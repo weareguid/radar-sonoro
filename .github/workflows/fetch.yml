@@ -1,0 +1,35 @@
+name: Corte semanal
+
+on:
+  schedule:
+    # 13:00 UTC los lunes (07:00 CDMX / 08:00 CDMX en horario de verano de EE.UU.)
+    - cron: "0 13 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Leer los 18 storefronts y recalcular el corte
+        run: node fetch.js
+
+      - name: Commit si hubo cambios
+        run: |
+          git config user.name "radar-sonoro-bot"
+          git config user.email "actions@users.noreply.github.com"
+          if ! git diff --quiet -- data; then
+            git add data
+            git commit -m "corte automático $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "sin cambios en el corte, no hay nada que commitear"
+          fi

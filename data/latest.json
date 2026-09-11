@@ -1,0 +1,1236 @@
+{
+  "snapshot": "2026-09-11T19:04:26.989Z",
+  "snapshotDate": "2026-09-11",
+  "storefronts": [
+    "mx",
+    "br",
+    "ar",
+    "cl",
+    "co",
+    "pe",
+    "uy",
+    "py",
+    "bo",
+    "ec",
+    "ve",
+    "cr",
+    "pa",
+    "gt",
+    "sv",
+    "hn",
+    "ni",
+    "do"
+  ],
+  "failed": [
+    {
+      "code": "py",
+      "error": "This operation was aborted"
+    }
+  ],
+  "maxSyncObserved": 8,
+  "consensus": [
+    {
+      "title": "BbY WOW",
+      "presence": 16,
+      "of": 17
+    },
+    {
+      "title": "KOKO",
+      "presence": 15,
+      "of": 17
+    },
+    {
+      "title": "Yonaguni",
+      "presence": 12,
+      "of": 17
+    },
+    {
+      "title": "Efecto",
+      "presence": 10,
+      "of": 17
+    },
+    {
+      "title": "Las mas bonitas son p#tas",
+      "presence": 9,
+      "of": 17
+    },
+    {
+      "title": "Ojitos Lindos",
+      "presence": 8,
+      "of": 17
+    },
+    {
+      "title": "L a k e n o s h i",
+      "presence": 6,
+      "of": 17
+    },
+    {
+      "title": "TE MUDASTE",
+      "presence": 6,
+      "of": 17
+    },
+    {
+      "title": "CAPCANA COCOA",
+      "presence": 5,
+      "of": 17
+    },
+    {
+      "title": "EXCESOS",
+      "presence": 4,
+      "of": 17
+    }
+  ],
+  "signals": [
+    {
+      "title": "BbY WOW",
+      "presence": 16,
+      "of": 17,
+      "tier": 3,
+      "tierLabel": "movimiento estructural",
+      "provisional": true
+    },
+    {
+      "title": "KOKO",
+      "presence": 15,
+      "of": 17,
+      "tier": 3,
+      "tierLabel": "movimiento estructural",
+      "provisional": true
+    },
+    {
+      "title": "Yonaguni",
+      "presence": 12,
+      "of": 17,
+      "tier": 2,
+      "tierLabel": "ola de mediano ciclo",
+      "provisional": true
+    },
+    {
+      "title": "Efecto",
+      "presence": 10,
+      "of": 17,
+      "tier": 2,
+      "tierLabel": "ola de mediano ciclo",
+      "provisional": true
+    },
+    {
+      "title": "Las mas bonitas son p#tas",
+      "presence": 9,
+      "of": 17,
+      "tier": 2,
+      "tierLabel": "ola de mediano ciclo",
+      "provisional": true
+    },
+    {
+      "title": "Ojitos Lindos",
+      "presence": 8,
+      "of": 17,
+      "tier": 2,
+      "tierLabel": "ola de mediano ciclo",
+      "provisional": true
+    },
+    {
+      "title": "L a k e n o s h i",
+      "presence": 6,
+      "of": 17,
+      "tier": 1,
+      "tierLabel": "flash trend",
+      "provisional": true
+    },
+    {
+      "title": "TE MUDASTE",
+      "presence": 6,
+      "of": 17,
+      "tier": 1,
+      "tierLabel": "flash trend",
+      "provisional": true
+    },
+    {
+      "title": "CAPCANA COCOA",
+      "presence": 5,
+      "of": 17,
+      "tier": 1,
+      "tierLabel": "flash trend",
+      "provisional": true
+    },
+    {
+      "title": "EXCESOS",
+      "presence": 4,
+      "of": 17,
+      "tier": 1,
+      "tierLabel": "flash trend",
+      "provisional": true
+    }
+  ],
+  "countries": {
+    "pe": {
+      "code": "pe",
+      "name": "Perú",
+      "sync": 5,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Sonido de Lluvia para Dormir y Relajarse (Pt. 01)",
+          "artistName": "Lluvia para Dormir"
+        },
+        {
+          "name": "Ojitos Lindos",
+          "artistName": "Bad Bunny & Bomba Estéreo"
+        },
+        {
+          "name": "Vete",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Dichavate",
+          "artistName": "Ya Ice Dilan, Rey Tony, Dj Honda & Helabusador"
+        },
+        {
+          "name": "Callaíta",
+          "artistName": "Bad Bunny & Tainy"
+        },
+        {
+          "name": "LA CANCIÓN",
+          "artistName": "J Balvin & Bad Bunny"
+        }
+      ]
+    },
+    "co": {
+      "code": "co",
+      "name": "Colombia",
+      "sync": 5,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "CAPCANA COCOA",
+          "artistName": "Blessd & Anuel AA"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "PERRO NEGRO",
+          "artistName": "Bad Bunny & Feid"
+        },
+        {
+          "name": "Ojalá",
+          "artistName": "Ryan Castro"
+        },
+        {
+          "name": "MERO TOTE",
+          "artistName": "Blessd, De La Rose & Los Money Makers"
+        },
+        {
+          "name": "GANAS REMIXXX (feat. De La Rose, Blessd)",
+          "artistName": "Kris R., ROA, Clarent & Luar La L"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "Ahí",
+          "artistName": "KAROL G & Drake"
+        }
+      ]
+    },
+    "cl": {
+      "code": "cl",
+      "name": "Chile",
+      "sync": 7,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Las mas bonitas son p#tas",
+          "artistName": "Anuel AA"
+        },
+        {
+          "name": "Donde Hubo Fuego Cenizas Quedan",
+          "artistName": "Anuel AA"
+        },
+        {
+          "name": "CAPCANA COCOA",
+          "artistName": "Blessd & Anuel AA"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "TE MUDASTE",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Luces Tenues",
+          "artistName": "Anuel AA"
+        },
+        {
+          "name": "Pa' Que La Pases Bien",
+          "artistName": "Arcángel"
+        }
+      ]
+    },
+    "br": {
+      "code": "br",
+      "name": "Brasil",
+      "sync": 0,
+      "dissident": true,
+      "tracks": [
+        {
+          "name": "Nicole Kidman",
+          "artistName": "ADÉLA"
+        },
+        {
+          "name": "Bass Persuades",
+          "artistName": "Miley Cyrus"
+        },
+        {
+          "name": "Ain't In LA",
+          "artistName": "ADÉLA"
+        },
+        {
+          "name": "hate that i made you love me",
+          "artistName": "Ariana Grande"
+        },
+        {
+          "name": "Cuida do Pet (feat. Mc Negão Original, DU'L & Dj Aladin GDB)",
+          "artistName": "Oldilla, Mc Iguinho Ct, MC Willian & Aaron Modesto"
+        },
+        {
+          "name": "Não Me Cutuca",
+          "artistName": "Anitta & Alceu Valença"
+        },
+        {
+          "name": "Você Já Sabe",
+          "artistName": "Anitta & Los Brasileros"
+        },
+        {
+          "name": "Sal Grosso",
+          "artistName": "Anitta & KBrum"
+        },
+        {
+          "name": "crank 2",
+          "artistName": "Slayyyter"
+        },
+        {
+          "name": "SaWaDiKa",
+          "artistName": "LISA"
+        }
+      ]
+    },
+    "mx": {
+      "code": "mx",
+      "name": "México",
+      "sync": 3,
+      "dissident": true,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "RIKI",
+          "artistName": "Neton Vega"
+        },
+        {
+          "name": "Te Estoy Correteando",
+          "artistName": "LATIN MAFIA & Fred again.."
+        },
+        {
+          "name": "TU SANCHO",
+          "artistName": "Fuerza Regida"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "EXCESOS",
+          "artistName": "Fuerza Regida"
+        },
+        {
+          "name": "Dandy Hats",
+          "artistName": "El Rabbanito"
+        },
+        {
+          "name": "gervonta",
+          "artistName": "Peso Pluma"
+        },
+        {
+          "name": "HOLLYWOOD",
+          "artistName": "Peso Pluma & Estevan Plazola"
+        },
+        {
+          "name": "Mar Azul",
+          "artistName": "Natanael Cano"
+        }
+      ]
+    },
+    "ar": {
+      "code": "ar",
+      "name": "Argentina",
+      "sync": 4,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "Las mas bonitas son p#tas",
+          "artistName": "Anuel AA"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "ZIZI",
+          "artistName": "Ozuna & Omar Courtz"
+        },
+        {
+          "name": "Se Preparó",
+          "artistName": "Ozuna"
+        },
+        {
+          "name": "POR SI MAÑANA NO ESTOY",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "De Lejitos (Remix)",
+          "artistName": "Jay Wheeler & Omar Courtz"
+        },
+        {
+          "name": "Ojitos Lindos",
+          "artistName": "Bad Bunny & Bomba Estéreo"
+        },
+        {
+          "name": "Sensualidad (feat. Mambo Kingz & DJ Luian)",
+          "artistName": "Bad Bunny, Prince Royce & J Balvin"
+        },
+        {
+          "name": "MIA (feat. Drake)",
+          "artistName": "Bad Bunny"
+        }
+      ]
+    },
+    "ec": {
+      "code": "ec",
+      "name": "Ecuador",
+      "sync": 5,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Te Estoy Correteando",
+          "artistName": "LATIN MAFIA & Fred again.."
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "Ojitos Lindos",
+          "artistName": "Bad Bunny & Bomba Estéreo"
+        },
+        {
+          "name": "Vete",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "LA CANCIÓN",
+          "artistName": "J Balvin & Bad Bunny"
+        },
+        {
+          "name": "Callaíta",
+          "artistName": "Bad Bunny & Tainy"
+        },
+        {
+          "name": "Me Porto Bonito",
+          "artistName": "Bad Bunny & Chencho Corleone"
+        }
+      ]
+    },
+    "ve": {
+      "code": "ve",
+      "name": "Venezuela",
+      "sync": 3,
+      "dissident": true,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "KLOuFRENS",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "VeLDÁ",
+          "artistName": "Bad Bunny, Omar Courtz & Dei V"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "PERRO NEGRO",
+          "artistName": "Bad Bunny & Feid"
+        },
+        {
+          "name": "amoureux",
+          "artistName": "Alleh"
+        },
+        {
+          "name": "WHERE SHE GOES",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Las mas bonitas son p#tas",
+          "artistName": "Anuel AA"
+        },
+        {
+          "name": "ZIZI",
+          "artistName": "Ozuna & Omar Courtz"
+        },
+        {
+          "name": "Ojos Brujos",
+          "artistName": "Clarent & Omar Courtz"
+        }
+      ]
+    },
+    "bo": {
+      "code": "bo",
+      "name": "Bolivia",
+      "sync": 7,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "Te Estoy Correteando",
+          "artistName": "LATIN MAFIA & Fred again.."
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "Pa' Que La Pases Bien",
+          "artistName": "Arcángel"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Dichavate",
+          "artistName": "Ya Ice Dilan, Rey Tony, Dj Honda & Helabusador"
+        },
+        {
+          "name": "Ojitos Lindos",
+          "artistName": "Bad Bunny & Bomba Estéreo"
+        },
+        {
+          "name": "TE MUDASTE",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Las mas bonitas son p#tas",
+          "artistName": "Anuel AA"
+        }
+      ]
+    },
+    "cr": {
+      "code": "cr",
+      "name": "Costa Rica",
+      "sync": 7,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "CAPCANA COCOA",
+          "artistName": "Blessd & Anuel AA"
+        },
+        {
+          "name": "VeLDÁ",
+          "artistName": "Bad Bunny, Omar Courtz & Dei V"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "SIATONTO",
+          "artistName": "4bes, PWater Sounds & Jeybil"
+        },
+        {
+          "name": "GANAS REMIXXX (feat. De La Rose, Blessd)",
+          "artistName": "Kris R., ROA, Clarent & Luar La L"
+        },
+        {
+          "name": "Las mas bonitas son p#tas",
+          "artistName": "Anuel AA"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "L a k e n o s h i",
+          "artistName": "Omar Courtz"
+        }
+      ]
+    },
+    "uy": {
+      "code": "uy",
+      "name": "Uruguay",
+      "sync": 4,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "Sonido de Lluvia para Dormir y Relajarse (Pt. 01)",
+          "artistName": "Lluvia para Dormir"
+        },
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "Las mas bonitas son p#tas",
+          "artistName": "Anuel AA"
+        },
+        {
+          "name": "ZIZI",
+          "artistName": "Ozuna & Omar Courtz"
+        },
+        {
+          "name": "Donde Hubo Fuego Cenizas Quedan",
+          "artistName": "Anuel AA"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "MIA (feat. Drake)",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Dichavate",
+          "artistName": "Ya Ice Dilan, Rey Tony, DJ Honda & Helabusador"
+        },
+        {
+          "name": "Sensualidad (feat. Mambo Kingz & DJ Luian)",
+          "artistName": "Bad Bunny, Prince Royce & J Balvin"
+        },
+        {
+          "name": "CAPCANA COCOA",
+          "artistName": "Blessd & Anuel AA"
+        }
+      ]
+    },
+    "pa": {
+      "code": "pa",
+      "name": "Panamá",
+      "sync": 7,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "VeLDÁ",
+          "artistName": "Bad Bunny, Omar Courtz & Dei V"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "PERRA",
+          "artistName": "Lil Naay"
+        },
+        {
+          "name": "Picadilly",
+          "artistName": "Emmxnuel, Yemil, El Yeyo PP & EL10"
+        },
+        {
+          "name": "CAPCANA COCOA",
+          "artistName": "Blessd & Anuel AA"
+        },
+        {
+          "name": "L a k e n o s h i",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "TE MUDASTE",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Las mas bonitas son p#tas",
+          "artistName": "Anuel AA"
+        }
+      ]
+    },
+    "hn": {
+      "code": "hn",
+      "name": "Honduras",
+      "sync": 8,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "VeLDÁ",
+          "artistName": "Bad Bunny, Omar Courtz & Dei V"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "TE MUDASTE",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Las mas bonitas son p#tas",
+          "artistName": "Anuel AA"
+        },
+        {
+          "name": "Ojitos Lindos",
+          "artistName": "Bad Bunny & Bomba Estéreo"
+        },
+        {
+          "name": "L a k e n o s h i",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "LA CANCIÓN",
+          "artistName": "J Balvin & Bad Bunny"
+        }
+      ]
+    },
+    "ni": {
+      "code": "ni",
+      "name": "Nicaragua",
+      "sync": 8,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "MIA (feat. Drake)",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Las mas bonitas son p#tas",
+          "artistName": "Anuel AA"
+        },
+        {
+          "name": "L a k e n o s h i",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "A Tu Merced",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Ojitos Lindos",
+          "artistName": "Bad Bunny & Bomba Estéreo"
+        },
+        {
+          "name": "EXCESOS",
+          "artistName": "Fuerza Regida"
+        }
+      ]
+    },
+    "gt": {
+      "code": "gt",
+      "name": "Guatemala",
+      "sync": 7,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "Sonido de Lluvia para Dormir y Relajarse (Pt. 01)",
+          "artistName": "Lluvia para Dormir"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "TE MUDASTE",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Ojitos Lindos",
+          "artistName": "Bad Bunny & Bomba Estéreo"
+        },
+        {
+          "name": "Vete",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Te Estoy Correteando",
+          "artistName": "LATIN MAFIA & Fred again.."
+        },
+        {
+          "name": "EXCESOS",
+          "artistName": "Fuerza Regida"
+        }
+      ]
+    },
+    "do": {
+      "code": "do",
+      "name": "República Dominicana",
+      "sync": 3,
+      "dissident": true,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "PERRA",
+          "artistName": "Lil Naay"
+        },
+        {
+          "name": "Otra Noche en Miami",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "Amnesia",
+          "artistName": "Dalvin La Melodia"
+        },
+        {
+          "name": "Alma Rota",
+          "artistName": "Dalvin La Melodia & El Blachy"
+        },
+        {
+          "name": "SPICY (feat. Myke Towers)",
+          "artistName": "Fronti & Brytiago"
+        },
+        {
+          "name": "UNA BABY EN SANTIAGO",
+          "artistName": "Lil Naay"
+        },
+        {
+          "name": "MOOD BRAZIL",
+          "artistName": "Lil Naay"
+        },
+        {
+          "name": "L a k e n o s h i",
+          "artistName": "Omar Courtz"
+        }
+      ]
+    },
+    "sv": {
+      "code": "sv",
+      "name": "El Salvador",
+      "sync": 8,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "TE MUDASTE",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Vete",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "L a k e n o s h i",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "Ojitos Lindos",
+          "artistName": "Bad Bunny & Bomba Estéreo"
+        },
+        {
+          "name": "Q U E V A S H A C E R H O Y ?",
+          "artistName": "Omar Courtz & De La Rose"
+        },
+        {
+          "name": "EXCESOS",
+          "artistName": "Fuerza Regida"
+        }
+      ]
+    }
+  },
+  "dissidents": [
+    {
+      "code": "br",
+      "name": "Brasil",
+      "sync": 0,
+      "dissident": true,
+      "tracks": [
+        {
+          "name": "Nicole Kidman",
+          "artistName": "ADÉLA"
+        },
+        {
+          "name": "Bass Persuades",
+          "artistName": "Miley Cyrus"
+        },
+        {
+          "name": "Ain't In LA",
+          "artistName": "ADÉLA"
+        },
+        {
+          "name": "hate that i made you love me",
+          "artistName": "Ariana Grande"
+        },
+        {
+          "name": "Cuida do Pet (feat. Mc Negão Original, DU'L & Dj Aladin GDB)",
+          "artistName": "Oldilla, Mc Iguinho Ct, MC Willian & Aaron Modesto"
+        },
+        {
+          "name": "Não Me Cutuca",
+          "artistName": "Anitta & Alceu Valença"
+        },
+        {
+          "name": "Você Já Sabe",
+          "artistName": "Anitta & Los Brasileros"
+        },
+        {
+          "name": "Sal Grosso",
+          "artistName": "Anitta & KBrum"
+        },
+        {
+          "name": "crank 2",
+          "artistName": "Slayyyter"
+        },
+        {
+          "name": "SaWaDiKa",
+          "artistName": "LISA"
+        }
+      ],
+      "why": {
+        "industry": "Funk carioca y sertanejo universitário",
+        "story": "El funk carioca y el sertanejo producen más streams internos que cualquier importación. El catálogo regional no compite: no cabe. Es el mercado más grande y el más aislado del mapa al mismo tiempo."
+      },
+      "needsReview": false
+    },
+    {
+      "code": "mx",
+      "name": "México",
+      "sync": 3,
+      "dissident": true,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "RIKI",
+          "artistName": "Neton Vega"
+        },
+        {
+          "name": "Te Estoy Correteando",
+          "artistName": "LATIN MAFIA & Fred again.."
+        },
+        {
+          "name": "TU SANCHO",
+          "artistName": "Fuerza Regida"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "EXCESOS",
+          "artistName": "Fuerza Regida"
+        },
+        {
+          "name": "Dandy Hats",
+          "artistName": "El Rabbanito"
+        },
+        {
+          "name": "gervonta",
+          "artistName": "Peso Pluma"
+        },
+        {
+          "name": "HOLLYWOOD",
+          "artistName": "Peso Pluma & Estevan Plazola"
+        },
+        {
+          "name": "Mar Azul",
+          "artistName": "Natanael Cano"
+        }
+      ],
+      "why": {
+        "industry": "Corridos tumbados y música mexicana",
+        "story": "El resurgimiento de los corridos tumbados y la música mexicana regional llena el chart nacional antes de que llegue cualquier hit del consenso. No es la excepción del mercado, es la industria dominante."
+      },
+      "needsReview": false
+    },
+    {
+      "code": "ve",
+      "name": "Venezuela",
+      "sync": 3,
+      "dissident": true,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "KLOuFRENS",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "VeLDÁ",
+          "artistName": "Bad Bunny, Omar Courtz & Dei V"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "PERRO NEGRO",
+          "artistName": "Bad Bunny & Feid"
+        },
+        {
+          "name": "amoureux",
+          "artistName": "Alleh"
+        },
+        {
+          "name": "WHERE SHE GOES",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "Las mas bonitas son p#tas",
+          "artistName": "Anuel AA"
+        },
+        {
+          "name": "ZIZI",
+          "artistName": "Ozuna & Omar Courtz"
+        },
+        {
+          "name": "Ojos Brujos",
+          "artistName": "Clarent & Omar Courtz"
+        }
+      ],
+      "why": null,
+      "needsReview": true
+    },
+    {
+      "code": "do",
+      "name": "República Dominicana",
+      "sync": 3,
+      "dissident": true,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky"
+        },
+        {
+          "name": "PERRA",
+          "artistName": "Lil Naay"
+        },
+        {
+          "name": "Otra Noche en Miami",
+          "artistName": "Bad Bunny"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz"
+        },
+        {
+          "name": "Amnesia",
+          "artistName": "Dalvin La Melodia"
+        },
+        {
+          "name": "Alma Rota",
+          "artistName": "Dalvin La Melodia & El Blachy"
+        },
+        {
+          "name": "SPICY (feat. Myke Towers)",
+          "artistName": "Fronti & Brytiago"
+        },
+        {
+          "name": "UNA BABY EN SANTIAGO",
+          "artistName": "Lil Naay"
+        },
+        {
+          "name": "MOOD BRAZIL",
+          "artistName": "Lil Naay"
+        },
+        {
+          "name": "L a k e n o s h i",
+          "artistName": "Omar Courtz"
+        }
+      ],
+      "why": {
+        "industry": "Dembow dominicano",
+        "story": "El dembow tiene su propia infraestructura de producción, DJs y consumo desde hace más de una década. Entra algo del consenso regional, pero compite con una escena que no necesita permiso de nadie para llenar un chart."
+      },
+      "needsReview": false
+    }
+  ],
+  "stats": {
+    "topSongRank1": {
+      "title": "BbY WOW",
+      "presence": 15,
+      "of": 17
+    },
+    "topConsensusPresence": [
+      {
+        "title": "BbY WOW",
+        "presence": 16,
+        "of": 17
+      }
+    ],
+    "topArtist": {
+      "name": "KAROL G",
+      "presence": 16,
+      "of": 17
+    },
+    "highestSync": {
+      "code": "hn",
+      "name": "Honduras",
+      "sync": 8
+    },
+    "dissidentCount": 4
+  },
+  "curatorialMyths": {
+    "KAROL G": {
+      "world": "No lanza discos, lanza estaciones climáticas. Cada proyecto reconfigura el género que la rodea en vez de sumarse a él.",
+      "withheld": "Rara vez compite en el terreno de la controversia. La ausencia de escándalo es, en sí misma, una decisión de marca.",
+      "risk": "Dominar tantos mercados con un solo título expone al catálogo completo a un techo de familiaridad: el consenso puede volverse previsible antes de volverse aburrido."
+    },
+    "Bad Bunny": {
+      "world": "No lanza discos, lanza estaciones climáticas. Cada proyecto reconfigura el género que lo rodea en vez de sumarse a él.",
+      "withheld": "Silencios largos entre eras, negativa a explicar decisiones creativas en el momento en que se toman. El misterio es parte del catálogo.",
+      "risk": "El riesgo no es la sobreexposición de streams, es la canonización prematura: cuando cada movimiento se lee como declaración de era y deja de tener espacio para fallar en público."
+    },
+    "Omar Courtz": {
+      "world": "Construye sobre el circuito puertorriqueño reciente sin heredar directamente la sombra de Bad Bunny: menos narrativa de mundo, más ejecución de sonido.",
+      "withheld": "Todavía no ha tenido que sostener una era completa. La pregunta abierta es si KOKO es el inicio de un catálogo o un pico aislado.",
+      "risk": "Sin un segundo movimiento que confirme el primero, el riesgo es quedar leído como una sola canción exitosa en vez de un artista con arco."
+    }
+  }
+}

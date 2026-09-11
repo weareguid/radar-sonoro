@@ -1,0 +1,14 @@
+{
+  "name": "radar-sonoro",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Radar Sonoro: consenso musical y disidentes en 18 mercados de América Latina, leído semanalmente desde los feeds públicos de Apple Music.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "fetch": "node fetch.js",
+    "serve": "python3 -m http.server 4173"
+  }
+}

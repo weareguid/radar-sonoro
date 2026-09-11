@@ -1,0 +1,40 @@
+{
+  "_readme": "Copy escrito a mano. why: revisar cuando un país entra o sale de la lista de disidentes (sync <= 3). myths: perfiles de artistas dominantes en el consenso, mantenidos manualmente porque requieren juicio cualitativo que los números no dan. No escribir cifras aquí; el número lo pone la página a partir de data/latest.json.",
+
+  "why": {
+    "br": {
+      "industry": "Funk carioca y sertanejo universitário",
+      "story": "El funk carioca y el sertanejo producen más streams internos que cualquier importación. El catálogo regional no compite: no cabe. Es el mercado más grande y el más aislado del mapa al mismo tiempo."
+    },
+    "mx": {
+      "industry": "Corridos tumbados y música mexicana",
+      "story": "El resurgimiento de los corridos tumbados y la música mexicana regional llena el chart nacional antes de que llegue cualquier hit del consenso. No es la excepción del mercado, es la industria dominante."
+    },
+    "do": {
+      "industry": "Dembow dominicano",
+      "story": "El dembow tiene su propia infraestructura de producción, DJs y consumo desde hace más de una década. Entra algo del consenso regional, pero compite con una escena que no necesita permiso de nadie para llenar un chart."
+    },
+    "ar": {
+      "industry": "RKT y trap porteño",
+      "story": "El RKT y el trap porteño construyeron un circuito de producción propio desde 2019. La escena no persigue el consenso regional, el consenso la persigue a ella. Suele oscilar cerca del umbral de disidencia."
+    }
+  },
+
+  "myths": {
+    "KAROL G": {
+      "world": "No lanza discos, lanza estaciones climáticas. Cada proyecto reconfigura el género que la rodea en vez de sumarse a él.",
+      "withheld": "Rara vez compite en el terreno de la controversia. La ausencia de escándalo es, en sí misma, una decisión de marca.",
+      "risk": "Dominar tantos mercados con un solo título expone al catálogo completo a un techo de familiaridad: el consenso puede volverse previsible antes de volverse aburrido."
+    },
+    "Bad Bunny": {
+      "world": "No lanza discos, lanza estaciones climáticas. Cada proyecto reconfigura el género que lo rodea en vez de sumarse a él.",
+      "withheld": "Silencios largos entre eras, negativa a explicar decisiones creativas en el momento en que se toman. El misterio es parte del catálogo.",
+      "risk": "El riesgo no es la sobreexposición de streams, es la canonización prematura: cuando cada movimiento se lee como declaración de era y deja de tener espacio para fallar en público."
+    },
+    "Omar Courtz": {
+      "world": "Construye sobre el circuito puertorriqueño reciente sin heredar directamente la sombra de Bad Bunny: menos narrativa de mundo, más ejecución de sonido.",
+      "withheld": "Todavía no ha tenido que sostener una era completa. La pregunta abierta es si KOKO es el inicio de un catálogo o un pico aislado.",
+      "risk": "Sin un segundo movimiento que confirme el primero, el riesgo es quedar leído como una sola canción exitosa en vez de un artista con arco."
+    }
+  }
+}

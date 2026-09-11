@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar Sonoro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="brand">
+      <span class="kicker">Inteligencia cultural · 18 mercados</span>
+      <h1>Radar Sonoro</h1>
+    </div>
+    <div class="stamp" id="stamp">cargando corte…</div>
+  </header>
+
+  <section class="thesis">
+    <div>
+      <h2 id="thesisHead">&nbsp;</h2>
+      <p id="thesisBody"></p>
+    </div>
+    <div class="discover">
+      <button class="discover-btn" id="surpriseBtn">Sorpréndeme</button>
+      <span class="discover-hint">Salta a un país, una señal o un artista al azar del corte.</span>
+    </div>
+  </section>
+
+  <section class="section" id="senales">
+    <div class="section-head">
+      <div>
+        <h3>Señales de la semana</h3>
+        <p class="section-sub" id="senalesSub">Cada título clasificado por lo que el dato hace, no por lo que promete.</p>
+      </div>
+      <span class="section-num">01 / lectura</span>
+    </div>
+    <div class="reel" id="signalReel"></div>
+  </section>
+
+  <section class="section" id="red">
+    <div class="section-head">
+      <div>
+        <h3>Mapa de relaciones</h3>
+        <p class="section-sub">Cada línea es un país que comparte el consenso regional. Entre más gruesa, más sincronía. Los nodos punteados son los disidentes: click para ver por qué.</p>
+      </div>
+      <span class="section-num">02 / lectura</span>
+    </div>
+    <div class="network-layout">
+      <div class="network-frame">
+        <svg id="netsvg" viewBox="0 0 760 560" role="img" aria-label="Diagrama de relaciones entre mercados y el consenso regional"></svg>
+      </div>
+      <div class="panel" id="panel">
+        <p class="placeholder">Elige un país del diagrama para leer su ficha, o pulsa Sorpréndeme.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="disidentes">
+    <div class="section-head">
+      <div>
+        <h3>Expediente de disidentes</h3>
+        <p class="section-sub">Sincronía de 3 o menos. No están fuera del mapa: tienen una industria propia capaz de ganarle al catálogo regional.</p>
+      </div>
+      <span class="section-num">03 / lectura</span>
+    </div>
+    <div class="casebook-grid" id="caseGrid"></div>
+  </section>
+
+  <section class="section" id="mitos">
+    <div class="section-head">
+      <div>
+        <h3>Arquitectos de mito</h3>
+        <p class="section-sub">Los artistas que sostienen el consenso, leídos como constructores de mundo: qué exhiben, qué callan, dónde está el riesgo.</p>
+      </div>
+      <span class="section-num">04 / lectura</span>
+    </div>
+    <div class="myth-list" id="mythList"></div>
+  </section>
+
+  <section class="section" style="border-bottom:none">
+    <div class="section-head">
+      <div>
+        <h3>Bitácora del corte</h3>
+        <p class="section-sub">Lo que este corte deja abierto para el próximo lunes.</p>
+      </div>
+      <span class="section-num">05 / lectura</span>
+    </div>
+    <div class="log" id="logBlock"></div>
+  </section>
+
+  <footer id="footer"></footer>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
