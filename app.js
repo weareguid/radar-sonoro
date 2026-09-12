@@ -305,7 +305,6 @@ function render(data){
   });
 
   renderNetwork(data);
-  renderCompare(data);
   renderLog(data);
   renderFooter(data);
   setupModal();
@@ -441,66 +440,6 @@ function setupSurprise(data){
       openSongModal(pick.title);
     }
   };
-}
-
-function renderCompare(data){
-  const codes = Object.keys(data.countries);
-  const selA = document.getElementById("compareA");
-  const selB = document.getElementById("compareB");
-  const options = codes.map(code => {
-    const c = data.countries[code];
-    return `<option value="${code}">${c.name}${c.dissident ? " · dissident" : ""}</option>`;
-  }).join("");
-  selA.innerHTML = options;
-  selB.innerHTML = options;
-
-  const highest = data.stats.highestSync;
-  const firstDissident = data.dissidents[0];
-  selA.value = highest ? highest.code : codes[0];
-  selB.value = firstDissident ? firstDissident.code : (codes[1] || codes[0]);
-
-  function draw(){
-    const a = data.countries[selA.value];
-    const b = data.countries[selB.value];
-    const grid = document.getElementById("compareGrid");
-    grid.innerHTML = "";
-    if (!a || !b) return;
-
-    const keysA = new Set(a.tracks.map(t => norm(t.name)));
-    const keysB = new Set(b.tracks.map(t => norm(t.name)));
-    let sharedCount = 0;
-
-    [a, b].forEach((country, idx) => {
-      const otherKeys = idx === 0 ? keysB : keysA;
-      const col = el("div","compare-col");
-      col.innerHTML = `
-        <div class="compare-col-head"><h4>${country.name}</h4><span>${country.sync}/10 sync</span></div>
-      `;
-      country.tracks.forEach(t=>{
-        const shared = otherKeys.has(norm(t.name));
-        if (shared && idx === 0) sharedCount++;
-        const row = el("button","compare-track"+(shared?" shared":""));
-        row.type = "button";
-        row.innerHTML = `
-          ${t.artworkUrl ? `<img src="${t.artworkUrl}" alt="">` : ""}
-          <span class="t-title">${t.name}</span>
-        `;
-        row.addEventListener("click", ()=> openSongModal(t.name));
-        col.appendChild(row);
-      });
-      grid.appendChild(col);
-    });
-
-    const summary = el("div","compare-summary");
-    summary.textContent = sharedCount
-      ? `They share ${sharedCount} of 10 songs.`
-      : `They don't share a single song from their top 10 this week.`;
-    grid.appendChild(summary);
-  }
-
-  selA.addEventListener("change", draw);
-  selB.addEventListener("change", draw);
-  draw();
 }
 
 function renderLog(data){

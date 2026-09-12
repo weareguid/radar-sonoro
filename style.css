@@ -179,24 +179,7 @@ h1{font-family:"Archivo Black","Archivo",sans-serif;font-size:clamp(30px,5vw,50p
 .song-chip:hover{border-color:var(--accent);color:var(--accent)}
 .song-chip.dissident{border-style:dashed}
 
-/* ---------- comparador ---------- */
-.compare-picker{display:flex;align-items:center;gap:14px;margin-bottom:20px}
-.compare-select{font-family:"IBM Plex Mono",monospace;font-size:12.5px;padding:9px 12px;border-radius:2px;border:1px solid var(--line);background:var(--surface);color:var(--ink);flex:1;max-width:280px}
-.compare-vs{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);text-transform:uppercase}
-.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.compare-col{background:var(--surface);border:1px solid var(--line);border-radius:3px;box-shadow:var(--shadow);padding:16px}
-.compare-col-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid var(--line-soft)}
-.compare-col-head h4{font-family:"Archivo Black","Archivo",sans-serif;font-size:17px;margin:0}
-.compare-col-head span{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted)}
-.compare-track{display:flex;align-items:center;gap:8px;padding:5px 4px;border-radius:2px;background:none;border:none;width:100%;text-align:left;font:inherit;color:inherit;cursor:pointer}
-.compare-track:hover{background:var(--surface-2)}
-.compare-track.shared{background:var(--accent-soft)}
-.compare-track img{width:26px;height:26px;border-radius:2px;object-fit:cover;background:var(--surface-2);flex:0 0 auto}
-.compare-track .t-title{font-size:12.5px;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.compare-summary{grid-column:1/-1;font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--muted);text-align:center}
-
 @media (max-width:760px){
-  .compare-grid{grid-template-columns:1fr}
   .song-hero{flex-direction:column}
 }
 
