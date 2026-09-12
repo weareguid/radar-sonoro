@@ -26,6 +26,13 @@ jobs:
         run: node fetch-critics.js
         continue-on-error: true
 
+      - name: Agregar el link exacto de Spotify a cada canción
+        run: node fetch-spotify.js
+        continue-on-error: true
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+
       - name: Commit si hubo cambios
         run: |
           git config user.name "radar-sonoro-bot"

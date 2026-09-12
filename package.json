@@ -10,6 +10,7 @@
   "scripts": {
     "fetch": "node fetch.js",
     "fetch:critics": "node fetch-critics.js",
+    "fetch:spotify": "node fetch-spotify.js",
     "serve": "python3 -m http.server 4173"
   }
 }

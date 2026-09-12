@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,10 +14,10 @@
 
   <header class="masthead">
     <div class="brand">
-      <span class="kicker">Inteligencia cultural · 18 mercados</span>
+      <span class="kicker">Cultural intelligence · 18 markets</span>
       <h1>Radar Sonoro</h1>
     </div>
-    <div class="stamp" id="stamp">cargando corte…</div>
+    <div class="stamp" id="stamp">loading this week's cut…</div>
   </header>
 
   <section class="thesis">
@@ -26,8 +26,8 @@
       <p id="thesisBody"></p>
     </div>
     <div class="discover">
-      <button class="discover-btn" id="surpriseBtn">Sorpréndeme</button>
-      <span class="discover-hint">Salta a un país o a una canción al azar del corte.</span>
+      <button class="discover-btn" id="surpriseBtn">Surprise me</button>
+      <span class="discover-hint">Jump to a random country or song from this week's cut.</span>
     </div>
   </section>
 
@@ -37,10 +37,10 @@
       <section class="section" id="senales">
         <div class="section-head">
           <div>
-            <h3>Señales de la semana</h3>
-            <p class="section-sub" id="senalesSub">Cada título clasificado por lo que el dato hace, no por lo que promete.</p>
+            <h3>Signals of the week</h3>
+            <p class="section-sub" id="senalesSub">Every title classified by what the data does, not what it promises.</p>
           </div>
-          <span class="section-num">01 / lectura</span>
+          <span class="section-num">01 / read</span>
         </div>
         <div class="reel" id="signalReel"></div>
       </section>
@@ -48,17 +48,17 @@
       <section class="section" id="red">
         <div class="section-head">
           <div>
-            <h3>Mapa de relaciones</h3>
-            <p class="section-sub">Cada línea es un país que comparte el consenso regional. Entre más gruesa, más sincronía. Los nodos punteados son los disidentes: click para ver por qué.</p>
+            <h3>Relationship map</h3>
+            <p class="section-sub">Each line is a country that shares the regional consensus. The thicker it is, the higher the sync. Dotted nodes are the dissidents — click to see why.</p>
           </div>
-          <span class="section-num">02 / lectura</span>
+          <span class="section-num">02 / read</span>
         </div>
         <div class="network-layout">
           <div class="network-frame">
-            <svg id="netsvg" viewBox="0 0 760 560" role="img" aria-label="Diagrama de relaciones entre mercados y el consenso regional"></svg>
+            <svg id="netsvg" viewBox="0 0 760 560" role="img" aria-label="Diagram of relationships between markets and the regional consensus"></svg>
           </div>
           <div class="panel" id="panel">
-            <p class="placeholder">Elige un país del diagrama para leer su ficha, o pulsa Sorpréndeme.</p>
+            <p class="placeholder">Pick a country from the diagram to read its profile, or hit Surprise me.</p>
           </div>
         </div>
       </section>
@@ -66,15 +66,15 @@
       <section class="section" id="comparar">
         <div class="section-head">
           <div>
-            <h3>Comparador de mercados</h3>
-            <p class="section-sub">Pon dos países lado a lado. Lo que comparten se resalta, lo que no, es lo que cada uno escucha que el otro ni conoce.</p>
+            <h3>Market comparator</h3>
+            <p class="section-sub">Put two countries side by side. What they share gets highlighted — what doesn't is what each one listens to that the other has never heard.</p>
           </div>
-          <span class="section-num">03 / lectura</span>
+          <span class="section-num">03 / read</span>
         </div>
         <div class="compare-picker">
-          <select id="compareA" class="compare-select" aria-label="Primer país a comparar"></select>
+          <select id="compareA" class="compare-select" aria-label="First country to compare"></select>
           <span class="compare-vs">vs</span>
-          <select id="compareB" class="compare-select" aria-label="Segundo país a comparar"></select>
+          <select id="compareB" class="compare-select" aria-label="Second country to compare"></select>
         </div>
         <div class="compare-grid" id="compareGrid"></div>
       </section>
@@ -82,10 +82,10 @@
       <section class="section" id="disidentes">
         <div class="section-head">
           <div>
-            <h3>Expediente de disidentes</h3>
-            <p class="section-sub">Sincronía de 3 o menos. No están fuera del mapa: tienen una industria propia capaz de ganarle al catálogo regional.</p>
+            <h3>Dissident case file</h3>
+            <p class="section-sub">Sync of 3 or less. They're not off the map — they have a local industry strong enough to beat the regional catalog.</p>
           </div>
-          <span class="section-num">04 / lectura</span>
+          <span class="section-num">04 / read</span>
         </div>
         <div class="casebook-grid" id="caseGrid"></div>
       </section>
@@ -93,10 +93,10 @@
       <section class="section" id="mitos">
         <div class="section-head">
           <div>
-            <h3>Arquitectos de mito</h3>
-            <p class="section-sub">Los artistas que sostienen el consenso, leídos como constructores de mundo: qué exhiben, qué callan, dónde está el riesgo.</p>
+            <h3>Myth architects</h3>
+            <p class="section-sub">The artists holding up the consensus, read as world-builders: what they show, what they withhold, where the risk is.</p>
           </div>
-          <span class="section-num">05 / lectura</span>
+          <span class="section-num">05 / read</span>
         </div>
         <div class="myth-list" id="mythList"></div>
       </section>
@@ -104,10 +104,10 @@
       <section class="section" style="border-bottom:none">
         <div class="section-head">
           <div>
-            <h3>Bitácora del corte</h3>
-            <p class="section-sub">Lo que este corte deja abierto para el próximo lunes.</p>
+            <h3>Cut log</h3>
+            <p class="section-sub">What this cut leaves open for next Monday.</p>
           </div>
-          <span class="section-num">06 / lectura</span>
+          <span class="section-num">06 / read</span>
         </div>
         <div class="log" id="logBlock"></div>
       </section>
@@ -122,13 +122,13 @@
           <span class="sidebar-kicker">Pitchfork</span>
           <h4>Best New Music</h4>
         </div>
-        <p class="sidebar-note">Discos que Pitchfork marcó como Best New Music esta semana. Sin relación con el consenso regional: es otra escala de vara, la de la crítica anglo.</p>
+        <p class="sidebar-note">Albums Pitchfork tagged Best New Music this week. Unrelated to the regional consensus — a different yardstick, the Anglo critics'.</p>
         <div class="sidebar-list" id="pitchforkList"></div>
       </div>
       <div class="sidebar-block">
         <div class="sidebar-head">
           <span class="sidebar-kicker">NME</span>
-          <h4>Reseñas recientes</h4>
+          <h4>Recent reviews</h4>
         </div>
         <div class="sidebar-list" id="nmeList"></div>
       </div>
@@ -140,7 +140,7 @@
 <div class="song-modal" id="songModal" hidden>
   <div class="song-modal-backdrop" id="songModalBackdrop"></div>
   <div class="song-modal-card" role="dialog" aria-modal="true" aria-labelledby="songModalTitle">
-    <button class="song-modal-close" id="songModalClose" aria-label="Cerrar">×</button>
+    <button class="song-modal-close" id="songModalClose" aria-label="Close">×</button>
     <div id="songModalBody"></div>
   </div>
 </div>

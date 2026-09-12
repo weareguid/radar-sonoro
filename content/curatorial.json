@@ -1,40 +1,40 @@
 {
-  "_readme": "Copy escrito a mano. why: revisar cuando un país entra o sale de la lista de disidentes (sync <= 3). myths: perfiles de artistas dominantes en el consenso, mantenidos manualmente porque requieren juicio cualitativo que los números no dan. No escribir cifras aquí; el número lo pone la página a partir de data/latest.json.",
+  "_readme": "Hand-written copy. why: review whenever a country enters or leaves the dissident list (sync <= 3). myths: profiles of the artists dominating the consensus, kept manual because they need qualitative judgment the numbers don't give. Don't write numbers here; the page fills those in from data/latest.json.",
 
   "why": {
     "br": {
-      "industry": "Funk carioca y sertanejo universitário",
-      "story": "El funk carioca y el sertanejo producen más streams internos que cualquier importación. El catálogo regional no compite: no cabe. Es el mercado más grande y el más aislado del mapa al mismo tiempo."
+      "industry": "Funk carioca and sertanejo universitário",
+      "story": "Funk carioca and sertanejo generate more internal streams than any import could. The regional catalog isn't competing — it doesn't fit. It's the biggest market on the map and the most isolated one, at the same time."
     },
     "mx": {
-      "industry": "Corridos tumbados y música mexicana",
-      "story": "El resurgimiento de los corridos tumbados y la música mexicana regional llena el chart nacional antes de que llegue cualquier hit del consenso. No es la excepción del mercado, es la industria dominante."
+      "industry": "Corridos tumbados and Mexican regional music",
+      "story": "The corridos tumbados revival and regional Mexican music fill the national chart before any consensus hit gets a look in. It's not the market's exception, it's the dominant industry."
     },
     "do": {
-      "industry": "Dembow dominicano",
-      "story": "El dembow tiene su propia infraestructura de producción, DJs y consumo desde hace más de una década. Entra algo del consenso regional, pero compite con una escena que no necesita permiso de nadie para llenar un chart."
+      "industry": "Dominican dembow",
+      "story": "Dembow has had its own production, DJ, and consumption infrastructure for over a decade. Some of the regional consensus gets in, but it's competing with a scene that doesn't need anyone's permission to fill a chart."
     },
     "ar": {
-      "industry": "RKT y trap porteño",
-      "story": "El RKT y el trap porteño construyeron un circuito de producción propio desde 2019. La escena no persigue el consenso regional, el consenso la persigue a ella. Suele oscilar cerca del umbral de disidencia."
+      "industry": "RKT and Buenos Aires trap",
+      "story": "RKT and Buenos Aires trap built their own production circuit starting in 2019. The scene doesn't chase the regional consensus — the consensus chases it. It tends to hover right around the dissident threshold."
     }
   },
 
   "myths": {
     "KAROL G": {
-      "world": "No lanza discos, lanza estaciones climáticas. Cada proyecto reconfigura el género que la rodea en vez de sumarse a él.",
-      "withheld": "Rara vez compite en el terreno de la controversia. La ausencia de escándalo es, en sí misma, una decisión de marca.",
-      "risk": "Dominar tantos mercados con un solo título expone al catálogo completo a un techo de familiaridad: el consenso puede volverse previsible antes de volverse aburrido."
+      "world": "She doesn't drop albums, she drops weather systems. Every project reconfigures the genre around her instead of joining it.",
+      "withheld": "She rarely competes on the terrain of controversy. The absence of scandal is, itself, a brand decision.",
+      "risk": "Dominating this many markets with one single exposes the whole catalog to a ceiling of familiarity: the consensus can turn predictable before it turns boring."
     },
     "Bad Bunny": {
-      "world": "No lanza discos, lanza estaciones climáticas. Cada proyecto reconfigura el género que lo rodea en vez de sumarse a él.",
-      "withheld": "Silencios largos entre eras, negativa a explicar decisiones creativas en el momento en que se toman. El misterio es parte del catálogo.",
-      "risk": "El riesgo no es la sobreexposición de streams, es la canonización prematura: cuando cada movimiento se lee como declaración de era y deja de tener espacio para fallar en público."
+      "world": "He doesn't drop albums, he drops weather systems. Every project reconfigures the genre around him instead of joining it.",
+      "withheld": "Long silences between eras, a refusal to explain creative decisions at the moment he makes them. The mystery is part of the catalog.",
+      "risk": "The risk isn't stream overexposure, it's premature canonization — when every move gets read as an era statement and there's no more room left to fail in public."
     },
     "Omar Courtz": {
-      "world": "Construye sobre el circuito puertorriqueño reciente sin heredar directamente la sombra de Bad Bunny: menos narrativa de mundo, más ejecución de sonido.",
-      "withheld": "Todavía no ha tenido que sostener una era completa. La pregunta abierta es si KOKO es el inicio de un catálogo o un pico aislado.",
-      "risk": "Sin un segundo movimiento que confirme el primero, el riesgo es quedar leído como una sola canción exitosa en vez de un artista con arco."
+      "world": "He builds on the recent Puerto Rican circuit without directly inheriting Bad Bunny's shadow: less world-narrative, more sound execution.",
+      "withheld": "He hasn't had to carry a full era yet. The open question is whether KOKO is the start of a catalog or an isolated peak.",
+      "risk": "Without a second move to confirm the first, the risk is getting read as one successful song instead of an artist with an arc."
     }
   }
 }

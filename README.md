@@ -2,6 +2,8 @@
 
 Qué se escucha en 18 mercados de América Latina, leído como inteligencia cultural en vez de como dashboard: señales clasificadas (flash / mediano ciclo / movimiento estructural), un mapa de relaciones explorable, y un expediente de los países cuya industria local le gana al consenso regional.
 
+**Nota de idioma**: el sitio (`index.html`, `app.js`, `content/curatorial.json`, los `tierLabel`/nombres de país que genera `fetch.js`) está en inglés a propósito, por decisión explícita del dueño del proyecto. Este README, los comentarios de código y los mensajes de consola siguen en español porque son para quien mantiene el proyecto, no para quien lo visita.
+
 Origen: [`mapa-sonoro.html`](../mapa-sonoro.html) más la lente de "The Curator" (clasificación de señales, artistas como arquitectos de mito, puente obligado con Latinoamérica). El prototipo visual se validó como [artifact](https://claude.ai/code/artifact/d808c8b3-b820-4ddb-8c59-d7d028d25cb9) antes de conectarlo a datos reales.
 
 ## Cómo funciona
@@ -35,11 +37,23 @@ Ninguno de los dos medios tiene API pública, y Complex no tiene RSS ni un siste
 - **Pitchfork** no tiene RSS de "Best New Music" específicamente, pero sí un RSS general de reseñas (`pitchfork.com/feed/feed-album-reviews/rss`). Cada página de reseña trae su propio estado embebido en `window.__PRELOADED_STATE__` con `headerProps.musicRating.isBestNewMusic` y el score. `fetch-critics.js` lee el RSS, visita cada reseña reciente (con medio segundo de espera entre una y otra) y se queda solo con las marcadas Best New Music. Esto no es una API documentada — es el estado interno de su app — así que puede romperse si Pitchfork cambia su frontend; el script falla en silencio por reseña individual y sigue con las demás.
 - **NME** sí tiene RSS normal (`nme.com/reviews/album/feed`) con todo lo necesario en el feed mismo (no hace falta visitar cada página). No tiene un equivalente a "Best New Music": es solo el flujo de reseñas recientes, sin bandera de calidad.
 
+### Link a Spotify por canción
+
+`fetch-spotify.js` agrega `spotifyUrl` a cada canción en `data/latest.json` (consenso, señales, y las 10 de cada uno de los 18 países), buscando `track:{título} artist:{primer artista}` con el Client Credentials Flow de Spotify — no hace falta que nadie inicie sesión, solo credenciales de una app. Si el título+artista no matchea nada, o si las credenciales no están configuradas, ese registro simplemente no trae `spotifyUrl` y la página no muestra el botón "Play on Spotify" para esa canción (nunca rompe nada).
+
+Para activarlo:
+
+1. Entra a [developer.spotify.com/dashboard](https://developer.spotify.com/dashboard), crea una app (cualquier nombre, cualquier "Redirect URI" funciona porque no se usa login de usuario).
+2. Copia el **Client ID** y el **Client Secret** de esa app.
+3. En el repo de GitHub: **Settings → Secrets and variables → Actions → New repository secret**, crea `SPOTIFY_CLIENT_ID` y `SPOTIFY_CLIENT_SECRET` con esos valores.
+4. Listo — el workflow los toma solo la próxima vez que corra. Para probar en local: `SPOTIFY_CLIENT_ID=... SPOTIFY_CLIENT_SECRET=... node fetch-spotify.js`.
+
 ## Uso local
 
 ```bash
 node fetch.js            # baja los 18 feeds y escribe data/latest.json
 node fetch-critics.js    # Best New Music de Pitchfork + reseñas de NME
+node fetch-spotify.js    # agrega el link exacto de Spotify a cada canción (necesita credenciales, ver arriba)
 npm run serve            # sirve el sitio en http://localhost:4173
 ```
 
@@ -47,11 +61,12 @@ Requiere Node 20+ (usa `fetch` global, sin dependencias).
 
 ## Automatización
 
-`.github/workflows/fetch.yml` corre `node fetch.js` y `node fetch-critics.js` cada lunes y hace commit de `data/` si hubo cambios. El paso de crítica tiene `continue-on-error`: si Pitchfork o NME cambian su estructura y el script empieza a fallar completo, no debe tumbar el corte semanal principal. Para activar el workflow:
+`.github/workflows/fetch.yml` corre `node fetch.js`, `node fetch-critics.js` y `node fetch-spotify.js` cada lunes y hace commit de `data/` si hubo cambios. Los dos últimos pasos tienen `continue-on-error`: si Pitchfork/NME cambian su estructura, o si las credenciales de Spotify no están configuradas o fallan, no debe tumbar el corte semanal principal. Para activar el workflow:
 
 1. Crear el repo en GitHub y hacer push de esta carpeta.
 2. En **Settings → Actions → General**, dar permiso de escritura al `GITHUB_TOKEN` (Read and write permissions) para que el workflow pueda commitear.
-3. El primer corte real ya está en `data/2026-09-11.json` / `data/latest.json` (18 mercados leídos con datos en vivo el 11 de septiembre de 2026).
+3. (Opcional) Configurar `SPOTIFY_CLIENT_ID` y `SPOTIFY_CLIENT_SECRET` como se explica arriba, si se quiere el link a Spotify.
+4. El primer corte real ya está en `data/2026-09-11.json` / `data/latest.json` (18 mercados leídos con datos en vivo el 11 de septiembre de 2026).
 
 ## Deploy
 

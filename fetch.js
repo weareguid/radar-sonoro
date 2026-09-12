@@ -18,9 +18,9 @@ const CONTENT_DIR = path.join(__dirname, "content");
 const STOREFRONTS = ["mx","br","ar","cl","co","pe","uy","py","bo","ec","ve","cr","pa","gt","sv","hn","ni","do"];
 
 const COUNTRY_NAMES = {
-  mx:"México", br:"Brasil", ar:"Argentina", cl:"Chile", co:"Colombia", pe:"Perú",
+  mx:"Mexico", br:"Brazil", ar:"Argentina", cl:"Chile", co:"Colombia", pe:"Peru",
   uy:"Uruguay", py:"Paraguay", bo:"Bolivia", ec:"Ecuador", ve:"Venezuela", cr:"Costa Rica",
-  pa:"Panamá", gt:"Guatemala", sv:"El Salvador", hn:"Honduras", ni:"Nicaragua", do:"República Dominicana"
+  pa:"Panama", gt:"Guatemala", sv:"El Salvador", hn:"Honduras", ni:"Nicaragua", do:"Dominican Republic"
 };
 
 const OUTLIER_MAX = 3; // sincronía <= 3 = disidente
@@ -199,15 +199,15 @@ async function classifySignals(consensus, snapshotDate) {
     ).length;
 
     if (history.length >= 2) {
-      if (appearances >= 2) return { ...entry, tier: 3, tierLabel: "movimiento estructural", provisional: false };
-      if (appearances === 1) return { ...entry, tier: 2, tierLabel: "ola de mediano ciclo", provisional: false };
+      if (appearances >= 2) return { ...entry, tier: 3, tierLabel: "structural movement", provisional: false };
+      if (appearances === 1) return { ...entry, tier: 2, tierLabel: "mid-cycle wave", provisional: false };
       return { ...entry, tier: 1, tierLabel: "flash trend", provisional: false };
     }
 
     // bootstrap: sin histórico suficiente, heurística por presencia en el corte actual
     const pct = entry.presence / entry.of;
     const tier = pct >= 0.78 ? 3 : pct >= 0.45 ? 2 : 1;
-    const tierLabel = tier === 3 ? "movimiento estructural" : tier === 2 ? "ola de mediano ciclo" : "flash trend";
+    const tierLabel = tier === 3 ? "structural movement" : tier === 2 ? "mid-cycle wave" : "flash trend";
     return { ...entry, tier, tierLabel, provisional: true };
   });
 }

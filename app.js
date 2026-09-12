@@ -1,7 +1,7 @@
 const COUNTRY_NAMES = {
-  mx:"México", br:"Brasil", ar:"Argentina", cl:"Chile", co:"Colombia", pe:"Perú",
+  mx:"Mexico", br:"Brazil", ar:"Argentina", cl:"Chile", co:"Colombia", pe:"Peru",
   uy:"Uruguay", py:"Paraguay", bo:"Bolivia", ec:"Ecuador", ve:"Venezuela", cr:"Costa Rica",
-  pa:"Panamá", gt:"Guatemala", sv:"El Salvador", hn:"Honduras", ni:"Nicaragua", do:"República Dominicana"
+  pa:"Panama", gt:"Guatemala", sv:"El Salvador", hn:"Honduras", ni:"Nicaragua", do:"Dominican Republic"
 };
 
 const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
@@ -18,14 +18,16 @@ function el(tag, cls, html){
 
 function fmtDate(iso){
   const d = new Date(iso);
-  return d.toLocaleDateString("es-MX", { day:"numeric", month:"short", year:"numeric" });
+  return d.toLocaleDateString("en-US", { day:"numeric", month:"short", year:"numeric" });
 }
+
+const SPOTIFY_ICON = `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 4.32-1.32 9.719-.66 13.379 1.621.361.181.54.78.362 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.72-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.019.599-1.559.3z"/></svg>`;
 
 async function main(){
   let data;
   try {
     const res = await fetch("https://weareguid.github.io/radar-sonoro/data/latest.json", { cache:"no-store" });
-    if (!res.ok) throw new Error("sin datos");
+    if (!res.ok) throw new Error("no data");
     data = await res.json();
   } catch (err) {
     renderMissingData();
@@ -35,17 +37,17 @@ async function main(){
   loadSidebar();
 }
 
-// la barra lateral es una fuente independiente (Pitchfork + NME): si falla,
-// no debe tumbar el resto de la página.
+// the sidebar is an independent source (Pitchfork + NME): if it fails,
+// it shouldn't take down the rest of the page.
 async function loadSidebar(){
   try {
     const res = await fetch("https://weareguid.github.io/radar-sonoro/data/critics.json", { cache:"no-store" });
-    if (!res.ok) throw new Error("sin datos de crítica");
+    if (!res.ok) throw new Error("no critics data");
     const critics = await res.json();
     renderPitchfork(critics.pitchfork || []);
     renderNme(critics.nme || []);
   } catch (err) {
-    document.getElementById("pitchforkList").innerHTML = `<p class="sidebar-empty">Sin datos de crítica este corte.</p>`;
+    document.getElementById("pitchforkList").innerHTML = `<p class="sidebar-empty">No critic data this week.</p>`;
     document.getElementById("nmeList").innerHTML = "";
   }
 }
@@ -54,7 +56,7 @@ function renderPitchfork(picks){
   const list = document.getElementById("pitchforkList");
   list.innerHTML = "";
   if (!picks.length) {
-    list.appendChild(el("p","sidebar-empty","Ningún disco marcado Best New Music en las reseñas más recientes."));
+    list.appendChild(el("p","sidebar-empty","No album tagged Best New Music in the most recent reviews."));
     return;
   }
   picks.forEach(p=>{
@@ -71,7 +73,7 @@ function renderPitchfork(picks){
     `;
     list.appendChild(item);
   });
-  const link = el("a","sidebar-footer-link","Ver Best New Music en Pitchfork →");
+  const link = el("a","sidebar-footer-link","See Best New Music on Pitchfork →");
   link.href = "https://pitchfork.com/best/";
   link.target = "_blank";
   link.rel = "noopener";
@@ -82,7 +84,7 @@ function renderNme(reviews){
   const list = document.getElementById("nmeList");
   list.innerHTML = "";
   if (!reviews.length) {
-    list.appendChild(el("p","sidebar-empty","Sin reseñas recientes de NME."));
+    list.appendChild(el("p","sidebar-empty","No recent NME reviews."));
     return;
   }
   reviews.slice(0, 6).forEach(r=>{
@@ -99,7 +101,7 @@ function renderNme(reviews){
     `;
     list.appendChild(item);
   });
-  const link = el("a","sidebar-footer-link","Ver reseñas en NME →");
+  const link = el("a","sidebar-footer-link","See reviews on NME →");
   link.href = "https://www.nme.com/reviews/album";
   link.target = "_blank";
   link.rel = "noopener";
@@ -107,12 +109,12 @@ function renderNme(reviews){
 }
 
 function renderMissingData(){
-  document.getElementById("stamp").innerHTML = `<span class="flag">Sin corte disponible</span>`;
-  document.getElementById("thesisHead").textContent = "Todavía no hay un corte que leer.";
-  document.getElementById("thesisBody").textContent = "Corre node fetch.js una vez para generar data/latest.json, o espera a la lectura automática del lunes.";
+  document.getElementById("stamp").innerHTML = `<span class="flag">No cut available</span>`;
+  document.getElementById("thesisHead").textContent = "There's no cut to read yet.";
+  document.getElementById("thesisBody").textContent = "Run node fetch.js once to generate data/latest.json, or wait for Monday's automated read.";
 }
 
-// --- búsqueda de una canción a través de los 18 mercados, no solo del consenso ---
+// --- find a song across all 18 markets, not just the consensus ---
 function getSongDetail(title){
   const key = norm(title);
   const countries = [];
@@ -130,6 +132,7 @@ function getSongDetail(title){
     title: rep ? rep.name : title,
     artistName: rep ? rep.artistName : "",
     artworkUrl: rep ? rep.artworkUrl : "",
+    spotifyUrl: rep ? rep.spotifyUrl : (signal ? signal.spotifyUrl : null),
     presence: countries.length,
     of: Object.keys(DATA.countries).length,
     countries,
@@ -149,9 +152,10 @@ function openSongModal(title){
         <h4 id="songModalTitle">${s.title}</h4>
         <div class="song-artist">${s.artistName}</div>
         ${s.tierLabel ? `<div class="song-tier">${s.tierLabel}</div>` : ""}
+        ${s.spotifyUrl ? `<a class="song-spotify" href="${s.spotifyUrl}" target="_blank" rel="noopener">${SPOTIFY_ICON} Play on Spotify</a>` : ""}
       </div>
     </div>
-    <p>Presente en ${s.presence} de ${s.of} mercados leídos esta semana${s.provisional ? " · clasificación provisional, sin histórico suficiente aún" : ""}.</p>
+    <p>Present in ${s.presence} of ${s.of} markets read this week${s.provisional ? " · provisional classification, not enough history yet" : ""}.</p>
     <div class="song-countries">
       ${s.countries.map(c => `<button type="button" class="song-chip${c.dissident ? " dissident" : ""}" data-code="${c.code}">${c.name} · ${c.sync}/10</button>`).join("")}
     </div>
@@ -190,28 +194,28 @@ function render(data){
 
   // --- masthead ---
   document.getElementById("stamp").innerHTML = `
-    Corte <b>${fmtDate(data.snapshot)}</b><br>
-    ${respondedCount}/${total} mercados leídos
-    ${data.failed.length ? `· <span class="flag">${data.failed.length} sin respuesta</span>` : ""}
+    Cut of <b>${fmtDate(data.snapshot)}</b><br>
+    ${respondedCount}/${total} markets read
+    ${data.failed.length ? `· <span class="flag">${data.failed.length} unresponsive</span>` : ""}
   `;
 
-  // --- thesis (generada del dato, nada escrito a mano con cifras) ---
+  // --- thesis (generated from the data, nothing hand-written with numbers) ---
   const top = data.stats.topSongRank1;
   const topArtist = data.stats.topArtist;
   const highest = data.stats.highestSync;
   document.getElementById("thesisHead").innerHTML =
     dissidentCount > 0
-      ? `La región se comporta como <em>un solo mercado</em>, salvo donde una industria local lo desplaza.`
-      : `Esta semana no hay disidentes: los ${respondedCount} mercados leídos comparten el mismo consenso.`;
+      ? `The region behaves like <em>a single market</em>, except where a local industry displaces it.`
+      : `No dissidents this week: all ${respondedCount} markets read share the same consensus.`;
   document.getElementById("thesisBody").textContent =
     dissidentCount > 0
-      ? `${syncedCount} de ${respondedCount} países escuchan casi lo mismo esta semana${top ? `, con "${top.title}" como el título más repetido` : ""}. ` +
-        `Los otros ${dissidentCount} no están desconectados: tienen una escena propia lo bastante fuerte para no necesitar el consenso regional. ` +
-        (highest ? `${highest.name} es hoy el mercado más sincronizado, con ${highest.sync}/10.` : "")
-      : `${topArtist ? `${topArtist.name} domina el consenso, presente en ${topArtist.presence} de ${respondedCount} mercados. ` : ""}` +
-        `Sin disidentes esta semana, la pregunta es cuánto dura.`;
+      ? `${syncedCount} of ${respondedCount} countries are listening to almost the same thing this week${top ? `, with "${top.title}" as the most repeated title` : ""}. ` +
+        `The other ${dissidentCount} aren't disconnected — they have a local scene strong enough that they don't need the regional consensus. ` +
+        (highest ? `${highest.name} is today's most in-sync market, at ${highest.sync}/10.` : "")
+      : `${topArtist ? `${topArtist.name} dominates the consensus, present in ${topArtist.presence} of ${respondedCount} markets. ` : ""}` +
+        `No dissidents this week — the question is how long that lasts.`;
 
-  // --- señales ---
+  // --- signals ---
   const reel = document.getElementById("signalReel");
   reel.innerHTML = "";
   data.signals.forEach(s=>{
@@ -228,19 +232,19 @@ function render(data){
       <div class="signal-title">${s.title}</div>
       <div class="signal-artist">${s.artistName || ""}</div>
       <div class="signal-meta">
-        <span>presencia</span><b>${s.presence}/${s.of}</b>
+        <span>presence</span><b>${s.presence}/${s.of}</b>
       </div>
-      ${s.provisional ? '<div class="signal-provisional">clasificación provisional, sin histórico suficiente aún</div>' : ""}
+      ${s.provisional ? '<div class="signal-provisional">provisional classification, not enough history yet</div>' : ""}
     `;
     card.addEventListener("click", ()=> openSongModal(s.title));
     reel.appendChild(card);
   });
 
-  // --- casebook de disidentes ---
+  // --- dissident casebook ---
   const caseGrid = document.getElementById("caseGrid");
   caseGrid.innerHTML = "";
   if (!data.dissidents.length) {
-    caseGrid.appendChild(el("p","section-sub","Sin disidentes en este corte. Todos los mercados leídos están dentro del consenso regional."));
+    caseGrid.appendChild(el("p","section-sub","No dissidents this cut. Every market read is inside the regional consensus."));
   }
   data.dissidents.forEach(c=>{
     const card = el("div","case-card");
@@ -250,24 +254,24 @@ function render(data){
         <div class="case-flag"><span>${c.name}</span><span class="case-score">${c.sync}/10</span></div>
         <h4>${c.why.industry}</h4>
         <p>${c.why.story}</p>
-        <div class="case-industry">desplaza al consenso regional</div>
+        <div class="case-industry">displaces the regional consensus</div>
       `;
     } else {
       card.innerHTML = `
         <div class="case-flag"><span>${c.name}</span><span class="case-score">${c.sync}/10</span></div>
-        <h4>Disidente sin revisar</h4>
-        <p class="case-pending">Entró a la lista este corte. Falta escribir en content/curatorial.json qué industria local explica la caída de sincronía.</p>
+        <h4>Unreviewed dissident</h4>
+        <p class="case-pending">Entered the list this cut. content/curatorial.json still needs an entry explaining which local industry is behind the drop in sync.</p>
       `;
     }
     caseGrid.appendChild(card);
   });
 
-  // --- perfiles de mito ---
+  // --- myth profiles ---
   const mythList = document.getElementById("mythList");
   mythList.innerHTML = "";
   const candidateArtists = [];
   if (data.stats.topArtist) candidateArtists.push(data.stats.topArtist.name);
-  // agrega el/los artistas detrás del segundo título más fuerte del consenso, si distinto
+  // add the artist(s) behind the second-strongest consensus title, if different
   const secondTitle = data.consensus[1];
   if (secondTitle) {
     for (const code of codes) {
@@ -277,24 +281,24 @@ function render(data){
   }
   const uniqueArtists = [...new Set(candidateArtists)];
   if (!uniqueArtists.length) {
-    mythList.appendChild(el("p","section-sub","Sin artista dominante identificable este corte."));
+    mythList.appendChild(el("p","section-sub","No identifiable dominant artist this cut."));
   }
   uniqueArtists.forEach(name=>{
     const myth = (data.curatorialMyths || {})[name];
     const card = el("details","myth-card");
     if (myth) {
       card.innerHTML = `
-        <summary><span><div class="myth-name">${name}</div><div class="myth-tag">artista dominante del consenso</div></span><span class="myth-toggle">+</span></summary>
+        <summary><span><div class="myth-name">${name}</div><div class="myth-tag">dominant artist of the consensus</div></span><span class="myth-toggle">+</span></summary>
         <div class="myth-body">
-          <div><h5>Cómo construye mundo</h5><p>${myth.world}</p></div>
-          <div><h5>Qué calla</h5><p>${myth.withheld}</p></div>
-          <div><h5>Dónde está el riesgo</h5><p>${myth.risk}</p></div>
+          <div><h5>How they build a world</h5><p>${myth.world}</p></div>
+          <div><h5>What they withhold</h5><p>${myth.withheld}</p></div>
+          <div><h5>Where the risk is</h5><p>${myth.risk}</p></div>
         </div>
       `;
     } else {
       card.innerHTML = `
-        <summary><span><div class="myth-name">${name}</div><div class="myth-tag">perfil por escribir</div></span><span class="myth-toggle">+</span></summary>
-        <div class="myth-body"><p style="grid-column:1/-1">Domina el consenso este corte pero no tiene perfil en content/curatorial.json todavía.</p></div>
+        <summary><span><div class="myth-name">${name}</div><div class="myth-tag">profile still to write</div></span><span class="myth-toggle">+</span></summary>
+        <div class="myth-body"><p style="grid-column:1/-1">Dominates the consensus this cut but doesn't have a profile in content/curatorial.json yet.</p></div>
       `;
     }
     mythList.appendChild(card);
@@ -318,7 +322,7 @@ function trackRow(track, { onClick } = {}){
       <span class="t-title">${track.name}</span>
       <span class="t-artist">${track.artistName}</span>
     </span>
-    <span class="t-flag">${inConsensus ? "consenso" : "propia"}</span>
+    <span class="t-flag">${inConsensus ? "consensus" : "local"}</span>
   `;
   row.addEventListener("click", () => (onClick || openSongModal)(track.name));
   return row;
@@ -335,15 +339,15 @@ function showCountry(code){
   const dissidentRecord = DATA.dissidents.find(d => d.code === code);
   const panel = document.getElementById("panel");
   panel.innerHTML = `
-    <span class="panel-eyebrow">${c.dissident ? "país disidente" : "sincronizado con el consenso"}</span>
+    <span class="panel-eyebrow">${c.dissident ? "dissident country" : "in sync with the consensus"}</span>
     <h4>${c.name}</h4>
-    <div class="panel-sync"><span class="n">${c.sync}</span><span class="d">/ 10 sincronía</span></div>
+    <div class="panel-sync"><span class="n">${c.sync}</span><span class="d">/ 10 sync</span></div>
     <div class="sync-bar"><span style="width:${(c.sync/maxSync)*100}%"></span></div>
     ${c.dissident && dissidentRecord?.why
-      ? `<p>${dissidentRecord.why.story}</p><p><a href="#case-${code}" style="color:var(--accent);text-decoration:none">Ver expediente completo →</a></p>`
+      ? `<p>${dissidentRecord.why.story}</p><p><a href="#case-${code}" style="color:var(--accent);text-decoration:none">See full case file →</a></p>`
       : c.dissident
-        ? `<p class="review-flag">Disidente nuevo. Falta escribir la razón editorial en content/curatorial.json.</p>`
-        : `<p>Comparte ${c.sync} de las ${DATA.consensus.length} canciones del consenso regional esta semana.</p>`
+        ? `<p class="review-flag">New dissident. content/curatorial.json still needs the editorial reason.</p>`
+        : `<p>Shares ${c.sync} of the ${DATA.consensus.length} regional consensus songs this week.</p>`
     }
     <ul class="panel-tracks" id="panelTracks"></ul>
   `;
@@ -367,11 +371,12 @@ function renderNetwork(data){
   const dissidents = codes.filter(c => data.countries[c].dissident);
   const positions = {};
 
-  // los 18 países se reparten en un solo círculo de 360°, sincronizados primero
-  // y disidentes al final: así quedan agrupados entre sí sin compartir ángulo
-  // con ningún país sincronizado (antes se calculaban en dos arcos separados
-  // que se traslapaban, y un disidente podía terminar alineado con un país
-  // sincronizado sin ninguna relación real entre ambos).
+  // all 18 countries are spread across a single 360° circle, synced ones
+  // first and dissidents last: that keeps dissidents clustered together
+  // without ever sharing an angle with a synced country (they used to be
+  // computed as two separate arcs that overlapped, so a dissident could
+  // end up visually aligned with a synced country with no real relation
+  // between the two).
   const ordered = [...synced, ...dissidents];
   const n = Math.max(ordered.length, 1);
   ordered.forEach((code, i) => {
@@ -396,15 +401,17 @@ function renderNetwork(data){
 
   edgeGroup.appendChild(svgEl("circle",{cx:CENTER.x,cy:CENTER.y,r:26,fill:"var(--ink)"}));
   const hubText = svgEl("text",{x:CENTER.x,y:CENTER.y+4,"text-anchor":"middle","font-family":"IBM Plex Mono, monospace","font-size":9.5,fill:"var(--ground)"});
-  hubText.textContent = "CONSENSO";
+  hubText.textContent = "CONSENSUS";
   edgeGroup.appendChild(hubText);
 
   codes.forEach(code=>{
     const c = data.countries[code];
     const p = positions[code];
+    // node size carries the full consensus/dissent signal on its own, not
+    // just the dashed outline: the bigger the circle, the higher the sync.
+    const rad = 8 + (c.sync/maxSync) * 13;
     const g = svgEl("g",{ class:"node-country"+(c.dissident?" dissident":""), "data-code":code, tabindex:"0", role:"button",
-      "aria-label": `${c.name}, sincronía ${c.sync} de 10` });
-    const rad = c.dissident ? 15 : 12 + (c.sync/maxSync)*7;
+      "aria-label": `${c.name}, sync ${c.sync} of 10` });
     g.appendChild(svgEl("circle",{cx:p.x,cy:p.y,r:rad}));
     const t = svgEl("text",{x:p.x,y:p.y+rad+13,"text-anchor":"middle","font-size":10});
     t.textContent = code.toUpperCase();
@@ -442,7 +449,7 @@ function renderCompare(data){
   const selB = document.getElementById("compareB");
   const options = codes.map(code => {
     const c = data.countries[code];
-    return `<option value="${code}">${c.name}${c.dissident ? " · disidente" : ""}</option>`;
+    return `<option value="${code}">${c.name}${c.dissident ? " · dissident" : ""}</option>`;
   }).join("");
   selA.innerHTML = options;
   selB.innerHTML = options;
@@ -467,7 +474,7 @@ function renderCompare(data){
       const otherKeys = idx === 0 ? keysB : keysA;
       const col = el("div","compare-col");
       col.innerHTML = `
-        <div class="compare-col-head"><h4>${country.name}</h4><span>${country.sync}/10 sincronía</span></div>
+        <div class="compare-col-head"><h4>${country.name}</h4><span>${country.sync}/10 sync</span></div>
       `;
       country.tracks.forEach(t=>{
         const shared = otherKeys.has(norm(t.name));
@@ -486,8 +493,8 @@ function renderCompare(data){
 
     const summary = el("div","compare-summary");
     summary.textContent = sharedCount
-      ? `Comparten ${sharedCount} de 10 canciones.`
-      : `No comparten ninguna canción de su top 10 esta semana.`;
+      ? `They share ${sharedCount} of 10 songs.`
+      : `They don't share a single song from their top 10 this week.`;
     grid.appendChild(summary);
   }
 
@@ -501,16 +508,16 @@ function renderLog(data){
   const second = data.consensus[1];
   const log = document.getElementById("logBlock");
   log.innerHTML = `
-    <span class="log-title">BITÁCORA · ${fmtDate(data.snapshot).toUpperCase()}</span>
+    <span class="log-title">CUT LOG · ${fmtDate(data.snapshot).toUpperCase()}</span>
     <span class="rule">──────────────────────────────────────────</span>
     <dl>
-      <dt>Tesis activa</dt><dd>${data.dissidents.length ? "mercado único, salvo industria local dominante" : "mercado único sin disidentes esta semana"}</dd>
-      ${top ? `<dt>Señal dominante</dt><dd><b>${top.title}</b> · presente en ${top.presence}/${top.of}</dd>` : ""}
-      ${second ? `<dt>Por confirmar</dt><dd><b>${second.title}</b> · ${second.presence}/${second.of}, ver si sostiene el próximo corte</dd>` : ""}
-      <dt>Disidentes activos</dt><dd>${data.dissidents.length} ${data.dissidents.length ? "· " + data.dissidents.map(d=>d.name).join(", ") : ""}</dd>
-      ${data.stats.highestSync ? `<dt>Sincronía más alta</dt><dd>${data.stats.highestSync.name} · ${data.stats.highestSync.sync}/10</dd>` : ""}
-      ${data.failed.length ? `<dt>Sin respuesta</dt><dd>${data.failed.map(f=>f.code).join(", ")}, se reintenta el próximo corte</dd>` : ""}
-      <dt>Próximo corte</dt><dd>lunes · lectura automática de ${data.storefronts.length} storefronts</dd>
+      <dt>Active thesis</dt><dd>${data.dissidents.length ? "single market, except where a local industry dominates" : "single market with no dissidents this week"}</dd>
+      ${top ? `<dt>Dominant signal</dt><dd><b>${top.title}</b> · present in ${top.presence}/${top.of}</dd>` : ""}
+      ${second ? `<dt>To confirm</dt><dd><b>${second.title}</b> · ${second.presence}/${second.of}, watch if it holds next cut</dd>` : ""}
+      <dt>Active dissidents</dt><dd>${data.dissidents.length} ${data.dissidents.length ? "· " + data.dissidents.map(d=>d.name).join(", ") : ""}</dd>
+      ${data.stats.highestSync ? `<dt>Highest sync</dt><dd>${data.stats.highestSync.name} · ${data.stats.highestSync.sync}/10</dd>` : ""}
+      ${data.failed.length ? `<dt>No response</dt><dd>${data.failed.map(f=>f.code).join(", ")}, retried next cut</dd>` : ""}
+      <dt>Next cut</dt><dd>Monday · automated read of ${data.storefronts.length} storefronts</dd>
     </dl>
     <span class="rule">──────────────────────────────────────────</span>
   `;
@@ -518,8 +525,8 @@ function renderLog(data){
 
 function renderFooter(data){
   document.getElementById("footer").innerHTML = `
-    <span>Fuente: feeds públicos de Apple Music por tienda nacional. Sin scraping, sin llave. Puerto Rico no tiene tienda propia (usa la de EE.UU. y el feed responde 500, por eso no está en la lista); Cuba no tiene tienda de Apple Music.</span>
-    <span>Tipografía Archivo, fundición Omnibus&#8209;Type (Argentina).</span>
+    <span>Source: Apple Music's public feeds, one per national storefront. No scraping, no API key. Puerto Rico has no storefront of its own (it uses the US one and the feed returns 500, which is why it's not in the list); Cuba has no Apple Music storefront.</span>
+    <span>Typeface: Archivo, from Omnibus&#8209;Type (Argentina).</span>
   `;
 }
 

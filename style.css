@@ -167,6 +167,12 @@ h1{font-family:"Archivo Black","Archivo",sans-serif;font-size:clamp(30px,5vw,50p
 .song-hero h4{font-family:"Archivo Black","Archivo",sans-serif;font-size:22px;margin:0 0 4px;line-height:1.15}
 .song-hero .song-artist{font-size:14px;color:var(--muted)}
 .song-hero .song-tier{margin-top:8px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.song-hero .song-spotify{
+  display:inline-flex;align-items:center;gap:6px;margin-top:10px;
+  background:#1DB954;color:#0B0B0B;font-weight:600;font-size:12.5px;
+  padding:7px 12px;border-radius:20px;text-decoration:none;
+}
+.song-hero .song-spotify:hover{background:#1ed760}
 .song-modal-body p{margin:0 0 14px;font-size:13.5px;color:var(--ink-2)}
 .song-countries{display:flex;flex-wrap:wrap;gap:6px}
 .song-chip{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.03em;padding:5px 9px;border-radius:2px;border:1px solid var(--line);background:var(--surface-2);cursor:pointer;color:inherit}
