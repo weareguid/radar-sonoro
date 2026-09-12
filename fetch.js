@@ -40,7 +40,12 @@ async function fetchStorefront(code, { timeoutMs = 20000 } = {}) {
     const json = await res.json();
     const results = json?.feed?.results ?? [];
     if (!results.length) throw new Error("feed vacío");
-    return results.slice(0, 10).map(r => ({ name: r.name, artistName: r.artistName }));
+    return results.slice(0, 10).map(r => ({
+      name: r.name,
+      artistName: r.artistName,
+      artworkUrl: (r.artworkUrl100 || "").replace("100x100", "300x300"),
+      url: r.url || null
+    }));
   } finally {
     clearTimeout(timer);
   }
@@ -86,6 +91,9 @@ function analyze(countries) {
   // consenso: en cuántas listas nacionales aparece cada título normalizado
   const titleCount = new Map();       // norm(title) -> count de países
   const titleLabel = new Map();       // norm(title) -> título original (primera vez visto)
+  const titleArtist = new Map();      // norm(title) -> artistName (primera vez visto)
+  const titleArt = new Map();         // norm(title) -> artworkUrl (primera vez visto)
+  const titleCountries = new Map();   // norm(title) -> [códigos de país donde aparece]
   const titleRank1Count = new Map();  // norm(title) -> en cuántos países es el #1
 
   for (const code of codes) {
@@ -95,7 +103,13 @@ function analyze(countries) {
       if (!seenInCountry.has(key)) {
         seenInCountry.add(key);
         titleCount.set(key, (titleCount.get(key) || 0) + 1);
-        if (!titleLabel.has(key)) titleLabel.set(key, track.name);
+        if (!titleLabel.has(key)) {
+          titleLabel.set(key, track.name);
+          titleArtist.set(key, track.artistName);
+          titleArt.set(key, track.artworkUrl);
+        }
+        if (!titleCountries.has(key)) titleCountries.set(key, []);
+        titleCountries.get(key).push(code);
       }
       if (i === 0) titleRank1Count.set(key, (titleRank1Count.get(key) || 0) + 1);
     });
@@ -106,7 +120,12 @@ function analyze(countries) {
     .slice(0, 10);
   const consensusSet = new Set(consensusEntries.map(([key]) => key));
   const consensus = consensusEntries.map(([key, count]) => ({
-    title: titleLabel.get(key), presence: count, of: codes.length
+    title: titleLabel.get(key),
+    artistName: titleArtist.get(key),
+    artworkUrl: titleArt.get(key),
+    presence: count,
+    of: codes.length,
+    countries: titleCountries.get(key)
   }));
 
   // sincronía por país: cuántas de sus 10 canciones están en el consenso

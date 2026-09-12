@@ -4,6 +4,11 @@ const COUNTRY_NAMES = {
   pa:"Panamá", gt:"Guatemala", sv:"El Salvador", hn:"Honduras", ni:"Nicaragua", do:"República Dominicana"
 };
 
+const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
+
+let DATA = null;
+let CONSENSUS_KEYS = new Set();
+
 function el(tag, cls, html){
   const e = document.createElement(tag);
   if (cls) e.className = cls;
@@ -35,7 +40,76 @@ function renderMissingData(){
   document.getElementById("thesisBody").textContent = "Corre node fetch.js una vez para generar data/latest.json, o espera a la lectura automática del lunes.";
 }
 
+// --- búsqueda de una canción a través de los 18 mercados, no solo del consenso ---
+function getSongDetail(title){
+  const key = norm(title);
+  const countries = [];
+  let rep = null;
+  for (const code of Object.keys(DATA.countries)) {
+    const c = DATA.countries[code];
+    const hit = c.tracks.find(t => norm(t.name) === key);
+    if (hit) {
+      if (!rep) rep = hit;
+      countries.push({ code, name: c.name, sync: c.sync, dissident: c.dissident });
+    }
+  }
+  const signal = DATA.signals.find(s => norm(s.title) === key);
+  return {
+    title: rep ? rep.name : title,
+    artistName: rep ? rep.artistName : "",
+    artworkUrl: rep ? rep.artworkUrl : "",
+    presence: countries.length,
+    of: Object.keys(DATA.countries).length,
+    countries,
+    tier: signal ? signal.tier : null,
+    tierLabel: signal ? signal.tierLabel : null,
+    provisional: signal ? signal.provisional : null
+  };
+}
+
+function openSongModal(title){
+  const s = getSongDetail(title);
+  const modal = document.getElementById("songModal");
+  document.getElementById("songModalBody").innerHTML = `
+    <div class="song-hero">
+      ${s.artworkUrl ? `<img src="${s.artworkUrl}" alt="">` : ""}
+      <div>
+        <h4 id="songModalTitle">${s.title}</h4>
+        <div class="song-artist">${s.artistName}</div>
+        ${s.tierLabel ? `<div class="song-tier">${s.tierLabel}</div>` : ""}
+      </div>
+    </div>
+    <p>Presente en ${s.presence} de ${s.of} mercados leídos esta semana${s.provisional ? " · clasificación provisional, sin histórico suficiente aún" : ""}.</p>
+    <div class="song-countries">
+      ${s.countries.map(c => `<button type="button" class="song-chip${c.dissident ? " dissident" : ""}" data-code="${c.code}">${c.name} · ${c.sync}/10</button>`).join("")}
+    </div>
+  `;
+  modal.querySelectorAll(".song-chip").forEach(chip=>{
+    chip.addEventListener("click", ()=>{
+      closeSongModal();
+      showCountry(chip.dataset.code);
+      document.getElementById("red").scrollIntoView({ behavior:"smooth", block:"center" });
+    });
+  });
+  modal.hidden = false;
+}
+
+function closeSongModal(){
+  document.getElementById("songModal").hidden = true;
+}
+
+function setupModal(){
+  document.getElementById("songModalClose").addEventListener("click", closeSongModal);
+  document.getElementById("songModalBackdrop").addEventListener("click", closeSongModal);
+  document.addEventListener("keydown", e=>{
+    if (e.key === "Escape") closeSongModal();
+  });
+}
+
 function render(data){
+  DATA = data;
+  CONSENSUS_KEYS = new Set(data.consensus.map(c => norm(c.title)));
+
   const codes = Object.keys(data.countries);
   const total = data.storefronts.length;
   const respondedCount = codes.length;
@@ -69,8 +143,10 @@ function render(data){
   const reel = document.getElementById("signalReel");
   reel.innerHTML = "";
   data.signals.forEach(s=>{
-    const card = el("div","signal-card");
+    const card = el("button","signal-card");
+    card.type = "button";
     card.innerHTML = `
+      ${s.artworkUrl ? `<img class="signal-art" src="${s.artworkUrl}" alt="" loading="lazy">` : ""}
       <div class="signal-tag">
         <span class="signal-bars">
           <i class="${s.tier>=1?'on':''}"></i><i class="${s.tier>=2?'on':''}"></i><i class="${s.tier>=3?'on':''}"></i>
@@ -78,11 +154,13 @@ function render(data){
         ${s.tierLabel}
       </div>
       <div class="signal-title">${s.title}</div>
+      <div class="signal-artist">${s.artistName || ""}</div>
       <div class="signal-meta">
         <span>presencia</span><b>${s.presence}/${s.of}</b>
       </div>
       ${s.provisional ? '<div class="signal-provisional">clasificación provisional, sin histórico suficiente aún</div>' : ""}
     `;
+    card.addEventListener("click", ()=> openSongModal(s.title));
     reel.appendChild(card);
   });
 
@@ -151,8 +229,54 @@ function render(data){
   });
 
   renderNetwork(data);
+  renderCompare(data);
   renderLog(data);
   renderFooter(data);
+  setupModal();
+  setupSurprise(data);
+}
+
+function trackRow(track, { onClick } = {}){
+  const inConsensus = CONSENSUS_KEYS.has(norm(track.name));
+  const row = el("button", "panel-track" + (inConsensus ? " in-consensus" : ""));
+  row.type = "button";
+  row.innerHTML = `
+    ${track.artworkUrl ? `<img src="${track.artworkUrl}" alt="">` : ""}
+    <span class="t-info">
+      <span class="t-title">${track.name}</span>
+      <span class="t-artist">${track.artistName}</span>
+    </span>
+    <span class="t-flag">${inConsensus ? "consenso" : "propia"}</span>
+  `;
+  row.addEventListener("click", () => (onClick || openSongModal)(track.name));
+  return row;
+}
+
+function showCountry(code){
+  const c = DATA.countries[code];
+  if (!c) return;
+  const svg = document.getElementById("netsvg");
+  svg.querySelectorAll(".node-country").forEach(n => n.classList.toggle("active", n.dataset.code === code));
+  svg.querySelectorAll(".edge").forEach(e => e.classList.toggle("active", e.dataset.code === code));
+
+  const maxSync = Math.max(1, DATA.maxSyncObserved);
+  const dissidentRecord = DATA.dissidents.find(d => d.code === code);
+  const panel = document.getElementById("panel");
+  panel.innerHTML = `
+    <span class="panel-eyebrow">${c.dissident ? "país disidente" : "sincronizado con el consenso"}</span>
+    <h4>${c.name}</h4>
+    <div class="panel-sync"><span class="n">${c.sync}</span><span class="d">/ 10 sincronía</span></div>
+    <div class="sync-bar"><span style="width:${(c.sync/maxSync)*100}%"></span></div>
+    ${c.dissident && dissidentRecord?.why
+      ? `<p>${dissidentRecord.why.story}</p><p><a href="#case-${code}" style="color:var(--accent);text-decoration:none">Ver expediente completo →</a></p>`
+      : c.dissident
+        ? `<p class="review-flag">Disidente nuevo. Falta escribir la razón editorial en content/curatorial.json.</p>`
+        : `<p>Comparte ${c.sync} de las ${DATA.consensus.length} canciones del consenso regional esta semana.</p>`
+    }
+    <ul class="panel-tracks" id="panelTracks"></ul>
+  `;
+  const list = document.getElementById("panelTracks");
+  c.tracks.forEach(t => list.appendChild(trackRow(t)));
 }
 
 function renderNetwork(data){
@@ -217,37 +341,85 @@ function renderNetwork(data){
   svg.appendChild(edgeGroup);
   svg.appendChild(nodeGroup);
 
-  const panel = document.getElementById("panel");
-  function showCountry(code){
-    const c = data.countries[code];
-    if (!c) return;
-    svg.querySelectorAll(".node-country").forEach(n => n.classList.toggle("active", n.dataset.code === code));
-    svg.querySelectorAll(".edge").forEach(e => e.classList.toggle("active", e.dataset.code === code));
-    const dissidentRecord = data.dissidents.find(d => d.code === code);
-    panel.innerHTML = `
-      <span class="panel-eyebrow">${c.dissident ? "país disidente" : "sincronizado con el consenso"}</span>
-      <h4>${c.name}</h4>
-      <div class="panel-sync"><span class="n">${c.sync}</span><span class="d">/ 10 sincronía</span></div>
-      <div class="sync-bar"><span style="width:${(c.sync/maxSync)*100}%"></span></div>
-      ${c.dissident && dissidentRecord?.why
-        ? `<p>${dissidentRecord.why.story}</p><p><a href="#case-${code}" style="color:var(--accent);text-decoration:none">Ver expediente completo →</a></p>`
-        : c.dissident
-          ? `<p class="review-flag">Disidente nuevo. Falta escribir la razón editorial en content/curatorial.json.</p>`
-          : `<p>Comparte ${c.sync} de las ${data.consensus.length} canciones del consenso regional esta semana.</p>`
-      }
-    `;
-  }
-
   nodeGroup.querySelectorAll(".node-country").forEach(n=>{
     n.addEventListener("click", ()=>showCountry(n.dataset.code));
     n.addEventListener("keydown", e=>{ if (e.key==="Enter"||e.key===" ") { e.preventDefault(); showCountry(n.dataset.code); } });
   });
+}
 
+function setupSurprise(data){
+  const codes = Object.keys(data.countries);
   document.getElementById("surpriseBtn").onclick = ()=>{
-    const pick = codes[Math.floor(Math.random()*codes.length)];
-    showCountry(pick);
-    document.getElementById("red").scrollIntoView({ behavior:"smooth", block:"center" });
+    if (Math.random() < 0.5) {
+      const pick = codes[Math.floor(Math.random()*codes.length)];
+      showCountry(pick);
+      document.getElementById("red").scrollIntoView({ behavior:"smooth", block:"center" });
+    } else {
+      const pool = data.signals.length ? data.signals : data.consensus;
+      const pick = pool[Math.floor(Math.random()*pool.length)];
+      openSongModal(pick.title);
+    }
   };
+}
+
+function renderCompare(data){
+  const codes = Object.keys(data.countries);
+  const selA = document.getElementById("compareA");
+  const selB = document.getElementById("compareB");
+  const options = codes.map(code => {
+    const c = data.countries[code];
+    return `<option value="${code}">${c.name}${c.dissident ? " · disidente" : ""}</option>`;
+  }).join("");
+  selA.innerHTML = options;
+  selB.innerHTML = options;
+
+  const highest = data.stats.highestSync;
+  const firstDissident = data.dissidents[0];
+  selA.value = highest ? highest.code : codes[0];
+  selB.value = firstDissident ? firstDissident.code : (codes[1] || codes[0]);
+
+  function draw(){
+    const a = data.countries[selA.value];
+    const b = data.countries[selB.value];
+    const grid = document.getElementById("compareGrid");
+    grid.innerHTML = "";
+    if (!a || !b) return;
+
+    const keysA = new Set(a.tracks.map(t => norm(t.name)));
+    const keysB = new Set(b.tracks.map(t => norm(t.name)));
+    let sharedCount = 0;
+
+    [a, b].forEach((country, idx) => {
+      const otherKeys = idx === 0 ? keysB : keysA;
+      const col = el("div","compare-col");
+      col.innerHTML = `
+        <div class="compare-col-head"><h4>${country.name}</h4><span>${country.sync}/10 sincronía</span></div>
+      `;
+      country.tracks.forEach(t=>{
+        const shared = otherKeys.has(norm(t.name));
+        if (shared && idx === 0) sharedCount++;
+        const row = el("button","compare-track"+(shared?" shared":""));
+        row.type = "button";
+        row.innerHTML = `
+          ${t.artworkUrl ? `<img src="${t.artworkUrl}" alt="">` : ""}
+          <span class="t-title">${t.name}</span>
+        `;
+        row.addEventListener("click", ()=> openSongModal(t.name));
+        col.appendChild(row);
+      });
+      grid.appendChild(col);
+    });
+
+    const summary = el("div","compare-summary");
+    summary.textContent = sharedCount
+      ? `Comparten ${sharedCount} de 10 canciones.`
+      : `No comparten ninguna canción de su top 10 esta semana.`;
+    grid.appendChild(summary);
+  }
+
+  selA.addEventListener("change", draw);
+  selB.addEventListener("change", draw);
+  draw();
 }
 
 function renderLog(data){
