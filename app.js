@@ -19,7 +19,7 @@ function fmtDate(iso){
 async function main(){
   let data;
   try {
-    const res = await fetch("data/latest.json", { cache:"no-store" });
+    const res = await fetch("https://weareguid.github.io/radar-sonoro/data/latest.json", { cache:"no-store" });
     if (!res.ok) throw new Error("sin datos");
     data = await res.json();
   } catch (err) {
