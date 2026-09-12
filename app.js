@@ -295,14 +295,16 @@ function renderNetwork(data){
   const dissidents = codes.filter(c => data.countries[c].dissident);
   const positions = {};
 
-  synced.forEach((code,i)=>{
-    const angle = (-90 + i * (300/Math.max(synced.length,1))) * Math.PI/180;
-    const r = 195;
-    positions[code] = { x: CENTER.x + r*Math.cos(angle), y: CENTER.y + r*Math.sin(angle) };
-  });
-  dissidents.forEach((code,i)=>{
-    const angle = (150 + i * (60/Math.max(dissidents.length,1))) * Math.PI/180;
-    const r = 250;
+  // los 18 países se reparten en un solo círculo de 360°, sincronizados primero
+  // y disidentes al final: así quedan agrupados entre sí sin compartir ángulo
+  // con ningún país sincronizado (antes se calculaban en dos arcos separados
+  // que se traslapaban, y un disidente podía terminar alineado con un país
+  // sincronizado sin ninguna relación real entre ambos).
+  const ordered = [...synced, ...dissidents];
+  const n = Math.max(ordered.length, 1);
+  ordered.forEach((code, i) => {
+    const angle = (-90 + i * (360 / n)) * Math.PI / 180;
+    const r = data.countries[code].dissident ? 250 : 195;
     positions[code] = { x: CENTER.x + r*Math.cos(angle), y: CENTER.y + r*Math.sin(angle) };
   });
 
