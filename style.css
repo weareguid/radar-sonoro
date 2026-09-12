@@ -62,7 +62,7 @@ body{
   line-height:1.55;
   -webkit-font-smoothing:antialiased;
 }
-.wrap{max-width:1160px;margin:0 auto;padding-inline:20px;padding-block:0 72px}
+.wrap{max-width:1320px;margin:0 auto;padding-inline:20px;padding-block:0 72px}
 ::selection{background:var(--accent-soft);color:var(--ink)}
 a{color:inherit}
 button{font-family:inherit}
@@ -192,6 +192,53 @@ h1{font-family:"Archivo Black","Archivo",sans-serif;font-size:clamp(30px,5vw,50p
 @media (max-width:760px){
   .compare-grid{grid-template-columns:1fr}
   .song-hero{flex-direction:column}
+}
+
+/* ---------- layout con barra lateral ---------- */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:0 40px;align-items:start}
+.main{min-width:0}
+.sidebar{
+  position:sticky;top:20px;
+  display:flex;flex-direction:column;gap:20px;
+  padding-top:36px;
+}
+.sidebar-block{
+  background:var(--surface);border:1px solid var(--line);border-radius:3px;box-shadow:var(--shadow);
+  padding:18px;
+}
+.sidebar-head{display:flex;flex-direction:column;gap:2px;margin-bottom:10px}
+.sidebar-kicker{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.sidebar-head h4{font-family:"Archivo Black","Archivo",sans-serif;font-size:17px;margin:0}
+.sidebar-note{font-size:12px;color:var(--muted);margin:0 0 12px;line-height:1.5}
+.sidebar-list{display:flex;flex-direction:column;gap:12px}
+.sidebar-empty{font-size:12.5px;color:var(--muted)}
+
+.sidebar-item{
+  display:grid;grid-template-columns:44px 1fr;gap:10px;
+  padding-bottom:12px;border-bottom:1px solid var(--line-soft);
+}
+.sidebar-item:last-child{border-bottom:none;padding-bottom:0}
+.sidebar-item img{width:44px;height:44px;border-radius:2px;object-fit:cover;background:var(--surface-2)}
+.sidebar-item .si-top{display:flex;justify-content:space-between;gap:6px;align-items:baseline}
+.sidebar-item .si-artist{font-size:12.5px;font-weight:600;line-height:1.25}
+.sidebar-item .si-score{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--accent);flex:0 0 auto}
+.sidebar-item .si-album{font-size:12px;color:var(--ink-2);font-style:italic;margin-top:1px}
+.sidebar-item .si-dek{font-size:11.5px;color:var(--muted);margin-top:4px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.sidebar-item a{text-decoration:none;color:inherit;display:block}
+.sidebar-item a:hover .si-artist{color:var(--accent)}
+.sidebar-footer-link{
+  display:block;margin-top:14px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.04em;
+  color:var(--muted);text-decoration:none;
+}
+.sidebar-footer-link:hover{color:var(--accent)}
+
+@media (max-width:980px){
+  .layout{grid-template-columns:1fr}
+  .sidebar{position:static;padding-top:0;flex-direction:row;flex-wrap:wrap}
+  .sidebar-block{flex:1 1 280px}
+}
+@media (max-width:560px){
+  .sidebar{flex-direction:column}
 }
 
 .casebook-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}

@@ -9,6 +9,7 @@
   },
   "scripts": {
     "fetch": "node fetch.js",
+    "fetch:critics": "node fetch-critics.js",
     "serve": "python3 -m http.server 4173"
   }
 }

@@ -32,6 +32,78 @@ async function main(){
     return;
   }
   render(data);
+  loadSidebar();
+}
+
+// la barra lateral es una fuente independiente (Pitchfork + NME): si falla,
+// no debe tumbar el resto de la página.
+async function loadSidebar(){
+  try {
+    const res = await fetch("https://weareguid.github.io/radar-sonoro/data/critics.json", { cache:"no-store" });
+    if (!res.ok) throw new Error("sin datos de crítica");
+    const critics = await res.json();
+    renderPitchfork(critics.pitchfork || []);
+    renderNme(critics.nme || []);
+  } catch (err) {
+    document.getElementById("pitchforkList").innerHTML = `<p class="sidebar-empty">Sin datos de crítica este corte.</p>`;
+    document.getElementById("nmeList").innerHTML = "";
+  }
+}
+
+function renderPitchfork(picks){
+  const list = document.getElementById("pitchforkList");
+  list.innerHTML = "";
+  if (!picks.length) {
+    list.appendChild(el("p","sidebar-empty","Ningún disco marcado Best New Music en las reseñas más recientes."));
+    return;
+  }
+  picks.forEach(p=>{
+    const item = el("div","sidebar-item");
+    item.innerHTML = `
+      <a href="${p.url}" target="_blank" rel="noopener">
+        ${p.artworkUrl ? `<img src="${p.artworkUrl}" alt="">` : ""}
+      </a>
+      <a href="${p.url}" target="_blank" rel="noopener">
+        <div class="si-top"><span class="si-artist">${p.artist}</span><span class="si-score">${p.score}</span></div>
+        <div class="si-album">${p.title}</div>
+        <div class="si-dek">${p.dek}</div>
+      </a>
+    `;
+    list.appendChild(item);
+  });
+  const link = el("a","sidebar-footer-link","Ver Best New Music en Pitchfork →");
+  link.href = "https://pitchfork.com/best/";
+  link.target = "_blank";
+  link.rel = "noopener";
+  list.appendChild(link);
+}
+
+function renderNme(reviews){
+  const list = document.getElementById("nmeList");
+  list.innerHTML = "";
+  if (!reviews.length) {
+    list.appendChild(el("p","sidebar-empty","Sin reseñas recientes de NME."));
+    return;
+  }
+  reviews.slice(0, 6).forEach(r=>{
+    const item = el("div","sidebar-item");
+    item.innerHTML = `
+      <a href="${r.url}" target="_blank" rel="noopener">
+        ${r.artworkUrl ? `<img src="${r.artworkUrl}" alt="">` : ""}
+      </a>
+      <a href="${r.url}" target="_blank" rel="noopener">
+        <div class="si-top"><span class="si-artist">${r.artist}</span></div>
+        <div class="si-album">${r.album}</div>
+        <div class="si-dek">${r.dek}</div>
+      </a>
+    `;
+    list.appendChild(item);
+  });
+  const link = el("a","sidebar-footer-link","Ver reseñas en NME →");
+  link.href = "https://www.nme.com/reviews/album";
+  link.target = "_blank";
+  link.rel = "noopener";
+  list.appendChild(link);
 }
 
 function renderMissingData(){

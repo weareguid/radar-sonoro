@@ -22,6 +22,10 @@ jobs:
       - name: Leer los 18 storefronts y recalcular el corte
         run: node fetch.js
 
+      - name: Leer Best New Music de Pitchfork y reseñas de NME
+        run: node fetch-critics.js
+        continue-on-error: true
+
       - name: Commit si hubo cambios
         run: |
           git config user.name "radar-sonoro-bot"

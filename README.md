@@ -14,6 +14,7 @@ fetch.js  →  data/latest.json + data/YYYY-MM-DD.json  →  index.html (lee el 
 - **`data/latest.json`** — el corte más reciente. Es la única fuente de verdad: nada en `index.html` tiene una cifra escrita a mano, todo sale de aquí.
 - **`content/curatorial.json`** — el único copy escrito a mano: por qué cada disidente resiste el consenso, y los perfiles de "arquitecto de mito" de los artistas que dominan el corte. Se revisa cuando un país entra o sale de la lista de disidentes, o cuando un artista nuevo domina el consenso. Si falta una entrada, la página lo marca visiblemente en vez de inventar el contenido ("disidente sin revisar" / "perfil por escribir").
 - **`index.html` + `app.js` + `style.css`** — la presentación. Sin build step: `app.js` hace `fetch("data/latest.json")` en tiempo de carga, por eso este sitio no puede vivir como Claude Artifact (la CSP bloquea fetch a JSON local) pero sí en GitHub Pages o Vercel.
+- **`fetch-critics.js` → `data/critics.json`** — barra lateral independiente: Best New Music de Pitchfork + reseñas recientes de NME. No se cruza con los datos de LATAM a propósito, es otra escala de vara (crítica anglo vs. consumo regional). Ver detalle abajo.
 
 ### Clasificación de señales (flash / mediano ciclo / estructural)
 
@@ -27,18 +28,26 @@ Con 3 o más cortes históricos, un título se clasifica por cuántos cortes pre
 - Disidente = sincronía ≤ 3 de 10 (`OUTLIER_MAX` en `fetch.js`).
 - La escala de color/tamaño del mapa se normaliza contra `maxSyncObserved`, el máximo real del corte, no contra 10.
 
+### Barra lateral: Best New Music (Pitchfork) + NME
+
+Ninguno de los dos medios tiene API pública, y Complex no tiene RSS ni un sistema de calificación por lanzamiento, así que no está incluido.
+
+- **Pitchfork** no tiene RSS de "Best New Music" específicamente, pero sí un RSS general de reseñas (`pitchfork.com/feed/feed-album-reviews/rss`). Cada página de reseña trae su propio estado embebido en `window.__PRELOADED_STATE__` con `headerProps.musicRating.isBestNewMusic` y el score. `fetch-critics.js` lee el RSS, visita cada reseña reciente (con medio segundo de espera entre una y otra) y se queda solo con las marcadas Best New Music. Esto no es una API documentada — es el estado interno de su app — así que puede romperse si Pitchfork cambia su frontend; el script falla en silencio por reseña individual y sigue con las demás.
+- **NME** sí tiene RSS normal (`nme.com/reviews/album/feed`) con todo lo necesario en el feed mismo (no hace falta visitar cada página). No tiene un equivalente a "Best New Music": es solo el flujo de reseñas recientes, sin bandera de calidad.
+
 ## Uso local
 
 ```bash
-node fetch.js      # baja los 18 feeds y escribe data/latest.json
-npm run serve       # sirve el sitio en http://localhost:4173
+node fetch.js            # baja los 18 feeds y escribe data/latest.json
+node fetch-critics.js    # Best New Music de Pitchfork + reseñas de NME
+npm run serve            # sirve el sitio en http://localhost:4173
 ```
 
 Requiere Node 20+ (usa `fetch` global, sin dependencias).
 
 ## Automatización
 
-`.github/workflows/fetch.yml` corre `node fetch.js` cada lunes y hace commit de `data/` si hubo cambios. Para activarlo:
+`.github/workflows/fetch.yml` corre `node fetch.js` y `node fetch-critics.js` cada lunes y hace commit de `data/` si hubo cambios. El paso de crítica tiene `continue-on-error`: si Pitchfork o NME cambian su estructura y el script empieza a fallar completo, no debe tumbar el corte semanal principal. Para activar el workflow:
 
 1. Crear el repo en GitHub y hacer push de esta carpeta.
 2. En **Settings → Actions → General**, dar permiso de escritura al `GITHUB_TOKEN` (Read and write permissions) para que el workflow pueda commitear.
@@ -46,12 +55,11 @@ Requiere Node 20+ (usa `fetch` global, sin dependencias).
 
 ## Deploy
 
-**GitHub Pages** (recomendado, cero configuración adicional):
-Settings → Pages → Deploy from a branch → `main` / `/ (root)`. El sitio queda en `https://<usuario>.github.io/radar-sonoro/`.
+**GitHub Pages** (activo): [`weareguid.github.io/radar-sonoro`](https://weareguid.github.io/radar-sonoro/), Settings → Pages → Deploy from a branch → `main` / `/ (root)`.
 
-**Vercel**: importar el repo, sin build command (es HTML/CSS/JS estático), output directory `.`.
+**Proxeado en `nostalgictuiter.com/radarsonoro`**: `index.html`, `style.css`, `app.js` y `data/*.json` se cargan con URLs absolutas a GitHub Pages (no rutas relativas), así que el sitio funciona igual sin importar bajo qué dominio o ruta se sirva el HTML. El proyecto Next.js de `nostalgictuiter.com` solo tiene un `rewrite` en su `next.config.mjs` que reenvía `/radarsonoro` y `/radarsonoro/:path*` a GitHub Pages — los dos deploys no están acoplados, radar-sonoro se actualiza solo y nostalgictuiter.com no necesita redeploy para reflejarlo.
 
-Cualquiera de las dos sirve `data/latest.json` como archivo estático normal, así que el `fetch()` en tiempo de carga funciona sin backend.
+**Vercel** (alternativa si se quiere independizar del todo): importar el repo, sin build command (es HTML/CSS/JS estático), output directory `.`.
 
 ## Siguiente iteración: serie temporal
 
