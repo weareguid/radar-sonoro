@@ -40,6 +40,7 @@ async function main(){
 // the sidebar is an independent source (Pitchfork + NME): if it fails,
 // it shouldn't take down the rest of the page.
 async function loadSidebar(){
+  loadInbox();
   try {
     const res = await fetch("https://weareguid.github.io/radar-sonoro/data/critics.json", { cache:"no-store" });
     if (!res.ok) throw new Error("no critics data");
@@ -50,6 +51,59 @@ async function loadSidebar(){
     document.getElementById("pitchforkList").innerHTML = `<p class="sidebar-empty">No critic data this week.</p>`;
     document.getElementById("nmeList").innerHTML = "";
   }
+}
+
+// Songs texted to the Telegram bot. Written straight into the repo by the
+// bot, so this file may not exist yet on a fresh checkout.
+async function loadInbox(){
+  const list = document.getElementById("inboxList");
+  try {
+    const res = await fetch("https://weareguid.github.io/radar-sonoro/data/inbox.json", { cache:"no-store" });
+    if (!res.ok) throw new Error("no inbox yet");
+    const entries = await res.json();
+    renderInbox(Array.isArray(entries) ? entries : []);
+  } catch (err) {
+    list.innerHTML = `<p class="sidebar-empty">Nothing yet — text a song to the bot and it lands here.</p>`;
+  }
+}
+
+function renderInbox(entries){
+  const list = document.getElementById("inboxList");
+  list.innerHTML = "";
+  if (!entries.length) {
+    list.appendChild(el("p","sidebar-empty","Nothing yet — text a song to the bot and it lands here."));
+    return;
+  }
+  entries.slice(0, 12).forEach(e=>{
+    const item = el("div","inbox-item");
+    item.innerHTML = `
+      <button type="button" class="inbox-row">
+        ${e.artworkUrl ? `<img src="${e.artworkUrl}" alt="">` : `<span class="inbox-noart"></span>`}
+        <span class="inbox-info">
+          <span class="inbox-artist">${e.artist}</span>
+          <span class="inbox-title">${e.title}</span>
+        </span>
+        <span class="inbox-play">▶</span>
+      </button>
+      <div class="inbox-player"></div>
+    `;
+    const row = item.querySelector(".inbox-row");
+    const player = item.querySelector(".inbox-player");
+    row.addEventListener("click", ()=>{
+      const open = player.classList.toggle("open");
+      if (open && !player.dataset.loaded && e.trackId) {
+        player.innerHTML = `<iframe src="https://open.spotify.com/embed/track/${e.trackId}" width="100%" height="152" frameborder="0" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"></iframe>`;
+        player.dataset.loaded = "1";
+      }
+      row.querySelector(".inbox-play").textContent = open ? "×" : "▶";
+    });
+    list.appendChild(item);
+  });
+  const link = el("a","sidebar-footer-link","Open the bot in Telegram →");
+  link.href = "https://t.me/Radar_sonoro_inbox_bot";
+  link.target = "_blank";
+  link.rel = "noopener";
+  list.appendChild(link);
 }
 
 function renderPitchfork(picks){
