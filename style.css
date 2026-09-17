@@ -183,13 +183,23 @@ h1{font-family:"Archivo Black","Archivo",sans-serif;font-size:clamp(30px,5vw,50p
   .song-hero{flex-direction:column}
 }
 
-/* ---------- layout con barra lateral ---------- */
-.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:0 40px;align-items:start}
-.main{min-width:0}
+/* ---------- layout con barra lateral ----------
+   El bloque de descubrimientos va primero en el DOM para que en móvil
+   quede hasta arriba; en escritorio grid lo reubica al tope de la
+   columna derecha, encima de Pitchfork y NME. */
+.layout{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 300px;
+  grid-template-rows:auto 1fr;
+  gap:0 40px;align-items:start;
+}
+.discoveries{grid-column:2;grid-row:1;padding-top:36px}
+.main{grid-column:1;grid-row:1 / span 2;min-width:0}
 .sidebar{
+  grid-column:2;grid-row:2;
   position:sticky;top:20px;
   display:flex;flex-direction:column;gap:20px;
-  padding-top:36px;
+  padding-top:20px;
 }
 .sidebar-block{
   background:var(--surface);border:1px solid var(--line);border-radius:3px;box-shadow:var(--shadow);
@@ -241,7 +251,11 @@ h1{font-family:"Archivo Black","Archivo",sans-serif;font-size:clamp(30px,5vw,50p
 .sidebar-footer-link:hover{color:var(--accent)}
 
 @media (max-width:980px){
-  .layout{grid-template-columns:1fr}
+  /* una sola columna: vuelve a mandar el orden del DOM, o sea
+     descubrimientos primero, luego el radar, y la crítica al final */
+  .layout{grid-template-columns:1fr;grid-template-rows:none}
+  .discoveries,.main,.sidebar{grid-column:1;grid-row:auto}
+  .discoveries{padding-top:24px}
   .sidebar{position:static;padding-top:0;flex-direction:row;flex-wrap:wrap}
   .sidebar-block{flex:1 1 280px}
 }
