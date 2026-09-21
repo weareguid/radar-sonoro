@@ -1,19 +1,31 @@
 {
-  "updated": "2026-09-14T19:29:50.897Z",
-  "pitchfork": [
-    {
-      "artist": "Lex Walton",
-      "title": "Ultimate Love Forever",
-      "dek": "Earnest and disaffected, ironic and confrontational, the Brooklyn songwriter’s Sub Pop debut channels trans rage into scrappy DIY punk with no patience left.",
-      "score": 8.3,
-      "genre": "Rock",
-      "label": "Sub Pop",
-      "reviewDate": "September 3, 2026",
-      "url": "https://pitchfork.com/reviews/albums/lex-walton-ultimate-love-forever/",
-      "artworkUrl": "https://media.pitchfork.com/photos/6a9857dd83bf94901ac8f2c6/1:1/w_450,c_limit/Lex%20Walton%20-%20Ultimate%20Love%20Forever%20album%20art.png"
-    }
-  ],
+  "updated": "2026-09-21T18:23:22.532Z",
+  "pitchfork": [],
   "nme": [
+    {
+      "artist": "Beck",
+      "album": "Ride Lonesome",
+      "dek": "a drop-dead gorgeous meditation on heartache and solitude",
+      "genre": "Alternative",
+      "url": "https://www.nme.com/reviews/album/beck-ride-lonesome-review-3969131",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/Beck-Credit-Mikai-Karl.jpg"
+    },
+    {
+      "artist": "",
+      "album": "",
+      "dek": "On her first ever double album, the Canadian artist splits her time between lightly psychedelic pop and reassuringly classy club bangers",
+      "genre": "Pop",
+      "url": "https://www.nme.com/reviews/album/carly-rae-jepsen-day-and-night-review-3968867",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/Carly-Rae-Jepsen-Credit-Vince-Aung.jpeg"
+    },
+    {
+      "artist": "Beabadoobee",
+      "album": "Pylon",
+      "dek": "making peace with the mess of being in your mid-twenties",
+      "genre": "Indie",
+      "url": "https://www.nme.com/reviews/album/beabadoobee-pylon-review-3968873",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/Beabadoobee-Credit-Erika-Kamano.jpg"
+    },
     {
       "artist": "Natanya",
       "album": "Attitude Era!",
@@ -53,30 +65,6 @@
       "genre": "Hip-hop",
       "url": "https://www.nme.com/reviews/album/erykah-badu-the-alchemist-before-the-world-blows-review-3966130",
       "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/Erykah-Badu-The-Alchemist-Credit-Adraint-Bereal.jpg"
-    },
-    {
-      "artist": "Mike D",
-      "album": "Thank You",
-      "dek": "Beastie Boys icon’s solo debut is a return to be grateful for",
-      "genre": "",
-      "url": "https://www.nme.com/reviews/album/mike-d-thank-you-album-review-beastie-boys-3964949",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/06/mike_d_d5_credit-Sam-Finelli.jpg"
-    },
-    {
-      "artist": "Interpol",
-      "album": "This Mirror Weighs A Ton",
-      "dek": "existential anthems and their best since ‘Antics’",
-      "genre": "Indie",
-      "url": "https://www.nme.com/reviews/album/interpol-this-mirror-weighs-a-ton-album-review-lyrics-3964741",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/08/interpol_mirror_ton_2000.jpg"
-    },
-    {
-      "artist": "Tiny Habits",
-      "album": "Keepers",
-      "dek": "hushed harmony-makers stride into sunny new sound",
-      "genre": "Indie",
-      "url": "https://www.nme.com/reviews/album/tiny-habits-keepers-review-3964765",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/08/Tiny-Habits-Credit-AJ-Incammicia.jpg"
     }
   ],
   "errors": []
