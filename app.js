@@ -311,10 +311,18 @@ function render(data){
         <div class="case-industry">displaces the regional consensus</div>
       `;
     } else {
+      // No written case yet. Rather than announce that, let the data speak:
+      // the titles this market plays *instead of* the consensus are the whole
+      // argument for why it reads as a dissident.
+      const local = (data.countries[c.code]?.tracks || [])
+        .filter(t => !CONSENSUS_KEYS.has(norm(t.name)))
+        .slice(0, 3);
       card.innerHTML = `
         <div class="case-flag"><span>${c.name}</span><span class="case-score">${c.sync}/10</span></div>
-        <h4>Unreviewed dissident</h4>
-        <p class="case-pending">Entered the list this cut. content/curatorial.json still needs an entry explaining which local industry is behind the drop in sync.</p>
+        <h4>Playing something else</h4>
+        <p>Keeps ${c.sync} of the ${data.consensus.length} consensus titles. The rest of its top 10 is its own.</p>
+        ${local.length ? `<ul class="case-local">${local.map(t=>`<li><span>${t.name}</span><em>${t.artistName}</em></li>`).join("")}</ul>` : ""}
+        <div class="case-industry">displaces the regional consensus</div>
       `;
     }
     caseGrid.appendChild(card);
@@ -333,28 +341,23 @@ function render(data){
       if (hit) { candidateArtists.push(hit.artistName.split(/,|&/)[0].trim()); break; }
     }
   }
-  const uniqueArtists = [...new Set(candidateArtists)];
-  if (!uniqueArtists.length) {
-    mythList.appendChild(el("p","section-sub","No identifiable dominant artist this cut."));
-  }
+  // A myth profile is qualitative judgment — there is no data fallback for it.
+  // An artist without one is simply left out, and the section hides itself
+  // rather than showing a card that admits it has nothing to say.
+  const myths = data.curatorialMyths || {};
+  const uniqueArtists = [...new Set(candidateArtists)].filter(name => myths[name]);
+  document.getElementById("mitos").hidden = !uniqueArtists.length;
   uniqueArtists.forEach(name=>{
-    const myth = (data.curatorialMyths || {})[name];
+    const myth = myths[name];
     const card = el("details","myth-card");
-    if (myth) {
-      card.innerHTML = `
-        <summary><span><div class="myth-name">${name}</div><div class="myth-tag">dominant artist of the consensus</div></span><span class="myth-toggle">+</span></summary>
-        <div class="myth-body">
-          <div><h5>How they build a world</h5><p>${myth.world}</p></div>
-          <div><h5>What they withhold</h5><p>${myth.withheld}</p></div>
-          <div><h5>Where the risk is</h5><p>${myth.risk}</p></div>
-        </div>
-      `;
-    } else {
-      card.innerHTML = `
-        <summary><span><div class="myth-name">${name}</div><div class="myth-tag">profile still to write</div></span><span class="myth-toggle">+</span></summary>
-        <div class="myth-body"><p style="grid-column:1/-1">Dominates the consensus this cut but doesn't have a profile in content/curatorial.json yet.</p></div>
-      `;
-    }
+    card.innerHTML = `
+      <summary><span><div class="myth-name">${name}</div><div class="myth-tag">dominant artist of the consensus</div></span><span class="myth-toggle">+</span></summary>
+      <div class="myth-body">
+        <div><h5>How they build a world</h5><p>${myth.world}</p></div>
+        <div><h5>What they withhold</h5><p>${myth.withheld}</p></div>
+        <div><h5>Where the risk is</h5><p>${myth.risk}</p></div>
+      </div>
+    `;
     mythList.appendChild(card);
   });
 
@@ -399,7 +402,7 @@ function showCountry(code){
     ${c.dissident && dissidentRecord?.why
       ? `<p>${dissidentRecord.why.story}</p><p><a href="#case-${code}" style="color:var(--accent);text-decoration:none">See full case file →</a></p>`
       : c.dissident
-        ? `<p class="review-flag">New dissident. content/curatorial.json still needs the editorial reason.</p>`
+        ? `<p>Keeps only ${c.sync} of the ${DATA.consensus.length} regional consensus songs. The rest of its top 10 is local.</p><p><a href="#case-${code}" style="color:var(--accent);text-decoration:none">See what it plays instead →</a></p>`
         : `<p>Shares ${c.sync} of the ${DATA.consensus.length} regional consensus songs this week.</p>`
     }
     <ul class="panel-tracks" id="panelTracks"></ul>
