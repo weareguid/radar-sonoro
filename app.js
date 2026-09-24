@@ -6,6 +6,13 @@ const COUNTRY_NAMES = {
 
 const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
 
+// Absolute in production: the page is also served through a rewrite at
+// nostalgictuiter.com/radarsonoro, where relative paths resolve wrong.
+// Same-origin on localhost so a local cut can be checked before it ships.
+const DATA_BASE = /^(localhost|127\.0\.0\.1)$/.test(location.hostname)
+  ? "data"
+  : "https://weareguid.github.io/radar-sonoro/data";
+
 let DATA = null;
 let CONSENSUS_KEYS = new Set();
 
@@ -26,7 +33,7 @@ const SPOTIFY_ICON = `<svg width="14" height="14" viewBox="0 0 24 24" fill="curr
 async function main(){
   let data;
   try {
-    const res = await fetch("https://weareguid.github.io/radar-sonoro/data/latest.json", { cache:"no-store" });
+    const res = await fetch(`${DATA_BASE}/latest.json`, { cache:"no-store" });
     if (!res.ok) throw new Error("no data");
     data = await res.json();
   } catch (err) {
@@ -42,7 +49,7 @@ async function main(){
 async function loadSidebar(){
   loadInbox();
   try {
-    const res = await fetch("https://weareguid.github.io/radar-sonoro/data/critics.json", { cache:"no-store" });
+    const res = await fetch(`${DATA_BASE}/critics.json`, { cache:"no-store" });
     if (!res.ok) throw new Error("no critics data");
     const critics = await res.json();
     renderPitchfork(critics.pitchfork || []);
@@ -58,7 +65,7 @@ async function loadSidebar(){
 async function loadInbox(){
   const list = document.getElementById("inboxList");
   try {
-    const res = await fetch("https://weareguid.github.io/radar-sonoro/data/inbox.json", { cache:"no-store" });
+    const res = await fetch(`${DATA_BASE}/inbox.json`, { cache:"no-store" });
     if (!res.ok) throw new Error("no inbox yet");
     const entries = await res.json();
     renderInbox(Array.isArray(entries) ? entries : []);
@@ -164,8 +171,8 @@ function renderNme(reviews){
 
 function renderMissingData(){
   document.getElementById("stamp").innerHTML = `<span class="flag">No cut available</span>`;
-  document.getElementById("thesisHead").textContent = "There's no cut to read yet.";
-  document.getElementById("thesisBody").textContent = "Run node fetch.js once to generate data/latest.json, or wait for Monday's automated read.";
+  document.getElementById("frontHead").textContent = "There's no cut to read yet.";
+  document.getElementById("frontBody").textContent = "Run node fetch.js once to generate data/latest.json, or wait for Monday's automated read.";
 }
 
 // --- find a song across all 18 markets, not just the consensus ---
@@ -181,11 +188,26 @@ function getSongDetail(title){
       countries.push({ code, name: c.name, sync: c.sync, dissident: c.dissident });
     }
   }
+  // A title can come from the crossover cards and never appear in the region
+  // (a US/UK-only song). Fall back to the reference feeds so the card still
+  // has a cover and a credit; presence stays honestly at 0.
+  let refMarkets = [];
+  if (DATA.reference) {
+    for (const code of Object.keys(DATA.reference)) {
+      const m = DATA.reference[code];
+      const hit = m.tracks.find(t => norm(t.name) === key);
+      if (hit) {
+        if (!rep) rep = hit;
+        refMarkets.push(m.name);
+      }
+    }
+  }
   const signal = DATA.signals.find(s => norm(s.title) === key);
   return {
     title: rep ? rep.name : title,
     artistName: rep ? rep.artistName : "",
     artworkUrl: rep ? rep.artworkUrl : "",
+    refMarkets,
     spotifyUrl: rep ? rep.spotifyUrl : (signal ? signal.spotifyUrl : null),
     presence: countries.length,
     of: Object.keys(DATA.countries).length,
@@ -209,7 +231,9 @@ function openSongModal(title){
         ${s.spotifyUrl ? `<a class="song-spotify" href="${s.spotifyUrl}" target="_blank" rel="noopener">${SPOTIFY_ICON} Play on Spotify</a>` : ""}
       </div>
     </div>
-    <p>Present in ${s.presence} of ${s.of} markets read this week${s.provisional ? " · provisional classification, not enough history yet" : ""}.</p>
+    <p>Present in ${s.presence} of ${s.of} markets read this week${s.provisional ? " · provisional classification, not enough history yet" : ""}.${
+      s.refMarkets?.length ? ` Also in the top 10 of the ${s.refMarkets.map(SHORT).join(" and ")}.` : ""
+    }</p>
     <div class="song-countries">
       ${s.countries.map(c => `<button type="button" class="song-chip${c.dissident ? " dissident" : ""}" data-code="${c.code}">${c.name} · ${c.sync}/10</button>`).join("")}
     </div>
@@ -253,21 +277,21 @@ function render(data){
     ${data.failed.length ? `· <span class="flag">${data.failed.length} unresponsive</span>` : ""}
   `;
 
-  // --- thesis (generated from the data, nothing hand-written with numbers) ---
+  // --- front line: how far the region travels ---
+  renderFrontline(data);
+
+  // The old thesis paragraph described the diagram, so it now sits with it.
   const top = data.stats.topSongRank1;
-  const topArtist = data.stats.topArtist;
   const highest = data.stats.highestSync;
-  document.getElementById("thesisHead").innerHTML =
-    dissidentCount > 0
-      ? `The region behaves like <em>a single market</em>, except where a local industry displaces it.`
-      : `No dissidents this week: all ${respondedCount} markets read share the same consensus.`;
-  document.getElementById("thesisBody").textContent =
-    dissidentCount > 0
-      ? `${syncedCount} of ${respondedCount} countries are listening to almost the same thing this week${top ? `, with "${top.title}" as the most repeated title` : ""}. ` +
-        `The other ${dissidentCount} aren't disconnected — they have a local scene strong enough that they don't need the regional consensus. ` +
-        (highest ? `${highest.name} is today's most in-sync market, at ${highest.sync}/10.` : "")
-      : `${topArtist ? `${topArtist.name} dominates the consensus, present in ${topArtist.presence} of ${respondedCount} markets. ` : ""}` +
-        `No dissidents this week — the question is how long that lasts.`;
+  const mapSub = document.getElementById("mapSub");
+  if (mapSub) {
+    mapSub.textContent = dissidentCount > 0
+      ? `${syncedCount} of ${respondedCount} markets are listening to almost the same thing${top ? `, with "${top.title}" as the most repeated title` : ""}. ` +
+        `The other ${dissidentCount} aren't disconnected — they have a local scene strong enough not to need the regional consensus. ` +
+        (highest ? `${highest.name} is the most in-sync market, at ${highest.sync}/10. ` : "") +
+        `Dotted nodes are the dissidents — click one to see why.`
+      : `All ${respondedCount} markets read share the same consensus this week. No dissidents. Click a node to read its profile.`;
+  }
 
   // --- signals ---
   const reel = document.getElementById("signalReel");
@@ -366,6 +390,105 @@ function render(data){
   renderFooter(data);
   setupModal();
   setupSurprise(data);
+}
+
+const SHORT = s => s.replace("United States", "US").replace("United Kingdom", "UK");
+const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
+
+// The headline is the week's crossover number, written from the delta against
+// the last cut. When nothing moves, that is itself the sentence — the page
+// never repeats last week's line as if it were news.
+function frontlineCopy(cross){
+  // US first: it's the market a LATAM title can plausibly reach, so it carries
+  // the sentence. Leading with the UK means leading with "nothing" every week.
+  const order = ["us", "gb"];
+  const out = cross.flows
+    .filter(f => f.direction === "out")
+    .sort((a, b) => order.indexOf(a.market) - order.indexOf(b.market));
+  const total = cross.exportedNow;
+  const prevTotal = cross.prev
+    ? out.reduce((n, f) => n + (cross.prev[f.key] ?? 0), 0)
+    : null;
+
+  const reach = out
+    .map(f => `<em>${f.count === 0 ? "nothing" : plural(f.count, "song")}</em> to the ${SHORT(f.to)}`)
+    .join(" and ");
+
+  let head;
+  if (prevTotal !== null && total !== prevTotal) {
+    const dir = total > prevTotal ? "up" : "down";
+    head = `LATAM's consensus travelled ${dir} this week: <em>${total} of 10</em> titles reached the US or the UK.`;
+  } else if (total === 0) {
+    head = cross.streak > 1
+      ? `<em>${cross.streak} cuts running</em>, not one song the region agrees on has reached the US or the UK.`
+      : `Not one song the region agrees on <em>reached the US or the UK</em> this week.`;
+  } else {
+    head = `The region sent ${reach} this week.`;
+  }
+
+  const anglo = cross.anglo;
+  const body = anglo
+    ? `The US and the UK share only ${anglo.count} of their own 10 with each other. ` +
+      `These aren't tiers of one market — they're three that barely overlap, and the overlap is what moves.`
+    : `Measured against the ${plural(out.length, "reference market")} read this cut.`;
+
+  return { head, body };
+}
+
+function flowCard(f, { control = false } = {}){
+  const card = el("div", "flow-card" + (control ? " is-control" : ""));
+  const dots = Array.from({ length: f.of }, (_, i) =>
+    `<i class="${i < f.count ? "on" : ""}"></i>`).join("");
+  const arrow = control ? "↔" : "→";
+  card.innerHTML = `
+    <div class="flow-route"><span>${SHORT(f.from)}</span><b>${arrow}</b><span>${SHORT(f.to)}</span></div>
+    <div class="flow-count"><span class="n">${f.count}</span><span class="d">/ ${f.of}</span></div>
+    <div class="flow-meter">${dots}</div>
+    ${f.titles.length
+      ? `<ul class="flow-titles">${f.titles.map(t => `<li><span>${t.title}</span><em>${t.artistName || ""}</em></li>`).join("")}</ul>`
+      : `<p class="flow-none">no shared title</p>`}
+  `;
+  card.querySelectorAll(".flow-titles li").forEach((li, i) => {
+    li.tabIndex = 0;
+    li.addEventListener("click", () => openSongModal(f.titles[i].title));
+    li.addEventListener("keydown", e => { if (e.key === "Enter") openSongModal(f.titles[i].title); });
+  });
+  return card;
+}
+
+function renderFrontline(data){
+  const section = document.getElementById("frontline");
+  const cross = data.crossover;
+  // No reference markets this cut: say the regional read instead of pretending
+  // to a crossover number that was never measured.
+  if (!cross || !cross.flows?.length) {
+    document.getElementById("frontHead").innerHTML =
+      `The region behaves like <em>a single market</em>, except where a local industry displaces it.`;
+    document.getElementById("frontBody").textContent =
+      `The US and UK feeds didn't answer this cut, so there's no crossover reading. The regional map below is unaffected.`;
+    document.getElementById("flowGrid").innerHTML = "";
+    document.getElementById("flowMethod").textContent = "";
+    return;
+  }
+
+  const { head, body } = frontlineCopy(cross);
+  document.getElementById("frontHead").innerHTML = head;
+  document.getElementById("frontBody").textContent = body;
+
+  const grid = document.getElementById("flowGrid");
+  grid.innerHTML = "";
+  const order = ["us", "gb"];
+  const byOrder = (a, b) => order.indexOf(a.market) - order.indexOf(b.market);
+  cross.flows.filter(f => f.direction === "out").sort(byOrder)
+    .forEach(f => grid.appendChild(flowCard(f)));
+  cross.flows.filter(f => f.direction === "in").sort(byOrder)
+    .forEach(f => grid.appendChild(flowCard(f)));
+  if (cross.anglo) grid.appendChild(flowCard(cross.anglo, { control: true }));
+
+  document.getElementById("flowMethod").textContent =
+    "Outbound counts the 10 regional consensus titles against that market's top 10. " +
+    "Inbound counts that market's top 10 against all 18 national charts — the generous test. " +
+    "US ↔ UK is the control.";
 }
 
 function trackRow(track, { onClick } = {}){
@@ -505,7 +628,7 @@ function renderLog(data){
   const log = document.getElementById("logBlock");
   log.innerHTML = `
     <span class="log-title">CUT LOG · ${fmtDate(data.snapshot).toUpperCase()}</span>
-    <span class="rule">──────────────────────────────────────────</span>
+    <div class="rule"></div>
     <dl>
       <dt>Active thesis</dt><dd>${data.dissidents.length ? "single market, except where a local industry dominates" : "single market with no dissidents this week"}</dd>
       ${top ? `<dt>Dominant signal</dt><dd><b>${top.title}</b> · present in ${top.presence}/${top.of}</dd>` : ""}
@@ -515,7 +638,7 @@ function renderLog(data){
       ${data.failed.length ? `<dt>No response</dt><dd>${data.failed.map(f=>f.code).join(", ")}, retried next cut</dd>` : ""}
       <dt>Next cut</dt><dd>Monday · automated read of ${data.storefronts.length} storefronts</dd>
     </dl>
-    <span class="rule">──────────────────────────────────────────</span>
+    <div class="rule"></div>
   `;
 }
 

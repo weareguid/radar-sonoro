@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="https://weareguid.github.io/radar-sonoro/style.css?v=4">
+<link rel="stylesheet" href="https://weareguid.github.io/radar-sonoro/style.css?v=5">
 </head>
 <body>
 <div class="wrap">
@@ -17,18 +17,17 @@
       <span class="kicker">Cultural intelligence · 18 markets</span>
       <h1>Radar Sonoro</h1>
     </div>
-    <div class="stamp" id="stamp">loading this week's cut…</div>
+    <div class="masthead-right">
+      <div class="stamp" id="stamp">loading this week's cut…</div>
+      <button class="discover-btn" id="surpriseBtn">Surprise me</button>
+    </div>
   </header>
 
-  <section class="thesis">
-    <div>
-      <h2 id="thesisHead">&nbsp;</h2>
-      <p id="thesisBody"></p>
-    </div>
-    <div class="discover">
-      <button class="discover-btn" id="surpriseBtn">Surprise me</button>
-      <span class="discover-hint">Jump to a random country or song from this week's cut.</span>
-    </div>
+  <section class="frontline" id="frontline">
+    <h2 id="frontHead">&nbsp;</h2>
+    <p id="frontBody"></p>
+    <div class="flow-grid" id="flowGrid"></div>
+    <p class="flow-method" id="flowMethod"></p>
   </section>
 
   <div class="layout">
@@ -61,7 +60,7 @@
         <div class="section-head">
           <div>
             <h3>Relationship map</h3>
-            <p class="section-sub">Each line is a country that shares the regional consensus. The thicker it is, the higher the sync. Dotted nodes are the dissidents — click to see why.</p>
+            <p class="section-sub" id="mapSub">Each line is a country that shares the regional consensus. The thicker it is, the higher the sync. Dotted nodes are the dissidents — click to see why.</p>
           </div>
           <span class="section-num">02 / read</span>
         </div>
@@ -141,6 +140,6 @@
   </div>
 </div>
 
-<script src="https://weareguid.github.io/radar-sonoro/app.js?v=4"></script>
+<script src="https://weareguid.github.io/radar-sonoro/app.js?v=5"></script>
 </body>
 </html>

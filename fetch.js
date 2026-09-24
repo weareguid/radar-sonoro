@@ -23,6 +23,13 @@ const COUNTRY_NAMES = {
   pa:"Panama", gt:"Guatemala", sv:"El Salvador", hn:"Honduras", ni:"Nicaragua", do:"Dominican Republic"
 };
 
+// Mercados de referencia. NO entran al consenso, ni a la sincronía, ni al mapa:
+// se leen sólo para medir cuánto se cruza la región con ellos. Meterlos al
+// consenso convertiría el modelo en "LATAM y los grandes", que es justo la
+// jerarquía que los datos no sostienen.
+const REFERENCE = ["us","gb"];
+const REFERENCE_NAMES = { us:"United States", gb:"United Kingdom" };
+
 const OUTLIER_MAX = 3; // sincronía <= 3 = disidente
 
 const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
@@ -53,12 +60,12 @@ async function fetchStorefront(code, { timeoutMs = 20000 } = {}) {
 
 // pequeño retraso entre lotes: 18 llamadas simultáneas al mismo host gatillan
 // aborts intermitentes en el feed de Apple, así que se corre en lotes de 6.
-async function fetchAll({ batchSize = 6, retries = 1 } = {}) {
+async function fetchAll(codes, { batchSize = 6, retries = 1 } = {}) {
   const countries = {};
   const failed = [];
 
-  for (let i = 0; i < STOREFRONTS.length; i += batchSize) {
-    const batch = STOREFRONTS.slice(i, i + batchSize);
+  for (let i = 0; i < codes.length; i += batchSize) {
+    const batch = codes.slice(i, i + batchSize);
     await Promise.all(batch.map(async code => {
       for (let attempt = 0; attempt <= retries; attempt++) {
         try {
@@ -173,25 +180,91 @@ function analyze(countries) {
   };
 }
 
+// Cortes anteriores, del más viejo al más reciente.
+async function loadHistory(snapshotDate, limit = 4) {
+  if (!existsSync(DATA_DIR)) return [];
+  const files = (await readdir(DATA_DIR))
+    .filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f) && f !== `${snapshotDate}.json`)
+    .sort()
+    .slice(-limit);
+  const out = [];
+  for (const f of files) {
+    try { out.push(JSON.parse(await readFile(path.join(DATA_DIR, f), "utf8"))); }
+    catch { /* corte corrupto o parcial, se ignora */ }
+  }
+  return out;
+}
+
+// Cruce entre la región y los mercados de referencia. Dos pruebas distintas,
+// a propósito:
+//   exporta  = títulos DEL CONSENSO regional que están en el top 10 del mercado.
+//   importa  = títulos del top 10 del mercado que aparecen en CUALQUIERA de las
+//              18 listas nacionales. Es la prueba generosa: si con 18 listas no
+//              aparece, de verdad no está sonando en la región.
+// Ambas sobre 10, así que las cifras se leen juntas sin trampa.
+function crossover(consensus, countries, reference, history) {
+  const consensusKeys = new Set(consensus.map(c => norm(c.title)));
+  const latamKeys = new Set();
+  for (const code of Object.keys(countries)) {
+    countries[code].forEach(t => latamKeys.add(norm(t.name)));
+  }
+
+  const flow = (fromLabel, toLabel, titles) => ({
+    from: fromLabel, to: toLabel, count: titles.length, of: 10, titles
+  });
+
+  const flows = [];
+  for (const code of Object.keys(reference)) {
+    const feed = reference[code];
+    const name = REFERENCE_NAMES[code] || code.toUpperCase();
+    const exported = consensus
+      .filter(c => feed.some(t => norm(t.name) === norm(c.title)))
+      .map(c => ({ title: c.title, artistName: c.artistName }));
+    const imported = feed
+      .filter(t => latamKeys.has(norm(t.name)))
+      .map(t => ({ title: t.name, artistName: t.artistName }));
+    flows.push({ ...flow("LATAM", name, exported), key: `latam-${code}`, direction: "out", market: code });
+    flows.push({ ...flow(name, "LATAM", imported), key: `${code}-latam`, direction: "in", market: code });
+  }
+
+  // US ↔ UK entre ellos: el control del experimento. Si los dos mercados anglo
+  // tampoco coinciden, "LATAM está aislado" deja de ser la lectura correcta.
+  let anglo = null;
+  if (reference.us && reference.gb) {
+    const gbKeys = new Set(reference.gb.map(t => norm(t.name)));
+    const shared = reference.us
+      .filter(t => gbKeys.has(norm(t.name)))
+      .map(t => ({ title: t.name, artistName: t.artistName }));
+    anglo = { ...flow("United States", "United Kingdom", shared), key: "us-gb", direction: "mutual" };
+  }
+
+  // Racha: cortes consecutivos —este incluido— sin un solo título del consenso
+  // regional en ningún mercado de referencia.
+  const exportedNow = flows.filter(f => f.direction === "out").reduce((n, f) => n + f.count, 0);
+  let streak = exportedNow === 0 ? 1 : 0;
+  if (exportedNow === 0) {
+    for (let i = history.length - 1; i >= 0; i--) {
+      const past = history[i]?.crossover?.flows;
+      if (!past) break;
+      const n = past.filter(f => f.direction === "out").reduce((s, f) => s + f.count, 0);
+      if (n !== 0) break;
+      streak++;
+    }
+  }
+
+  const prevCut = history[history.length - 1]?.crossover || null;
+  const prev = prevCut
+    ? Object.fromEntries((prevCut.flows || []).map(f => [f.key, f.count]))
+    : null;
+
+  return { flows, anglo, exportedNow, streak, prev, snapshotOf: 10 };
+}
+
 // Clasifica cada título del consenso como flash / mid-cycle / structural
 // comparando contra los cortes históricos disponibles. Con menos de 3 cortes
 // previos no hay serie suficiente: se usa un umbral de presencia como marcador
 // provisional y se etiqueta como tal.
-async function classifySignals(consensus, snapshotDate) {
-  let history = [];
-  if (existsSync(DATA_DIR)) {
-    const files = (await readdir(DATA_DIR))
-      .filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f) && f !== `${snapshotDate}.json`)
-      .sort()
-      .slice(-4); // hasta 4 cortes previos
-    for (const f of files) {
-      try {
-        const snap = JSON.parse(await readFile(path.join(DATA_DIR, f), "utf8"));
-        history.push(snap);
-      } catch { /* corte corrupto o parcial, se ignora */ }
-    }
-  }
-
+function classifySignals(consensus, history) {
   return consensus.map(entry => {
     const key = norm(entry.title);
     const appearances = history.filter(snap =>
@@ -221,17 +294,25 @@ async function loadCuratorial() {
 async function main() {
   await mkdir(DATA_DIR, { recursive: true });
 
-  const { countries, failed } = await fetchAll();
+  const { countries, failed } = await fetchAll(STOREFRONTS);
   if (Object.keys(countries).length === 0) {
     console.error("Ningún storefront respondió. Aborta sin escribir.");
     process.exit(1);
   }
 
+  // Los de referencia van aparte y no son críticos: si fallan, el corte sale
+  // igual y la sección de cruce simplemente no se dibuja.
+  const { countries: reference, failed: referenceFailed } = await fetchAll(REFERENCE);
+
   const snapshot = new Date().toISOString();
   const snapshotDate = snapshot.slice(0, 10);
 
+  const history = await loadHistory(snapshotDate);
   const { consensus, perCountry, maxSyncObserved, stats, dissidents } = analyze(countries);
-  const signals = await classifySignals(consensus, snapshotDate);
+  const signals = classifySignals(consensus, history);
+  const cross = Object.keys(reference).length
+    ? crossover(consensus, countries, reference, history)
+    : null;
   const curatorial = await loadCuratorial();
 
   const dissidentsWithNotes = dissidents.map(d => ({
@@ -248,6 +329,11 @@ async function main() {
     maxSyncObserved,
     consensus,
     signals,
+    crossover: cross,
+    reference: Object.fromEntries(Object.entries(reference).map(([code, tracks]) => [
+      code, { code, name: REFERENCE_NAMES[code] || code.toUpperCase(), tracks }
+    ])),
+    referenceFailed,
     countries: perCountry,
     dissidents: dissidentsWithNotes,
     stats,
