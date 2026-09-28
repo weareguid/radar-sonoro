@@ -1,7 +1,51 @@
 {
-  "updated": "2026-09-21T18:23:22.532Z",
-  "pitchfork": [],
+  "updated": "2026-09-28T19:54:52.757Z",
+  "pitchfork": [
+    {
+      "artist": "Gilla Band",
+      "title": "Pugnello",
+      "dek": "Exploding its signature blend of noise-punk and dance music to masterful extremes, the Irish band gets louder, rawer, funnier, and more methodical on its exhilarating fourth album.",
+      "score": 8.8,
+      "genre": "Rock",
+      "label": "Rough Trade",
+      "reviewDate": "September 25, 2026",
+      "url": "https://pitchfork.com/reviews/albums/gilla-band-pugnello/",
+      "artworkUrl": "https://media.pitchfork.com/photos/6ab1778795d5696b67afdb32/1:1/w_450,c_limit/191402061673.png"
+    }
+  ],
   "nme": [
+    {
+      "artist": "Blondshell",
+      "album": "Violins",
+      "dek": "beautifully tender and profoundly honest album of alt-rock poetry",
+      "genre": "Indie",
+      "url": "https://www.nme.com/reviews/album/blondshell-violins-review-3970720",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/08/blondshell@2000x1270.jpg"
+    },
+    {
+      "artist": "Tinashe",
+      "album": "Popstar",
+      "dek": "multi-faceted and effortlessly assured proclamation of self-worth",
+      "genre": "Pop",
+      "url": "https://www.nme.com/reviews/album/tinashe-popstar-review-3970721",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/Tinashe-Credit-Hugo-Comte.jpg"
+    },
+    {
+      "artist": "No Na",
+      "album": "Island Girl",
+      "dek": "an album of two halves that points towards girl group greatness",
+      "genre": "Pop",
+      "url": "https://www.nme.com/reviews/album/no-na-island-girl-review-3970054",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/No-Na-Credit-88rising.jpg"
+    },
+    {
+      "artist": "Miley",
+      "album": "Bass Persuades",
+      "dek": "the chameleonic star is no longer explaining herself",
+      "genre": "Pop",
+      "url": "https://www.nme.com/reviews/album/miley-cyrus-bass-persuades-review-3970066",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/miley_portrait_mert_alas.jpg"
+    },
     {
       "artist": "Beck",
       "album": "Ride Lonesome",
@@ -33,38 +77,6 @@
       "genre": "Pop",
       "url": "https://www.nme.com/reviews/album/natanya-attitude-era-review-3968025",
       "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/Natanya-Credit-Press.jpg"
-    },
-    {
-      "artist": "This Is Lorelei",
-      "album": "The Singer In My Band",
-      "dek": "indie-rock shapeshifter finds strength in simplicity",
-      "genre": "Indie",
-      "url": "https://www.nme.com/reviews/album/this-is-lorelei-the-singer-in-my-band-review-3967539",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/This-Is-Lorelei-Credit-Eve-Alpert.jpg"
-    },
-    {
-      "artist": "ADÉLA",
-      "album": "Prima",
-      "dek": "pop star’s enthralling bid for a seat at the table",
-      "genre": "Pop",
-      "url": "https://www.nme.com/reviews/album/adela-prima-review-3966971",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/Adela-Credit-Press.jpeg"
-    },
-    {
-      "artist": "President",
-      "album": "Blood Of Your Empire",
-      "dek": "polarising pop-metallers serve up an arty and versatile debut",
-      "genre": "Metal",
-      "url": "https://www.nme.com/reviews/album/president-blood-of-your-empire-review-3966725",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/President-Credit-Jonathan-Weiner.jpg"
-    },
-    {
-      "artist": "Erykah Badu, The Alchemist",
-      "album": "Before The World Blows",
-      "dek": "cosmic soul for a fractured world",
-      "genre": "Hip-hop",
-      "url": "https://www.nme.com/reviews/album/erykah-badu-the-alchemist-before-the-world-blows-review-3966130",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/Erykah-Badu-The-Alchemist-Credit-Adraint-Bereal.jpg"
     }
   ],
   "errors": []
