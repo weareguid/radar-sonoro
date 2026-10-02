@@ -76,12 +76,17 @@ async function loadInbox(){
 
 function renderInbox(entries){
   const list = document.getElementById("inboxList");
+  const foot = document.getElementById("inboxFoot");
   list.innerHTML = "";
+  foot.innerHTML = "";
   if (!entries.length) {
+    list.classList.remove("has-overflow");
     list.appendChild(el("p","sidebar-empty","Nothing yet — text a song to the bot and it lands here."));
     return;
   }
-  entries.slice(0, 12).forEach(e=>{
+  // The list scrolls, so there is no reason to truncate it: everything the bot
+  // kept is reachable. Players are only built on click, so rows stay cheap.
+  entries.forEach(e=>{
     const item = el("div","inbox-item");
     item.innerHTML = `
       <button type="button" class="inbox-row">
@@ -103,14 +108,26 @@ function renderInbox(entries){
         player.dataset.loaded = "1";
       }
       row.querySelector(".inbox-play").textContent = open ? "×" : "▶";
+      sync(); // an opened player changes how much is left below
     });
     list.appendChild(item);
   });
+
+  // The link lives outside the scroller so it never scrolls out of reach.
   const link = el("a","sidebar-footer-link","Open the bot in Telegram →");
   link.href = "https://t.me/Radar_sonoro_inbox_bot";
   link.target = "_blank";
   link.rel = "noopener";
-  list.appendChild(link);
+  foot.appendChild(link);
+
+  // Only fade the bottom edge when there is actually more below, and drop the
+  // hint once the reader reaches the end.
+  const sync = () => {
+    const more = list.scrollHeight - list.clientHeight - list.scrollTop > 4;
+    list.classList.toggle("has-overflow", more);
+  };
+  list.addEventListener("scroll", sync, { passive: true });
+  requestAnimationFrame(sync);
 }
 
 function renderPitchfork(picks){
