@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="https://weareguid.github.io/radar-sonoro/style.css?v=6">
+<link rel="stylesheet" href="https://weareguid.github.io/radar-sonoro/style.css?v=7">
 </head>
 <body>
 <div class="wrap">
@@ -23,6 +23,18 @@
     </div>
   </header>
 
+  <div class="discoveries">
+    <div class="sidebar-block">
+      <div class="sidebar-head">
+        <span class="sidebar-kicker">From Telegram</span>
+        <h4>Recently added</h4>
+      </div>
+      <p class="sidebar-note">Songs caught in the wild and sent to the bot. Tap one to play it here.</p>
+      <div class="sidebar-list inbox-scroll" id="inboxList"></div>
+      <div id="inboxFoot"></div>
+    </div>
+  </div>
+
   <section class="frontline" id="frontline">
     <h2 id="frontHead">&nbsp;</h2>
     <p id="frontBody"></p>
@@ -30,106 +42,91 @@
     <p class="flow-method" id="flowMethod"></p>
   </section>
 
-  <div class="layout">
+  <div class="main">
 
-    <div class="discoveries">
-      <div class="sidebar-block">
-        <div class="sidebar-head">
-          <span class="sidebar-kicker">From Telegram</span>
-          <h4>Recently added</h4>
+    <section class="section" id="senales">
+      <div class="section-head">
+        <div>
+          <h3>Signals of the week</h3>
+          <p class="section-sub" id="senalesSub">Every title classified by what the data does, not what it promises.</p>
         </div>
-        <p class="sidebar-note">Songs caught in the wild and sent to the bot. Tap one to play it here.</p>
-        <div class="sidebar-list inbox-scroll" id="inboxList"></div>
-        <div id="inboxFoot"></div>
+        <span class="section-num">01 / read</span>
       </div>
-    </div>
+      <div class="reel" id="signalReel"></div>
+    </section>
 
-    <div class="main">
-
-      <section class="section" id="senales">
-        <div class="section-head">
-          <div>
-            <h3>Signals of the week</h3>
-            <p class="section-sub" id="senalesSub">Every title classified by what the data does, not what it promises.</p>
-          </div>
-          <span class="section-num">01 / read</span>
+    <section class="section" id="red">
+      <div class="section-head">
+        <div>
+          <h3>Relationship map</h3>
+          <p class="section-sub" id="mapSub">Each line is a country that shares the regional consensus. The thicker it is, the higher the sync. Dotted nodes are the dissidents — click to see why.</p>
         </div>
-        <div class="reel" id="signalReel"></div>
-      </section>
-
-      <section class="section" id="red">
-        <div class="section-head">
-          <div>
-            <h3>Relationship map</h3>
-            <p class="section-sub" id="mapSub">Each line is a country that shares the regional consensus. The thicker it is, the higher the sync. Dotted nodes are the dissidents — click to see why.</p>
-          </div>
-          <span class="section-num">02 / read</span>
-        </div>
-        <div class="network-layout">
-          <div class="network-frame">
-            <svg id="netsvg" viewBox="0 0 760 560" role="img" aria-label="Diagram of relationships between markets and the regional consensus"></svg>
-          </div>
-          <div class="panel" id="panel">
-            <p class="placeholder">Pick a country from the diagram to read its profile, or hit Surprise me.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="disidentes">
-        <div class="section-head">
-          <div>
-            <h3>Dissident case file</h3>
-            <p class="section-sub">Sync of 3 or less. They're not off the map — they have a local industry strong enough to beat the regional catalog.</p>
-          </div>
-          <span class="section-num">03 / read</span>
-        </div>
-        <div class="casebook-grid" id="caseGrid"></div>
-      </section>
-
-      <section class="section" id="mitos">
-        <div class="section-head">
-          <div>
-            <h3>Myth architects</h3>
-            <p class="section-sub">The artists holding up the consensus, read as world-builders: what they show, what they withhold, where the risk is.</p>
-          </div>
-          <span class="section-num">04 / read</span>
-        </div>
-        <div class="myth-list" id="mythList"></div>
-      </section>
-
-      <section class="section" style="border-bottom:none">
-        <div class="section-head">
-          <div>
-            <h3>Cut log</h3>
-            <p class="section-sub">What this cut leaves open for next Monday.</p>
-          </div>
-          <span class="section-num">05 / read</span>
-        </div>
-        <div class="log" id="logBlock"></div>
-      </section>
-
-      <footer id="footer"></footer>
-
-    </div>
-
-    <aside class="sidebar">
-      <div class="sidebar-block">
-        <div class="sidebar-head">
-          <span class="sidebar-kicker">Pitchfork</span>
-          <h4>Best New Music</h4>
-        </div>
-        <p class="sidebar-note">Albums Pitchfork tagged Best New Music this week. Unrelated to the regional consensus — a different yardstick, the Anglo critics'.</p>
-        <div class="sidebar-list" id="pitchforkList"></div>
+        <span class="section-num">02 / read</span>
       </div>
-      <div class="sidebar-block">
-        <div class="sidebar-head">
-          <span class="sidebar-kicker">NME</span>
-          <h4>Recent reviews</h4>
+      <div class="network-layout">
+        <div class="network-frame">
+          <svg id="netsvg" viewBox="0 0 760 560" role="img" aria-label="Diagram of relationships between markets and the regional consensus"></svg>
         </div>
-        <div class="sidebar-list" id="nmeList"></div>
+        <div class="panel" id="panel">
+          <p class="placeholder">Pick a country from the diagram to read its profile, or hit Surprise me.</p>
+        </div>
       </div>
-    </aside>
+    </section>
+
+    <section class="section" id="disidentes">
+      <div class="section-head">
+        <div>
+          <h3>Dissident case file</h3>
+          <p class="section-sub">Sync of 3 or less. They're not off the map — they have a local industry strong enough to beat the regional catalog.</p>
+        </div>
+        <span class="section-num">03 / read</span>
+      </div>
+      <div class="casebook-grid" id="caseGrid"></div>
+    </section>
+
+    <section class="section" id="mitos">
+      <div class="section-head">
+        <div>
+          <h3>Myth architects</h3>
+          <p class="section-sub">The artists holding up the consensus, read as world-builders: what they show, what they withhold, where the risk is.</p>
+        </div>
+        <span class="section-num">04 / read</span>
+      </div>
+      <div class="myth-list" id="mythList"></div>
+    </section>
+
+    <section class="section" style="border-bottom:none">
+      <div class="section-head">
+        <div>
+          <h3>Cut log</h3>
+          <p class="section-sub">What this cut leaves open for next Monday.</p>
+        </div>
+        <span class="section-num">05 / read</span>
+      </div>
+      <div class="log" id="logBlock"></div>
+    </section>
+
+    <footer id="footer"></footer>
+
   </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-block">
+      <div class="sidebar-head">
+        <span class="sidebar-kicker">Pitchfork</span>
+        <h4>Best New Music</h4>
+      </div>
+      <p class="sidebar-note">Albums Pitchfork tagged Best New Music this week. Unrelated to the regional consensus — a different yardstick, the Anglo critics'.</p>
+      <div class="sidebar-list" id="pitchforkList"></div>
+    </div>
+    <div class="sidebar-block">
+      <div class="sidebar-head">
+        <span class="sidebar-kicker">NME</span>
+        <h4>Recent reviews</h4>
+      </div>
+      <div class="sidebar-list" id="nmeList"></div>
+    </div>
+  </aside>
 
 </div>
 
@@ -141,6 +138,6 @@
   </div>
 </div>
 
-<script src="https://weareguid.github.io/radar-sonoro/app.js?v=6"></script>
+<script src="https://weareguid.github.io/radar-sonoro/app.js?v=7"></script>
 </body>
 </html>
