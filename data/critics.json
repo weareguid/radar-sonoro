@@ -1,6 +1,28 @@
 {
-  "updated": "2026-09-28T19:54:52.757Z",
+  "updated": "2026-10-05T21:02:30.852Z",
   "pitchfork": [
+    {
+      "artist": "300SkullsAndCounting, Jenny Sparks",
+      "title": "THIS IS SPA TOWN!",
+      "dek": "The UK artist brings a frenzy of club-grime provocation and internet humor to his glitched-out emo, but his portrayal of small-town malaise is what makes it a riot.",
+      "score": 8.2,
+      "genre": "Experimental / Rap",
+      "label": "XL",
+      "reviewDate": "October 1, 2026",
+      "url": "https://pitchfork.com/reviews/albums/300skullsandcounting-jenny-sparks-this-is-spa-town/",
+      "artworkUrl": "https://media.pitchfork.com/photos/6abd510c90e6bf2bda5674d9/1:1/w_450,c_limit/300SkullsAndCounting%20Jenny%20Sparks%20This%20Is%20Spa%20Town.png"
+    },
+    {
+      "artist": "Tinashe",
+      "title": "Popstar",
+      "dek": "Tinashe’s eighth album is her best and bravest yet: more ambitious, more focused, and effortlessly in touch with the zeitgeist. It’s the best pop album of the year.",
+      "score": 9,
+      "genre": "Pop/R&B",
+      "label": "Nice Life / Atlantic",
+      "reviewDate": "September 30, 2026",
+      "url": "https://pitchfork.com/reviews/albums/tinashe-popstar/",
+      "artworkUrl": "https://media.pitchfork.com/photos/6ab4131ef7ef2378a6776d41/1:1/w_450,c_limit/Tinashe-%20Popstar%20.jpg"
+    },
     {
       "artist": "Gilla Band",
       "title": "Pugnello",
@@ -14,6 +36,38 @@
     }
   ],
   "nme": [
+    {
+      "artist": "Victoria Monét",
+      "album": "Frequency Of Love",
+      "dek": "a well-negotiated declaration of love",
+      "genre": "R&B",
+      "url": "https://www.nme.com/reviews/album/victoria-monet-frequency-of-love-review-3972142",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/Victoria-Monet-Credit-MARVIN.jpg"
+    },
+    {
+      "artist": "Ceebo",
+      "album": "Bloccstar",
+      "dek": "wading through the moral pitfalls of fame",
+      "genre": "Rap",
+      "url": "https://www.nme.com/reviews/album/ceebo-bloccstar-mixtape-review-3971885",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/Ceebo-Credit-Finn-Harney.jpeg"
+    },
+    {
+      "artist": "Jae Stephens",
+      "album": "Audacity",
+      "dek": "cheeky confidence that goes far",
+      "genre": "Pop",
+      "url": "https://www.nme.com/reviews/album/jae-stephens-audacity-review-3971536",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/Jae-Stephens-Credit-Cass-Meyers.jpg"
+    },
+    {
+      "artist": "Wishy",
+      "album": "Nature’s Pill",
+      "dek": "heartfelt, hopelessly romantic indie-rock gold",
+      "genre": "",
+      "url": "https://www.nme.com/reviews/album/wishy-natures-pill-review-3971193",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/Wishy-Credit-Rian-Archer.jpg"
+    },
     {
       "artist": "Blondshell",
       "album": "Violins",
@@ -45,38 +99,6 @@
       "genre": "Pop",
       "url": "https://www.nme.com/reviews/album/miley-cyrus-bass-persuades-review-3970066",
       "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/miley_portrait_mert_alas.jpg"
-    },
-    {
-      "artist": "Beck",
-      "album": "Ride Lonesome",
-      "dek": "a drop-dead gorgeous meditation on heartache and solitude",
-      "genre": "Alternative",
-      "url": "https://www.nme.com/reviews/album/beck-ride-lonesome-review-3969131",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/Beck-Credit-Mikai-Karl.jpg"
-    },
-    {
-      "artist": "",
-      "album": "",
-      "dek": "On her first ever double album, the Canadian artist splits her time between lightly psychedelic pop and reassuringly classy club bangers",
-      "genre": "Pop",
-      "url": "https://www.nme.com/reviews/album/carly-rae-jepsen-day-and-night-review-3968867",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/Carly-Rae-Jepsen-Credit-Vince-Aung.jpeg"
-    },
-    {
-      "artist": "Beabadoobee",
-      "album": "Pylon",
-      "dek": "making peace with the mess of being in your mid-twenties",
-      "genre": "Indie",
-      "url": "https://www.nme.com/reviews/album/beabadoobee-pylon-review-3968873",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/Beabadoobee-Credit-Erika-Kamano.jpg"
-    },
-    {
-      "artist": "Natanya",
-      "album": "Attitude Era!",
-      "dek": "nostalgic, playful, spunky pop for those who love life left-field",
-      "genre": "Pop",
-      "url": "https://www.nme.com/reviews/album/natanya-attitude-era-review-3968025",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/09/Natanya-Credit-Press.jpg"
     }
   ],
   "errors": []
