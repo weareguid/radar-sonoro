@@ -1,6 +1,50 @@
 {
-  "updated": "2026-10-12T21:28:00.088Z",
+  "updated": "2026-10-19T18:54:21.975Z",
   "pitchfork": [
+    {
+      "artist": "Worldpeace DMT",
+      "title": "Stick Around for Tea",
+      "dek": "The irreverent duo of Leo Fincham and Rowan Please plies its brilliantly digitized indie-pop bricolage on an album with the ragtag splendor of a low-budget musical.",
+      "score": 8.3,
+      "genre": "Pop/R&B",
+      "label": "self-released",
+      "reviewDate": "October 19, 2026",
+      "url": "https://pitchfork.com/reviews/albums/worldpeace-dmt-stick-around-for-tea/",
+      "artworkUrl": "https://media.pitchfork.com/photos/6ad133ea47a15edc7845996a/1:1/w_450,c_limit/Worldpeace%20DMT%20-%20Stick%20Around%20for%20Tea%20album%20art.jpg"
+    },
+    {
+      "artist": "Djrum",
+      "title": "DJ-Kicks",
+      "dek": "The UK selector throws caution&#8212;and genre&#8212;to the winds on an audacious 82-minute set that careens between ambient, drill’n’bass, post-punk, breakcore, and more.",
+      "score": 8.4,
+      "genre": "Electronic",
+      "label": "!K7",
+      "reviewDate": "October 17, 2026",
+      "url": "https://pitchfork.com/reviews/albums/djrum-dj-kicks/",
+      "artworkUrl": "https://media.pitchfork.com/photos/6ad0e91d056973d40b8be89e/1:1/w_450,c_limit/Djrum%20-%20DJ-Kicks.jpg"
+    },
+    {
+      "artist": "@ ",
+      "title": "Autosmile",
+      "dek": "The Philly duo’s folk music radiates a special kind of energy. Their second album is tinged with psychedelia, a wicker wunderkammer of songs, spells, and secrets.",
+      "score": 8.6,
+      "genre": "Rock",
+      "label": "4AD",
+      "reviewDate": "October 16, 2026",
+      "url": "https://pitchfork.com/reviews/albums/at-sign-autosmile/",
+      "artworkUrl": "https://media.pitchfork.com/photos/6a3be91e393fc0fa5a7423cb/1:1/w_450,c_limit/@-Autosmile.jpeg"
+    },
+    {
+      "artist": "Jess Williamson",
+      "title": "A Mile South of Heaven",
+      "dek": "Torn between Texas and Topanga but fully herself, the songwriter sounds at home in the outlaw country idiom on an intimate, searching new record produced by Shooter Jennings.",
+      "score": 8.4,
+      "genre": "Folk/Country",
+      "label": "New West",
+      "reviewDate": "October 13, 2026",
+      "url": "https://pitchfork.com/reviews/albums/jess-williamson-a-mile-south-of-heaven/",
+      "artworkUrl": "https://media.pitchfork.com/photos/6ab178b1e1cdfe6681b364a7/1:1/w_450,c_limit/3605.jpg"
+    },
     {
       "artist": "Marina Herlop",
       "title": "Dja Dja",
@@ -18,13 +62,45 @@
       "dek": "With new songs that rank among his very best, the Geese frontman’s solo live album is an exquisite rendering of a had-to-be-there night and a work of real-time mythmaking.",
       "score": 8.9,
       "genre": "Rock",
-      "label": "Partisan",
+      "label": "Partisan / Play It Again Sam",
       "reviewDate": "October 9, 2026",
       "url": "https://pitchfork.com/reviews/albums/cameron-winter-live-at-carnegie-hall/",
       "artworkUrl": "https://media.pitchfork.com/photos/6a8374d55eeaf65ef2de9c77/1:1/w_450,c_limit/Live%20at%20Carnegie%20Hall_1500X.jpg"
     }
   ],
   "nme": [
+    {
+      "artist": "",
+      "album": "",
+      "dek": "Still in recovery from a life-shattering stroke, the Mercury Prize winner offers a deeply poignant, lyrically brilliant glimpse into his state pre-illness",
+      "genre": "Soul",
+      "url": "https://www.nme.com/reviews/album/michael-kiwanuka-fudge-review-3973478",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/Michael-Kiwanuka-Credit-Jodie-Canwell.jpg"
+    },
+    {
+      "artist": "Chrissi",
+      "album": "I Hate You Don’t Leave Me !",
+      "dek": "a layered look at love, loss and self-doubt",
+      "genre": "R&B",
+      "url": "https://www.nme.com/reviews/album/chrissi-i-hate-you-dont-leave-me-review-3973169",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/Chrissi-Credit-Lily-West-Squish.jpg"
+    },
+    {
+      "artist": "The Avalanches",
+      "album": "No Bad Memories",
+      "dek": "excessive and overstimulating by design",
+      "genre": "Electronic",
+      "url": "https://www.nme.com/reviews/album/the-avalanches-no-bad-memories-review-3973070",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/The-Avalanches-Credit-Dean-Podmore.jpg"
+    },
+    {
+      "artist": "Nieve Ella",
+      "album": "How Long Will It Take?",
+      "dek": "coming to terms with the messiness of growing up",
+      "genre": "Alternative",
+      "url": "https://www.nme.com/reviews/album/nieve-ella-how-long-will-it-take-review-3972997",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/07/nieve-ella-press@2000x1270.jpg"
+    },
     {
       "artist": "Rachel Chinouriri",
       "album": "I Think I Spoke Too Soon",
@@ -56,38 +132,6 @@
       "genre": "Indie",
       "url": "https://www.nme.com/reviews/album/remi-wolf-mud-review-3972721",
       "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/Remi-Wolf-Credit-Zachary-Gray.jpg"
-    },
-    {
-      "artist": "Troye Sivan",
-      "album": "She’s the Best",
-      "dek": "late-night revelations set to a ’90s alt-dance groove",
-      "genre": "Dance",
-      "url": "https://www.nme.com/reviews/album/troye-sivan-shes-the-best-review-3972714",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/Troye-Sivan-Credit-Marcus-Cooper.jpeg"
-    },
-    {
-      "artist": "Jamie T",
-      "album": "Ghosts (100 Days Of Morning)",
-      "dek": "making peace with the past",
-      "genre": "Indie",
-      "url": "https://www.nme.com/reviews/album/jamie-t-ghosts-100-days-of-morning-review-3972263",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/08/jamie-t@2000x1270.jpg"
-    },
-    {
-      "artist": "Victoria Monét",
-      "album": "Frequency Of Love",
-      "dek": "a well-negotiated declaration of love",
-      "genre": "R&B",
-      "url": "https://www.nme.com/reviews/album/victoria-monet-frequency-of-love-review-3972142",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/Victoria-Monet-Credit-MARVIN.jpg"
-    },
-    {
-      "artist": "Ceebo",
-      "album": "Bloccstar",
-      "dek": "wading through the moral pitfalls of fame",
-      "genre": "Rap",
-      "url": "https://www.nme.com/reviews/album/ceebo-bloccstar-mixtape-review-3971885",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/Ceebo-Credit-Finn-Harney.jpeg"
     }
   ],
   "errors": []
