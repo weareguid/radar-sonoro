@@ -1,6 +1,39 @@
 {
-  "updated": "2026-10-19T18:54:21.975Z",
+  "updated": "2026-10-26T18:56:53.051Z",
   "pitchfork": [
+    {
+      "artist": "heavensouls",
+      "title": "cantu of the sower EP",
+      "dek": "An album-length EP by the 20-year-old producer is a dizzying and boundless collage of collages, using free-jazz logic and digital overload to chart new emotional terrain.",
+      "score": 8.2,
+      "genre": "Experimental",
+      "label": "NTS",
+      "reviewDate": "October 26, 2026",
+      "url": "https://pitchfork.com/reviews/albums/heavensouls-cantu-of-the-sower-ep/",
+      "artworkUrl": "https://media.pitchfork.com/photos/6adb85c8eb79c260502e90fb/1:1/w_450,c_limit/heavensouls%20Cantu%20of%20the%20sower.jpg"
+    },
+    {
+      "artist": "Fine",
+      "title": "Jazz dreams",
+      "dek": "The Danish artist achieves a beguiling flow state on her second solo album: a set of future standards full of empty space.",
+      "score": 8.7,
+      "genre": "Pop/R&B",
+      "label": "Escho",
+      "reviewDate": "October 23, 2026",
+      "url": "https://pitchfork.com/reviews/albums/fine-jazz-dreams/",
+      "artworkUrl": "https://media.pitchfork.com/photos/6ab1771595d5696b67afdb2c/1:1/w_450,c_limit/a0271857415_10.jpg"
+    },
+    {
+      "artist": "Alchemical Sisters",
+      "title": "Alchemical Sisters",
+      "dek": "For their collaborative full-length debut, Eris Drew and Octo Octa hunkered down in their New Hampshire cabin to craft a celebratory, sample-heavy tribute to the maximalist dance music of yore.",
+      "score": 8.3,
+      "genre": "Electronic",
+      "label": "Interdimensional Transmissions",
+      "reviewDate": "October 22, 2026",
+      "url": "https://pitchfork.com/reviews/albums/alchemical-sisters-alchemical-sisters/",
+      "artworkUrl": "https://media.pitchfork.com/photos/6a885e2c3ebe66b3901a13cd/1:1/w_450,c_limit/Eris-Drew-Octo-Octa-Alchemical-Sisters.jpeg"
+    },
     {
       "artist": "Worldpeace DMT",
       "title": "Stick Around for Tea",
@@ -33,42 +66,17 @@
       "reviewDate": "October 16, 2026",
       "url": "https://pitchfork.com/reviews/albums/at-sign-autosmile/",
       "artworkUrl": "https://media.pitchfork.com/photos/6a3be91e393fc0fa5a7423cb/1:1/w_450,c_limit/@-Autosmile.jpeg"
-    },
-    {
-      "artist": "Jess Williamson",
-      "title": "A Mile South of Heaven",
-      "dek": "Torn between Texas and Topanga but fully herself, the songwriter sounds at home in the outlaw country idiom on an intimate, searching new record produced by Shooter Jennings.",
-      "score": 8.4,
-      "genre": "Folk/Country",
-      "label": "New West",
-      "reviewDate": "October 13, 2026",
-      "url": "https://pitchfork.com/reviews/albums/jess-williamson-a-mile-south-of-heaven/",
-      "artworkUrl": "https://media.pitchfork.com/photos/6ab178b1e1cdfe6681b364a7/1:1/w_450,c_limit/3605.jpg"
-    },
-    {
-      "artist": "Marina Herlop",
-      "title": "Dja Dja",
-      "dek": "Modeled after the literary concept of the hero’s journey, the Catalan composer’s latest album is her most ambitious yet: It’s weirder, wilder, and more dazzling than anything she’s done to date.",
-      "score": 8.5,
-      "genre": "Electronic",
-      "label": "Marina Herlop",
-      "reviewDate": "October 12, 2026",
-      "url": "https://pitchfork.com/reviews/albums/marina-herlop-dja-dja/",
-      "artworkUrl": "https://media.pitchfork.com/photos/6a452b81a7029f511eacd6da/1:1/w_450,c_limit/Marina-Herlop-Dja-Dja.jpeg"
-    },
-    {
-      "artist": "Cameron Winter",
-      "title": "Live at Carnegie Hall",
-      "dek": "With new songs that rank among his very best, the Geese frontman’s solo live album is an exquisite rendering of a had-to-be-there night and a work of real-time mythmaking.",
-      "score": 8.9,
-      "genre": "Rock",
-      "label": "Partisan / Play It Again Sam",
-      "reviewDate": "October 9, 2026",
-      "url": "https://pitchfork.com/reviews/albums/cameron-winter-live-at-carnegie-hall/",
-      "artworkUrl": "https://media.pitchfork.com/photos/6a8374d55eeaf65ef2de9c77/1:1/w_450,c_limit/Live%20at%20Carnegie%20Hall_1500X.jpg"
     }
   ],
   "nme": [
+    {
+      "artist": "Young Eman",
+      "album": "BINE",
+      "dek": "a wild ride with a dark side",
+      "genre": "Rap",
+      "url": "https://www.nme.com/reviews/album/young-eman-bine-review-3973934",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/Young-Eman-Credit-Press-Retry.jpg"
+    },
     {
       "artist": "",
       "album": "",
@@ -124,14 +132,6 @@
       "genre": "Indie",
       "url": "https://www.nme.com/reviews/album/chloe-slater-riot-youth-review-extending-a-hopeful-hand-to-a-generation-on-the-edge-3972727",
       "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/06/chloe-slater-credit-el-hardwick.jpeg"
-    },
-    {
-      "artist": "Remi Wolf",
-      "album": "Mud",
-      "dek": "funk-pop maximalist gets her hands dirty",
-      "genre": "Indie",
-      "url": "https://www.nme.com/reviews/album/remi-wolf-mud-review-3972721",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/Remi-Wolf-Credit-Zachary-Gray.jpg"
     }
   ],
   "errors": []
