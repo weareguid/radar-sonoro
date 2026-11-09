@@ -1,30 +1,35 @@
 {
-  "updated": "2026-11-02T22:01:09.323Z",
+  "updated": "2026-11-09T22:47:03.395Z",
   "pitchfork": [
     {
-      "artist": "heavensouls",
-      "title": "cantu of the sower EP",
-      "dek": "An album-length EP by the 20-year-old producer is a dizzying and boundless collage of collages, using free-jazz logic and digital overload to chart new emotional terrain.",
+      "artist": "Baby Osamaa",
+      "title": "On Tha Run",
+      "dek": "With delirious melodic instincts, the Bronx rapper’s new tape evokes Young Money-era swag on a SoundCloud budget.",
       "score": 8.2,
-      "genre": "Experimental",
-      "label": "NTS",
-      "reviewDate": "October 26, 2026",
-      "url": "https://pitchfork.com/reviews/albums/heavensouls-cantu-of-the-sower-ep/",
-      "artworkUrl": "https://media.pitchfork.com/photos/6adb85c8eb79c260502e90fb/1:1/w_450,c_limit/heavensouls%20Cantu%20of%20the%20sower.jpg"
-    },
-    {
-      "artist": "Fine",
-      "title": "Jazz dreams",
-      "dek": "The Danish artist achieves a beguiling flow state on her second solo album: a set of future standards full of empty space.",
-      "score": 8.7,
-      "genre": "Pop/R&B",
-      "label": "Escho",
-      "reviewDate": "October 23, 2026",
-      "url": "https://pitchfork.com/reviews/albums/fine-jazz-dreams/",
-      "artworkUrl": "https://media.pitchfork.com/photos/6ab1771595d5696b67afdb2c/1:1/w_450,c_limit/a0271857415_10.jpg"
+      "genre": "Rap",
+      "label": "self-released",
+      "reviewDate": "November 4, 2026",
+      "url": "https://pitchfork.com/reviews/albums/baby-osamaa-on-tha-run/",
+      "artworkUrl": "https://media.pitchfork.com/photos/6aea06e6b2a4ae06c18ac614/1:1/w_450,c_limit/Baby%20Osamaa%20-%20On%20Tha%20Run%20album%20art.jpg"
     }
   ],
   "nme": [
+    {
+      "artist": "Shygirl",
+      "album": "Swallow!",
+      "dek": "a dreamy, guitar-heavy return from the pop experimentalist",
+      "genre": "Electronic",
+      "url": "https://www.nme.com/reviews/album/shygirl-swallow-review-3975181",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/11/Shygirl-Credit-Jessica-Madavo.jpeg"
+    },
+    {
+      "artist": "Royal Blood",
+      "album": "Dead Company",
+      "dek": "Brighton riff lords flex their massive muscles",
+      "genre": "Rock",
+      "url": "https://www.nme.com/reviews/album/royal-blood-dead-company-review-3975176",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/11/royal-blood-credit-Edward-Cooke.jpeg"
+    },
     {
       "artist": "Daine",
       "album": "In Endless Awe &#038; Agony",
@@ -72,22 +77,6 @@
       "genre": "Soul",
       "url": "https://www.nme.com/reviews/album/michael-kiwanuka-fudge-review-3973478",
       "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/Michael-Kiwanuka-Credit-Jodie-Canwell.jpg"
-    },
-    {
-      "artist": "Chrissi",
-      "album": "I Hate You Don’t Leave Me !",
-      "dek": "a layered look at love, loss and self-doubt",
-      "genre": "R&B",
-      "url": "https://www.nme.com/reviews/album/chrissi-i-hate-you-dont-leave-me-review-3973169",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/Chrissi-Credit-Lily-West-Squish.jpg"
-    },
-    {
-      "artist": "The Avalanches",
-      "album": "No Bad Memories",
-      "dek": "excessive and overstimulating by design",
-      "genre": "Electronic",
-      "url": "https://www.nme.com/reviews/album/the-avalanches-no-bad-memories-review-3973070",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/The-Avalanches-Credit-Dean-Podmore.jpg"
     }
   ],
   "errors": []
