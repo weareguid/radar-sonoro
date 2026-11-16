@@ -1,19 +1,51 @@
 {
-  "updated": "2026-11-09T22:47:03.395Z",
+  "updated": "2026-11-16T22:37:48.265Z",
   "pitchfork": [
     {
-      "artist": "Baby Osamaa",
-      "title": "On Tha Run",
-      "dek": "With delirious melodic instincts, the Bronx rapper’s new tape evokes Young Money-era swag on a SoundCloud budget.",
-      "score": 8.2,
+      "artist": "Armand Hammer",
+      "title": "Snakes &amp; Ladders",
+      "dek": "It’s a marathon and the New York duo keeps the faith, delivering another lyrical masterclass over engrossing beats from the indie rap all-stars whose work they’ve cultivated.",
+      "score": 8.3,
       "genre": "Rap",
-      "label": "self-released",
-      "reviewDate": "November 4, 2026",
-      "url": "https://pitchfork.com/reviews/albums/baby-osamaa-on-tha-run/",
-      "artworkUrl": "https://media.pitchfork.com/photos/6aea06e6b2a4ae06c18ac614/1:1/w_450,c_limit/Baby%20Osamaa%20-%20On%20Tha%20Run%20album%20art.jpg"
+      "label": "Backwoodz Studioz",
+      "reviewDate": "November 13, 2026",
+      "url": "https://pitchfork.com/reviews/albums/armand-hammer-snakes-and-ladders/",
+      "artworkUrl": "https://media.pitchfork.com/photos/6af5f3f605ae8a8ec42748c2/1:1/w_450,c_limit/Armand%20Hammer%20-%20Snakes%20&%20Ladders%20album%20art.jpg"
     }
   ],
   "nme": [
+    {
+      "artist": "",
+      "album": "",
+      "dek": "On a debut EP executive produced by PinkPantheress, the UK girl group expand their splashy sound with nods to Girls Aloud, All Saints and Pussycat Dolls",
+      "genre": "Pop",
+      "url": "https://www.nme.com/reviews/album/say-now-say-what-you-see-ep-review-3975820",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/11/Say-Now-Credit-Press.jpeg"
+    },
+    {
+      "artist": "U2",
+      "album": "Carnaval de Luz",
+      "dek": "brighter, poppier and still a little bit bombastic",
+      "genre": "Rock",
+      "url": "https://www.nme.com/reviews/album/u2-carnaval-de-luz-review-3975730",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/11/U2-Credit-Viviane-Sassen.jpg"
+    },
+    {
+      "artist": "Skepta",
+      "album": "The Fork And Knife",
+      "dek": "timely social commentary amid a hazy narrative structure",
+      "genre": "Rap",
+      "url": "https://www.nme.com/reviews/album/skepta-the-fork-and-knife-review-3975634",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/11/Skepta-Credit-Press.jpg"
+    },
+    {
+      "artist": "2hollis",
+      "album": "Pirouette",
+      "dek": "a lovestruck fantasist faces his fears of vulnerability",
+      "genre": "Electronic",
+      "url": "https://www.nme.com/reviews/album/2hollis-pirouette-review-3975633",
+      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/11/2hollis-Credit-Noah-Dillon-1.jpeg"
+    },
     {
       "artist": "Shygirl",
       "album": "Swallow!",
@@ -45,38 +77,6 @@
       "genre": "Pop",
       "url": "https://www.nme.com/reviews/album/chloe-qisha-fantasize-review-3973927",
       "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/Chloe-Qisha-Credit-Blacksocks.jpg"
-    },
-    {
-      "artist": "Queens Of The Stone Age",
-      "album": "Perfecth",
-      "dek": "the desert rock dons adventure into love for their third act",
-      "genre": "Rock",
-      "url": "https://www.nme.com/reviews/album/queens-of-the-stone-age-perfecth-album-review-3974374",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/queens_of_the_stone_age_perfecth_review.jpg"
-    },
-    {
-      "artist": "DIIV",
-      "album": "ZIRP!",
-      "dek": "pop meets politics on their most adventurous record yet",
-      "genre": "Indie",
-      "url": "https://www.nme.com/reviews/album/diiv-zirp-review-3974219",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/DIIV-ZIRP-Credit-Jaxon-Whittington.jpg"
-    },
-    {
-      "artist": "Young Eman",
-      "album": "BINE",
-      "dek": "a wild ride with a dark side",
-      "genre": "Rap",
-      "url": "https://www.nme.com/reviews/album/young-eman-bine-review-3973934",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/Young-Eman-Credit-Press-Retry.jpg"
-    },
-    {
-      "artist": "",
-      "album": "",
-      "dek": "Still in recovery from a life-shattering stroke, the Mercury Prize winner offers a deeply poignant, lyrically brilliant glimpse into his state pre-illness",
-      "genre": "Soul",
-      "url": "https://www.nme.com/reviews/album/michael-kiwanuka-fudge-review-3973478",
-      "artworkUrl": "https://www.nme.com/wp-content/uploads/2026/10/Michael-Kiwanuka-Credit-Jodie-Canwell.jpg"
     }
   ],
   "errors": []

@@ -1,0 +1,2438 @@
+{
+  "snapshot": "2026-11-16T22:37:34.970Z",
+  "snapshotDate": "2026-11-16",
+  "storefronts": [
+    "mx",
+    "br",
+    "ar",
+    "cl",
+    "co",
+    "pe",
+    "uy",
+    "py",
+    "bo",
+    "ec",
+    "ve",
+    "cr",
+    "pa",
+    "gt",
+    "sv",
+    "hn",
+    "ni",
+    "do"
+  ],
+  "failed": [],
+  "maxSyncObserved": 8,
+  "consensus": [
+    {
+      "title": "BbY WOW",
+      "artistName": "KAROL G, Judeline & rusowsky",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+      "presence": 17,
+      "of": 18,
+      "countries": [
+        "cl",
+        "ar",
+        "pe",
+        "co",
+        "mx",
+        "uy",
+        "py",
+        "ve",
+        "cr",
+        "ec",
+        "bo",
+        "pa",
+        "gt",
+        "sv",
+        "ni",
+        "do",
+        "hn"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+    },
+    {
+      "title": "KOKO",
+      "artistName": "Omar Courtz",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/300x300bb.jpg",
+      "presence": 14,
+      "of": 18,
+      "countries": [
+        "cl",
+        "ar",
+        "pe",
+        "uy",
+        "py",
+        "cr",
+        "ec",
+        "bo",
+        "pa",
+        "gt",
+        "sv",
+        "ni",
+        "do",
+        "hn"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/1tz7RZirwiuaJw2p0jbdHb"
+    },
+    {
+      "title": "Yonaguni",
+      "artistName": "Bad Bunny",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b6/12/da/b612daba-6c68-c2ab-7492-fb2e079074d5/196006829308.jpg/300x300bb.jpg",
+      "presence": 13,
+      "of": 18,
+      "countries": [
+        "cl",
+        "pe",
+        "co",
+        "py",
+        "cr",
+        "ec",
+        "bo",
+        "pa",
+        "gt",
+        "sv",
+        "ni",
+        "do",
+        "hn"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/2JPLbjOn0wPCngEot2STUS"
+    },
+    {
+      "title": "Efecto",
+      "artistName": "Bad Bunny",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+      "presence": 11,
+      "of": 18,
+      "countries": [
+        "cl",
+        "pe",
+        "co",
+        "cr",
+        "ec",
+        "bo",
+        "pa",
+        "gt",
+        "sv",
+        "ni",
+        "hn"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/5Eax0qFko2dh7Rl2lYs3bx"
+    },
+    {
+      "title": "Suzuki",
+      "artistName": "Fuerza Regida",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/300x300bb.jpg",
+      "presence": 10,
+      "of": 18,
+      "countries": [
+        "cl",
+        "pe",
+        "mx",
+        "ve",
+        "ec",
+        "bo",
+        "gt",
+        "sv",
+        "ni",
+        "hn"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/6VDw2mGBIa4csypjOhS6JT"
+    },
+    {
+      "title": "Vuelve",
+      "artistName": "Anuel AA",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/43/2c/c3/432cc3a0-debd-4cec-67a1-8b3720402308/885288743814.jpg/300x300bb.jpg",
+      "presence": 10,
+      "of": 18,
+      "countries": [
+        "cl",
+        "ar",
+        "pe",
+        "uy",
+        "py",
+        "cr",
+        "pa",
+        "ni",
+        "do",
+        "hn"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/4rKEWNZrYYo66knSxFxE2J"
+    },
+    {
+      "title": "TE MUDASTE",
+      "artistName": "Bad Bunny",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/70/1c/64701cff-71ed-912f-ce62-71d409f5e6ad/195497640560.jpg/300x300bb.jpg",
+      "presence": 7,
+      "of": 18,
+      "countries": [
+        "cl",
+        "py",
+        "bo",
+        "pa",
+        "gt",
+        "sv",
+        "hn"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/5RubKOuDoPn5Kj5TLVxSxY"
+    },
+    {
+      "title": "VeLDÁ",
+      "artistName": "Bad Bunny, Omar Courtz & Dei V",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/5e/7e/905e7ed5-a8fa-a8f3-cd06-0028fdf3afaa/199066342442.jpg/300x300bb.jpg",
+      "presence": 6,
+      "of": 18,
+      "countries": [
+        "py",
+        "ve",
+        "cr",
+        "pa",
+        "sv",
+        "hn"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/7d6yK8v8J484SWH5prIQiE"
+    },
+    {
+      "title": "Las mas bonitas son p#tas",
+      "artistName": "Anuel AA",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/46/f2/82/46f28288-8e3d-d4cb-e73f-00863da4603b/820233902649.jpg/300x300bb.jpg",
+      "presence": 5,
+      "of": 18,
+      "countries": [
+        "ar",
+        "uy",
+        "py",
+        "cr",
+        "ni"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/4vJaNTSA8fYLLLSauHmkLe"
+    },
+    {
+      "title": "Ojitos Lindos",
+      "artistName": "Bad Bunny & Bomba Estéreo",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+      "presence": 5,
+      "of": 18,
+      "countries": [
+        "pe",
+        "py",
+        "ec",
+        "bo",
+        "gt"
+      ],
+      "spotifyUrl": "https://open.spotify.com/track/3k3NWokhRRkEPhCzPmV8TW"
+    }
+  ],
+  "signals": [
+    {
+      "title": "BbY WOW",
+      "artistName": "KAROL G, Judeline & rusowsky",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+      "presence": 17,
+      "of": 18,
+      "countries": [
+        "cl",
+        "ar",
+        "pe",
+        "co",
+        "mx",
+        "uy",
+        "py",
+        "ve",
+        "cr",
+        "ec",
+        "bo",
+        "pa",
+        "gt",
+        "sv",
+        "ni",
+        "do",
+        "hn"
+      ],
+      "tier": 3,
+      "tierLabel": "structural movement",
+      "provisional": false,
+      "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+    },
+    {
+      "title": "KOKO",
+      "artistName": "Omar Courtz",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/300x300bb.jpg",
+      "presence": 14,
+      "of": 18,
+      "countries": [
+        "cl",
+        "ar",
+        "pe",
+        "uy",
+        "py",
+        "cr",
+        "ec",
+        "bo",
+        "pa",
+        "gt",
+        "sv",
+        "ni",
+        "do",
+        "hn"
+      ],
+      "tier": 3,
+      "tierLabel": "structural movement",
+      "provisional": false,
+      "spotifyUrl": "https://open.spotify.com/track/1tz7RZirwiuaJw2p0jbdHb"
+    },
+    {
+      "title": "Yonaguni",
+      "artistName": "Bad Bunny",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b6/12/da/b612daba-6c68-c2ab-7492-fb2e079074d5/196006829308.jpg/300x300bb.jpg",
+      "presence": 13,
+      "of": 18,
+      "countries": [
+        "cl",
+        "pe",
+        "co",
+        "py",
+        "cr",
+        "ec",
+        "bo",
+        "pa",
+        "gt",
+        "sv",
+        "ni",
+        "do",
+        "hn"
+      ],
+      "tier": 3,
+      "tierLabel": "structural movement",
+      "provisional": false,
+      "spotifyUrl": "https://open.spotify.com/track/2JPLbjOn0wPCngEot2STUS"
+    },
+    {
+      "title": "Efecto",
+      "artistName": "Bad Bunny",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+      "presence": 11,
+      "of": 18,
+      "countries": [
+        "cl",
+        "pe",
+        "co",
+        "cr",
+        "ec",
+        "bo",
+        "pa",
+        "gt",
+        "sv",
+        "ni",
+        "hn"
+      ],
+      "tier": 3,
+      "tierLabel": "structural movement",
+      "provisional": false,
+      "spotifyUrl": "https://open.spotify.com/track/5Eax0qFko2dh7Rl2lYs3bx"
+    },
+    {
+      "title": "Suzuki",
+      "artistName": "Fuerza Regida",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/300x300bb.jpg",
+      "presence": 10,
+      "of": 18,
+      "countries": [
+        "cl",
+        "pe",
+        "mx",
+        "ve",
+        "ec",
+        "bo",
+        "gt",
+        "sv",
+        "ni",
+        "hn"
+      ],
+      "tier": 3,
+      "tierLabel": "structural movement",
+      "provisional": false,
+      "spotifyUrl": "https://open.spotify.com/track/6VDw2mGBIa4csypjOhS6JT"
+    },
+    {
+      "title": "Vuelve",
+      "artistName": "Anuel AA",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/43/2c/c3/432cc3a0-debd-4cec-67a1-8b3720402308/885288743814.jpg/300x300bb.jpg",
+      "presence": 10,
+      "of": 18,
+      "countries": [
+        "cl",
+        "ar",
+        "pe",
+        "uy",
+        "py",
+        "cr",
+        "pa",
+        "ni",
+        "do",
+        "hn"
+      ],
+      "tier": 3,
+      "tierLabel": "structural movement",
+      "provisional": false,
+      "spotifyUrl": "https://open.spotify.com/track/4rKEWNZrYYo66knSxFxE2J"
+    },
+    {
+      "title": "TE MUDASTE",
+      "artistName": "Bad Bunny",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/70/1c/64701cff-71ed-912f-ce62-71d409f5e6ad/195497640560.jpg/300x300bb.jpg",
+      "presence": 7,
+      "of": 18,
+      "countries": [
+        "cl",
+        "py",
+        "bo",
+        "pa",
+        "gt",
+        "sv",
+        "hn"
+      ],
+      "tier": 3,
+      "tierLabel": "structural movement",
+      "provisional": false,
+      "spotifyUrl": "https://open.spotify.com/track/5RubKOuDoPn5Kj5TLVxSxY"
+    },
+    {
+      "title": "VeLDÁ",
+      "artistName": "Bad Bunny, Omar Courtz & Dei V",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/5e/7e/905e7ed5-a8fa-a8f3-cd06-0028fdf3afaa/199066342442.jpg/300x300bb.jpg",
+      "presence": 6,
+      "of": 18,
+      "countries": [
+        "py",
+        "ve",
+        "cr",
+        "pa",
+        "sv",
+        "hn"
+      ],
+      "tier": 3,
+      "tierLabel": "structural movement",
+      "provisional": false,
+      "spotifyUrl": "https://open.spotify.com/track/7d6yK8v8J484SWH5prIQiE"
+    },
+    {
+      "title": "Las mas bonitas son p#tas",
+      "artistName": "Anuel AA",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/46/f2/82/46f28288-8e3d-d4cb-e73f-00863da4603b/820233902649.jpg/300x300bb.jpg",
+      "presence": 5,
+      "of": 18,
+      "countries": [
+        "ar",
+        "uy",
+        "py",
+        "cr",
+        "ni"
+      ],
+      "tier": 3,
+      "tierLabel": "structural movement",
+      "provisional": false,
+      "spotifyUrl": "https://open.spotify.com/track/4vJaNTSA8fYLLLSauHmkLe"
+    },
+    {
+      "title": "Ojitos Lindos",
+      "artistName": "Bad Bunny & Bomba Estéreo",
+      "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+      "presence": 5,
+      "of": 18,
+      "countries": [
+        "pe",
+        "py",
+        "ec",
+        "bo",
+        "gt"
+      ],
+      "tier": 3,
+      "tierLabel": "structural movement",
+      "provisional": false,
+      "spotifyUrl": "https://open.spotify.com/track/3k3NWokhRRkEPhCzPmV8TW"
+    }
+  ],
+  "crossover": {
+    "flows": [
+      {
+        "from": "LATAM",
+        "to": "United States",
+        "count": 1,
+        "of": 10,
+        "titles": [
+          {
+            "title": "BbY WOW",
+            "artistName": "KAROL G, Judeline & rusowsky"
+          }
+        ],
+        "key": "latam-us",
+        "direction": "out",
+        "market": "us"
+      },
+      {
+        "from": "United States",
+        "to": "LATAM",
+        "count": 2,
+        "of": 10,
+        "titles": [
+          {
+            "title": "BbY WOW",
+            "artistName": "KAROL G, Judeline & rusowsky"
+          },
+          {
+            "title": "Housewife",
+            "artistName": "Tate McRae"
+          }
+        ],
+        "key": "us-latam",
+        "direction": "in",
+        "market": "us"
+      },
+      {
+        "from": "LATAM",
+        "to": "United Kingdom",
+        "count": 0,
+        "of": 10,
+        "titles": [],
+        "key": "latam-gb",
+        "direction": "out",
+        "market": "gb"
+      },
+      {
+        "from": "United Kingdom",
+        "to": "LATAM",
+        "count": 1,
+        "of": 10,
+        "titles": [
+          {
+            "title": "Housewife",
+            "artistName": "Tate McRae"
+          }
+        ],
+        "key": "gb-latam",
+        "direction": "in",
+        "market": "gb"
+      }
+    ],
+    "anglo": {
+      "from": "United States",
+      "to": "United Kingdom",
+      "count": 2,
+      "of": 10,
+      "titles": [
+        {
+          "title": "Choosin' Texas",
+          "artistName": "Ella Langley"
+        },
+        {
+          "title": "Housewife",
+          "artistName": "Tate McRae"
+        }
+      ],
+      "key": "us-gb",
+      "direction": "mutual"
+    },
+    "exportedNow": 1,
+    "streak": 0,
+    "prev": {
+      "latam-gb": 0,
+      "gb-latam": 1,
+      "latam-us": 1,
+      "us-latam": 2
+    },
+    "snapshotOf": 10
+  },
+  "reference": {
+    "us": {
+      "code": "us",
+      "name": "United States",
+      "tracks": [
+        {
+          "name": "Choosin' Texas",
+          "artistName": "Ella Langley",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e2/91/4d/e2914d0a-7f1d-f04c-fbf4-c50b38548838/196873638690.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/us/album/choosin-texas/1844932149?i=1844932150"
+        },
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/us/album/bby-wow/6796864741?i=6796864754"
+        },
+        {
+          "name": "Housewife",
+          "artistName": "Tate McRae",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/69/64/e4/6964e483-c02c-e389-14f4-c426e8c65f2c/196874840146.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/us/album/housewife/6822497770?i=6822497774"
+        },
+        {
+          "name": "Been By Now",
+          "artistName": "Morgan Wallen",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9f/8d/52/9f8d52a0-b6d9-d038-327b-4fe58bedce67/26UMGIM94572.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/us/album/been-by-now/6792676858?i=6792676860"
+        },
+        {
+          "name": "All I Want for Christmas Is You",
+          "artistName": "Mariah Carey",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c6/b7/27/c6b727f7-3a32-6b43-cee2-05bb71daf1cf/dj.itfmdeif.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/us/album/all-i-want-for-christmas-is-you/585972750?i=585972803"
+        },
+        {
+          "name": "Last Thing You Need",
+          "artistName": "Morgan Wallen",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/us/album/last-thing-you-need/6812476961?i=6812477290"
+        },
+        {
+          "name": "Janice STFU",
+          "artistName": "Drake",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/35/b9/06/35b90629-a873-14f8-4789-ffc324960038/26UMGIM63614.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/us/album/janice-stfu/6769568449?i=6769568596"
+        },
+        {
+          "name": "Dead Fresh",
+          "artistName": "Lil Baby",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/74/80/37/748037d7-71c1-feff-4d38-3ef0a25578b6/26UMGIM85451.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/us/album/dead-fresh/6790569132?i=6790569133"
+        },
+        {
+          "name": "Solar Eclipse",
+          "artistName": "Drake & Don Toliver",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/bb/45/62/bb4562a3-45a2-539c-b557-a18ea060a476/26UMGIM63616.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/us/album/solar-eclipse/6818209777?i=6818209989"
+        },
+        {
+          "name": "Lies (feat. Lana Del Rey)",
+          "artistName": "Zach Bryan & Lana Del Rey",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ea/98/f2/ea98f2b8-5131-29ae-2064-997234ef13bc/093624812647.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/us/album/lies-feat-lana-del-rey/6822944288?i=6822944296"
+        }
+      ]
+    },
+    "gb": {
+      "code": "gb",
+      "name": "United Kingdom",
+      "tracks": [
+        {
+          "name": "Babydoll",
+          "artistName": "Jamie Miller",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e6/15/d2/e615d28f-70b5-e43a-b3c8-460dca39c9e5/26UMGIM97516.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gb/album/babydoll/6794168372?i=6794168373"
+        },
+        {
+          "name": "Stop The Wedding!",
+          "artistName": "Ashe",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b7/55/7a/b7557aef-bb0a-cc57-25bf-979eee194f16/075679571403.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gb/album/stop-the-wedding/6795697684?i=6795697687"
+        },
+        {
+          "name": "Housewife",
+          "artistName": "Tate McRae",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/69/64/e4/6964e483-c02c-e389-14f4-c426e8c65f2c/196874840146.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gb/album/housewife/6822497770?i=6822497774"
+        },
+        {
+          "name": "Great Expectation",
+          "artistName": "SIENNA SPIRO",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f4/e5/61/f4e561f5-3e73-68c7-7ca4-295ac5a063ed/26UMGIM51351.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gb/album/great-expectation/6769552402?i=6769552411"
+        },
+        {
+          "name": "Movin' To The Sun",
+          "artistName": "HUGEL, Imael Angel & Ultra Naté",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/61/7a/96617ab5-51da-7cfc-97e5-c5a6a893c210/1087654.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gb/album/movin-to-the-sun/6769069923?i=6769070199"
+        },
+        {
+          "name": "Rein Me In",
+          "artistName": "Sam Fender & Olivia Dean",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8f/0f/9f/8f0f9f3d-b26b-779d-d1f1-2db2154a68b7/25UMGIM75096.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gb/album/rein-me-in/1820918466?i=1820918468"
+        },
+        {
+          "name": "Man I Need",
+          "artistName": "Olivia Dean",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/08/e2/21/08e22164-7c0b-1522-818f-e0e74f62dc49/25UMGIM69703.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gb/album/man-i-need/1817609404?i=1817609509"
+        },
+        {
+          "name": "Choosin' Texas",
+          "artistName": "Ella Langley",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e2/91/4d/e2914d0a-7f1d-f04c-fbf4-c50b38548838/196873638690.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gb/album/choosin-texas/1844932149?i=1844932150"
+        },
+        {
+          "name": "Last Christmas (Single Version)",
+          "artistName": "Wham!",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/eb/4a/f9/eb4af984-fc68-56ab-7b89-1d070c04e1dd/5099765318524.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gb/album/last-christmas-single-version/202117886?i=202117984"
+        },
+        {
+          "name": "stupid song",
+          "artistName": "Olivia Rodrigo",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1d/1b/f9/1d1bf9b1-44c6-9a6c-6ffb-c158488c06ce/26UMGIM39303.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gb/album/stupid-song/1889992111?i=1889992115"
+        }
+      ]
+    }
+  },
+  "referenceFailed": [],
+  "countries": {
+    "cl": {
+      "code": "cl",
+      "name": "Chile",
+      "sync": 7,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "Vuelve",
+          "artistName": "Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/43/2c/c3/432cc3a0-debd-4cec-67a1-8b3720402308/885288743814.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cl/album/vuelve/6818353344?i=6818353346",
+          "spotifyUrl": "https://open.spotify.com/track/4rKEWNZrYYo66knSxFxE2J"
+        },
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cl/album/bby-wow/6796864741?i=6796864754",
+          "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "name": "Suzuki",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cl/album/suzuki/6812476961?i=6812477298",
+          "spotifyUrl": "https://open.spotify.com/track/6VDw2mGBIa4csypjOhS6JT"
+        },
+        {
+          "name": "Te Imagino",
+          "artistName": "Myke Towers",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5e/01/e0/5e01e0f6-91a6-d923-2495-855a4610485f/1200220330331.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cl/album/te-imagino/6823686091?i=6823686094",
+          "spotifyUrl": "https://open.spotify.com/track/2zMwhxsn38rjCCnIwpaoh4"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b6/12/da/b612daba-6c68-c2ab-7492-fb2e079074d5/196006829308.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cl/album/yonaguni/1570323047?i=1570323056",
+          "spotifyUrl": "https://open.spotify.com/track/2JPLbjOn0wPCngEot2STUS"
+        },
+        {
+          "name": "LA PLAYA (feat. Flackoloyal)",
+          "artistName": "Benja Valencia, Katteyes, SINAKA & Swift 047",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/31/53/6c/31536c4f-d890-d5a3-162b-1fc4722f3be4/1200220381333.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cl/album/la-playa-feat-flackoloyal/6827313837?i=6827313839",
+          "spotifyUrl": "https://open.spotify.com/track/6OJ83IY4WkIIBx7xd2FRuQ"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cl/album/koko/1877481995?i=1877482633",
+          "spotifyUrl": "https://open.spotify.com/track/1tz7RZirwiuaJw2p0jbdHb"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cl/album/efecto/1622045624?i=1622045954",
+          "spotifyUrl": "https://open.spotify.com/track/5Eax0qFko2dh7Rl2lYs3bx"
+        },
+        {
+          "name": "Luces Tenues",
+          "artistName": "Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/0e/79/0c/0e790cc8-c67d-6e06-cc92-4137c9a8afe4/197190645262.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cl/album/luces-tenues/1720988532?i=1720988719",
+          "spotifyUrl": "https://open.spotify.com/track/15GcuHNJMf7LqwpU3N4Puw"
+        },
+        {
+          "name": "TE MUDASTE",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/70/1c/64701cff-71ed-912f-ce62-71d409f5e6ad/195497640560.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cl/album/te-mudaste/1542102907?i=1542102922",
+          "spotifyUrl": "https://open.spotify.com/track/5RubKOuDoPn5Kj5TLVxSxY"
+        }
+      ]
+    },
+    "br": {
+      "code": "br",
+      "name": "Brazil",
+      "sync": 0,
+      "dissident": true,
+      "tracks": [
+        {
+          "name": "Pós (Ao Vivo)",
+          "artistName": "Felipe e Rodrigo",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/55/ac/80/55ac8010-26ff-2719-6218-e5419e64b127/1200220202775.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/p%C3%B3s-ao-vivo/6815826568?i=6815826572",
+          "spotifyUrl": "https://open.spotify.com/track/1uDn0nbzeGPVw97jp7SvzR"
+        },
+        {
+          "name": "Housewife",
+          "artistName": "Tate McRae",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/69/64/e4/6964e483-c02c-e389-14f4-c426e8c65f2c/196874840146.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/housewife/6822497770?i=6822497774",
+          "spotifyUrl": "https://open.spotify.com/track/2sFepQNyl1WjpROruP8bJ0"
+        },
+        {
+          "name": "Postinho de Gasolina",
+          "artistName": "João Gustavo e Murilo & Grelo",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/da/e5/90dae5bf-d2e5-0d0f-2a66-5007df7d1768/3778128.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/postinho-de-gasolina/6794359613?i=6794359884",
+          "spotifyUrl": "https://open.spotify.com/track/0xXYRMvxCUBKWVptybXSjB"
+        },
+        {
+          "name": "Nicole Kidman",
+          "artistName": "ADÉLA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/77/7b/5d777b87-e796-0b3e-cef6-d37d993dd8fe/26UMGIM82371.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/nicole-kidman/6792883860?i=6792884088",
+          "spotifyUrl": "https://open.spotify.com/track/70cHKK8bHAfJrOGVnfRG9J"
+        },
+        {
+          "name": "Flash (Ao Vivo)",
+          "artistName": "Hugo & Guilherme",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7c/07/13/7c0713a7-9103-831f-d541-f68ec91fa8b3/1200214766542.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/flash-ao-vivo/6797688529?i=6797688530",
+          "spotifyUrl": "https://open.spotify.com/track/3rRihXlOCLUlkQTzglpwCi"
+        },
+        {
+          "name": "Mega Hair (Ao Vivo)",
+          "artistName": "Netto Brito & Luan Pereira",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3a/04/58/3a0458ac-2c12-11dd-06eb-0b1a2255f310/1200220039135.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/mega-hair-ao-vivo/6807174941?i=6807174942",
+          "spotifyUrl": "https://open.spotify.com/track/6lZjGV5YRf4JP82ylbO0yu"
+        },
+        {
+          "name": "Ain't In LA",
+          "artistName": "ADÉLA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/77/7b/5d777b87-e796-0b3e-cef6-d37d993dd8fe/26UMGIM82371.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/aint-in-la/6792883860?i=6792884101",
+          "spotifyUrl": "https://open.spotify.com/track/6U9VpmP3dEinuezxCJ2Zg9"
+        },
+        {
+          "name": "Cadeira Cativa (Ao Vivo)",
+          "artistName": "Zé Neto & Cristiano",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/63/af/a3/63afa3c3-7c7b-bc39-a050-6f66a2dcb53d/196874264478.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/cadeira-cativa-ao-vivo/6774797126?i=6774797127",
+          "spotifyUrl": "https://open.spotify.com/track/27BcWN9G2MxGBXvC0tEKkN"
+        },
+        {
+          "name": "Você Já Sabe",
+          "artistName": "Anitta & Los Brasileros",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3a/bf/6a/3abf6a92-7a22-5cdb-209b-54f2e38cf623/26UMGIM96099.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/voc%C3%AA-j%C3%A1-sabe/6793770395?i=6793770617",
+          "spotifyUrl": "https://open.spotify.com/track/0kcS3YhPRQnpUOUSiHDW1R"
+        },
+        {
+          "name": "Eu Te Seguro (Ao Vivo)",
+          "artistName": "Panda & MJ Records",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/62/ec/58/62ec58ca-872b-d85a-255b-3236eb61d7b6/196873588636.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/eu-te-seguro-ao-vivo/1838576009?i=1838576011",
+          "spotifyUrl": "https://open.spotify.com/track/4V2rUOmaevK0C1bKAkeFf5"
+        }
+      ]
+    },
+    "ar": {
+      "code": "ar",
+      "name": "Argentina",
+      "sync": 4,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "Vuelve",
+          "artistName": "Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/43/2c/c3/432cc3a0-debd-4cec-67a1-8b3720402308/885288743814.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ar/album/vuelve/6818353344?i=6818353346",
+          "spotifyUrl": "https://open.spotify.com/track/4rKEWNZrYYo66knSxFxE2J"
+        },
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ar/album/bby-wow/6796864741?i=6796864754",
+          "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "name": "Las mas bonitas son p#tas",
+          "artistName": "Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/46/f2/82/46f28288-8e3d-d4cb-e73f-00863da4603b/820233902649.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ar/album/las-mas-bonitas-son-p-tas/6784402197?i=6784402416",
+          "spotifyUrl": "https://open.spotify.com/track/4vJaNTSA8fYLLLSauHmkLe"
+        },
+        {
+          "name": "EN ITALIA",
+          "artistName": "BOM, Miranda! & Lali",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a4/0b/ef/a40bef38-87d5-1fa9-4521-1d1a21c0b73b/196874820858.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ar/album/en-italia/6826373481?i=6826373485",
+          "spotifyUrl": "https://open.spotify.com/track/6GLo8QFCRc0cJZdRwYSfrp"
+        },
+        {
+          "name": "MIGAJAS",
+          "artistName": "BOM, Miranda! & Lali",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a4/0b/ef/a40bef38-87d5-1fa9-4521-1d1a21c0b73b/196874820858.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ar/album/migajas/6826373481?i=6826373489",
+          "spotifyUrl": "https://open.spotify.com/track/3chpdbsrGsNug2Kalhj3Fz"
+        },
+        {
+          "name": "SEÑORA",
+          "artistName": "BOM, Miranda! & Lali",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a4/0b/ef/a40bef38-87d5-1fa9-4521-1d1a21c0b73b/196874820858.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ar/album/se%C3%B1ora/6826373481?i=6826373483",
+          "spotifyUrl": "https://open.spotify.com/track/28UHGAvWXgP3aTYM1y37fu"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ar/album/koko/1877481995?i=1877482633",
+          "spotifyUrl": "https://open.spotify.com/track/1tz7RZirwiuaJw2p0jbdHb"
+        },
+        {
+          "name": "Se Preparó",
+          "artistName": "Ozuna",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/df/7c/1b/df7c1b32-0fca-94f0-866b-ba89e420ca04/697691884103.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ar/album/se-prepar%C3%B3/1269285897?i=1269286798",
+          "spotifyUrl": "https://open.spotify.com/track/1m69ELEgE6k5ZWsap40ozt"
+        },
+        {
+          "name": "BODYPAINTING",
+          "artistName": "Emilia",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d3/6a/e7/d36ae784-84be-5811-5cc2-ce4dc9ae7611/196874897980.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ar/album/bodypainting/6827293503?i=6827293505",
+          "spotifyUrl": "https://open.spotify.com/track/5fmF4ElhKPljPIGRY86WSl"
+        },
+        {
+          "name": "Sensualidad (feat. Mambo Kingz & DJ Luian)",
+          "artistName": "Bad Bunny, Prince Royce & J Balvin",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a3/1a/e9/a31ae99b-9378-d004-a613-e8f7397f7a88/191773843489.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ar/album/sensualidad-feat-mambo-kingz-dj-luian/1299972303?i=1299972308",
+          "spotifyUrl": null
+        }
+      ]
+    },
+    "pe": {
+      "code": "pe",
+      "name": "Peru",
+      "sync": 7,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pe/album/bby-wow/6796864741?i=6796864754",
+          "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b6/12/da/b612daba-6c68-c2ab-7492-fb2e079074d5/196006829308.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pe/album/yonaguni/1570323047?i=1570323056",
+          "spotifyUrl": "https://open.spotify.com/track/2JPLbjOn0wPCngEot2STUS"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pe/album/efecto/1622045624?i=1622045954",
+          "spotifyUrl": "https://open.spotify.com/track/5Eax0qFko2dh7Rl2lYs3bx"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pe/album/koko/1877481995?i=1877482633",
+          "spotifyUrl": "https://open.spotify.com/track/1tz7RZirwiuaJw2p0jbdHb"
+        },
+        {
+          "name": "Sonido de Lluvia para Dormir y Relajarse (Pt. 02)",
+          "artistName": "Lluvia para Dormir",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/97/e5/a0/97e5a051-ab09-cabb-31f4-96aee2719b1d/1963621469467_cover.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pe/album/sonido-de-lluvia-para-dormir-y-relajarse-pt-02/1695209090?i=1695209094",
+          "spotifyUrl": "https://open.spotify.com/track/3cnyFwRaXXhY7KC653y5cT"
+        },
+        {
+          "name": "Vete",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/8c/0f/81/8c0f81f2-9f10-5e3d-b9de-5961a73e8e52/195081078724.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pe/album/vete/1500776322?i=1500776923",
+          "spotifyUrl": "https://open.spotify.com/track/2n7ohqg1s68ToAHh4u9mcW"
+        },
+        {
+          "name": "Vuelve",
+          "artistName": "Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/43/2c/c3/432cc3a0-debd-4cec-67a1-8b3720402308/885288743814.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pe/album/vuelve/6818353344?i=6818353346",
+          "spotifyUrl": "https://open.spotify.com/track/4rKEWNZrYYo66knSxFxE2J"
+        },
+        {
+          "name": "Ojitos Lindos",
+          "artistName": "Bad Bunny & Bomba Estéreo",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pe/album/ojitos-lindos/1622045624?i=1622045962",
+          "spotifyUrl": "https://open.spotify.com/track/3k3NWokhRRkEPhCzPmV8TW"
+        },
+        {
+          "name": "Suzuki",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pe/album/suzuki/6812476961?i=6812477298",
+          "spotifyUrl": "https://open.spotify.com/track/6VDw2mGBIa4csypjOhS6JT"
+        },
+        {
+          "name": "Callaíta",
+          "artistName": "Bad Bunny & Tainy",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/a8/5d/7c/a85d7c43-777a-f2b7-5abc-1e4d59d8fe7c/193483903545.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pe/album/calla%C3%ADta/1465503234?i=1465503235",
+          "spotifyUrl": "https://open.spotify.com/track/71wFwRo8xGc4lrcyKwsvba"
+        }
+      ]
+    },
+    "co": {
+      "code": "co",
+      "name": "Colombia",
+      "sync": 3,
+      "dissident": true,
+      "tracks": [
+        {
+          "name": "PARADIXE",
+          "artistName": "Feid, El Americano 4KT & Pirlo",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8f/d6/4c/8fd64cc6-e58c-2edc-1615-238b433a1170/26UM1IM12670.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/paradixe/6812011280?i=6812011443",
+          "spotifyUrl": "https://open.spotify.com/track/1SibbsD9N244CWhIL9FzjN"
+        },
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/bby-wow/6796864741?i=6796864754",
+          "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "name": "PERRO NEGRO",
+          "artistName": "Bad Bunny & Feid",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/00/e0/31/00e0311e-9dab-fd0c-fc37-ee3d36aafbf3/197190137897.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/perro-negro/1710982865?i=1710983279",
+          "spotifyUrl": "https://open.spotify.com/track/7iQXYTyuG13aoeHxGG28Nh"
+        },
+        {
+          "name": "CAPCANA COCOA",
+          "artistName": "Blessd & Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/45/ff/de/45ffde34-6e7e-90e4-eaa7-4d4f72599051/1200220051427.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/capcana-cocoa/6808005047?i=6808005059",
+          "spotifyUrl": "https://open.spotify.com/track/5Otq7hczby9xJIplVweLBI"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b6/12/da/b612daba-6c68-c2ab-7492-fb2e079074d5/196006829308.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/yonaguni/1570323047?i=1570323056",
+          "spotifyUrl": "https://open.spotify.com/track/2JPLbjOn0wPCngEot2STUS"
+        },
+        {
+          "name": "Happy Monday (W Sound 10)",
+          "artistName": "W Sound, Hades66 & Ovy On the Drums",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ab/81/e8/ab81e88c-c8e0-2624-25f0-6bf18a20b6a4/1200220345397.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/happy-monday-w-sound-10/6824664210?i=6824664211",
+          "spotifyUrl": "https://open.spotify.com/track/3IOUSbYmye1CFqdUjXYLFF"
+        },
+        {
+          "name": "Peli De Terror",
+          "artistName": "Køddy G, THE FAVORITES & Fharid On The Beat",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b7/31/de/b731deb0-6f32-a9a4-0f3d-df33f9f8ac34/5378.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/peli-de-terror/6817112748?i=6817112749",
+          "spotifyUrl": "https://open.spotify.com/track/23XDZWXMOiRrm0qoKXCPbf"
+        },
+        {
+          "name": "Te Imagino",
+          "artistName": "Myke Towers",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5e/01/e0/5e01e0f6-91a6-d923-2495-855a4610485f/1200220330331.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/te-imagino/6823686091?i=6823686094",
+          "spotifyUrl": "https://open.spotify.com/track/2zMwhxsn38rjCCnIwpaoh4"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/efecto/1622045624?i=1622045954",
+          "spotifyUrl": "https://open.spotify.com/track/5Eax0qFko2dh7Rl2lYs3bx"
+        },
+        {
+          "name": "Ojalá",
+          "artistName": "Ryan Castro",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8b/bb/06/8bbb0602-9d85-c28b-6de1-558f89f38bfa/196873157443.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/ojal%C3%A1/1814163356?i=1814164314",
+          "spotifyUrl": "https://open.spotify.com/track/3YSkiK0JAaWvZVh0rFa3ja"
+        }
+      ]
+    },
+    "mx": {
+      "code": "mx",
+      "name": "Mexico",
+      "sync": 2,
+      "dissident": true,
+      "tracks": [
+        {
+          "name": "Suzuki",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/suzuki/6812476961?i=6812477298",
+          "spotifyUrl": "https://open.spotify.com/track/6VDw2mGBIa4csypjOhS6JT"
+        },
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/bby-wow/6796864741?i=6796864754",
+          "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "name": "Olimpo",
+          "artistName": "Neton Vega & Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/91/0e/fa910ef9-5a70-973e-1b2c-27f34dd4e536/1963625111737_cover.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/olimpo/6825004152?i=6825004153",
+          "spotifyUrl": "https://open.spotify.com/track/0vGKL7wzfkhzGEJScbYt7N"
+        },
+        {
+          "name": "OLIVIA LA FLAKA",
+          "artistName": "Natanael Cano, Tito Double P, Victor Mendivil & Ovi",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/70/b4/32/70b4321e-d887-b60c-c413-50513d7a5585/196874816158.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/olivia-la-flaka/6814967310?i=6814967656",
+          "spotifyUrl": "https://open.spotify.com/track/6756nr1dYiw5aNLSgIHNOI"
+        },
+        {
+          "name": "TU SANCHO",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/51/0a/a3/510aa39f-7a41-b53c-70a0-6a0df60645bb/196872995978.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/tu-sancho/1804142476?i=1804142885",
+          "spotifyUrl": "https://open.spotify.com/track/6eLQXa6uk2EW8drsiKbABZ"
+        },
+        {
+          "name": "King of Watches",
+          "artistName": "Omar Camacho",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/03/1f/80031f12-fb82-924b-48c1-2c34dda8b95e/1200214033859.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/king-of-watches/6770709820?i=6770710132",
+          "spotifyUrl": "https://open.spotify.com/track/47ovAtI7DPTKTPbyRsqHmc"
+        },
+        {
+          "name": "EXCESOS",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/21/e3/b7/21e3b74f-571b-07ce-567b-a2aa8274c7b2/196871548922.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/excesos/1712362875?i=1712363845",
+          "spotifyUrl": "https://open.spotify.com/track/6UtWwuheJr5LLDeVypPNx7"
+        },
+        {
+          "name": "Marlboro Rojo",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/51/0a/a3/510aa39f-7a41-b53c-70a0-6a0df60645bb/196872995978.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/marlboro-rojo/1804142476?i=1804142886",
+          "spotifyUrl": "https://open.spotify.com/track/3hpm0fTeSqlhJbnqAgaLZs"
+        },
+        {
+          "name": "FES",
+          "artistName": "Victor Mendivil & Omar Camacho",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a6/d8/31/a6d831af-322c-57e3-a470-5acc23dd84c1/1963625067621_cover.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/fes/6818554554?i=6818554565",
+          "spotifyUrl": "https://open.spotify.com/track/6mj3eOn5r61kiRRdu4atAO"
+        },
+        {
+          "name": "gervonta",
+          "artistName": "Peso Pluma",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/39/ed/a6/39eda6fa-33fc-76da-238e-454c5ad8b73c/199066114025.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/gervonta/1783250949?i=1783250950",
+          "spotifyUrl": "https://open.spotify.com/track/0hfXHqWhOpbR9YQmQojDMN"
+        }
+      ]
+    },
+    "uy": {
+      "code": "uy",
+      "name": "Uruguay",
+      "sync": 4,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "Sonido de Lluvia para Dormir y Relajarse (Pt. 02)",
+          "artistName": "Lluvia para Dormir",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/97/e5/a0/97e5a051-ab09-cabb-31f4-96aee2719b1d/1963621469467_cover.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/uy/album/sonido-de-lluvia-para-dormir-y-relajarse-pt-02/1695209090?i=1695209094",
+          "spotifyUrl": "https://open.spotify.com/track/3cnyFwRaXXhY7KC653y5cT"
+        },
+        {
+          "name": "Vuelve",
+          "artistName": "Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/43/2c/c3/432cc3a0-debd-4cec-67a1-8b3720402308/885288743814.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/uy/album/vuelve/6818353344?i=6818353346",
+          "spotifyUrl": "https://open.spotify.com/track/4rKEWNZrYYo66knSxFxE2J"
+        },
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/uy/album/bby-wow/6796864741?i=6796864754",
+          "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "name": "BODYPAINTING",
+          "artistName": "Emilia",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d3/6a/e7/d36ae784-84be-5811-5cc2-ce4dc9ae7611/196874897980.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/uy/album/bodypainting/6827293503?i=6827293505",
+          "spotifyUrl": "https://open.spotify.com/track/5fmF4ElhKPljPIGRY86WSl"
+        },
+        {
+          "name": "MIGAJAS",
+          "artistName": "BOM, Miranda! & Lali",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a4/0b/ef/a40bef38-87d5-1fa9-4521-1d1a21c0b73b/196874820858.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/uy/album/migajas/6826373481?i=6826373489",
+          "spotifyUrl": "https://open.spotify.com/track/3chpdbsrGsNug2Kalhj3Fz"
+        },
+        {
+          "name": "Las mas bonitas son p#tas",
+          "artistName": "Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/46/f2/82/46f28288-8e3d-d4cb-e73f-00863da4603b/820233902649.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/uy/album/las-mas-bonitas-son-p-tas/6784402197?i=6784402416",
+          "spotifyUrl": "https://open.spotify.com/track/4vJaNTSA8fYLLLSauHmkLe"
+        },
+        {
+          "name": "VAMO A VEL",
+          "artistName": "ROA & Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/50/66/11/50661123-1d80-1054-62f2-2e786fa631c3/26UM1IM14326.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/uy/album/vamo-a-vel/6808400636?i=6808400640",
+          "spotifyUrl": "https://open.spotify.com/track/10NP7LyY0Hs7p6xqAckosJ"
+        },
+        {
+          "name": "EN ITALIA",
+          "artistName": "BOM, Miranda! & Lali",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a4/0b/ef/a40bef38-87d5-1fa9-4521-1d1a21c0b73b/196874820858.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/uy/album/en-italia/6826373481?i=6826373485",
+          "spotifyUrl": "https://open.spotify.com/track/6GLo8QFCRc0cJZdRwYSfrp"
+        },
+        {
+          "name": "Dime Tú",
+          "artistName": "La Penúltima",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4f/ba/2d/4fba2da1-d2c7-52df-1d7d-6fd4d3fe6eb0/1200214597825.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/uy/album/dime-t%C3%BA/6790888573?i=6790888578",
+          "spotifyUrl": "https://open.spotify.com/track/2tE00CWlJrVIRQKJLpFZGf"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/uy/album/koko/1877481995?i=1877482633",
+          "spotifyUrl": "https://open.spotify.com/track/1tz7RZirwiuaJw2p0jbdHb"
+        }
+      ]
+    },
+    "py": {
+      "code": "py",
+      "name": "Paraguay",
+      "sync": 8,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/py/album/bby-wow/6796864741?i=6796864754",
+          "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "name": "VeLDÁ",
+          "artistName": "Bad Bunny, Omar Courtz & Dei V",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/5e/7e/905e7ed5-a8fa-a8f3-cd06-0028fdf3afaa/199066342442.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/py/album/veld%C3%A1/1787022393?i=1787022999",
+          "spotifyUrl": "https://open.spotify.com/track/7d6yK8v8J484SWH5prIQiE"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b6/12/da/b612daba-6c68-c2ab-7492-fb2e079074d5/196006829308.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/py/album/yonaguni/1570323047?i=1570323056",
+          "spotifyUrl": "https://open.spotify.com/track/2JPLbjOn0wPCngEot2STUS"
+        },
+        {
+          "name": "Vuelve",
+          "artistName": "Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/43/2c/c3/432cc3a0-debd-4cec-67a1-8b3720402308/885288743814.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/py/album/vuelve/6818353344?i=6818353346",
+          "spotifyUrl": "https://open.spotify.com/track/4rKEWNZrYYo66knSxFxE2J"
+        },
+        {
+          "name": "Pós (Ao Vivo)",
+          "artistName": "Felipe e Rodrigo",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/55/ac/80/55ac8010-26ff-2719-6218-e5419e64b127/1200220202775.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/py/album/p%C3%B3s-ao-vivo/6815826568?i=6815826572",
+          "spotifyUrl": "https://open.spotify.com/track/1uDn0nbzeGPVw97jp7SvzR"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/py/album/koko/1877481995?i=1877482633",
+          "spotifyUrl": "https://open.spotify.com/track/1tz7RZirwiuaJw2p0jbdHb"
+        },
+        {
+          "name": "Las mas bonitas son p#tas",
+          "artistName": "Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/46/f2/82/46f28288-8e3d-d4cb-e73f-00863da4603b/820233902649.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/py/album/las-mas-bonitas-son-p-tas/6784402197?i=6784402416",
+          "spotifyUrl": "https://open.spotify.com/track/4vJaNTSA8fYLLLSauHmkLe"
+        },
+        {
+          "name": "TE MUDASTE",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/70/1c/64701cff-71ed-912f-ce62-71d409f5e6ad/195497640560.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/py/album/te-mudaste/1542102907?i=1542102922",
+          "spotifyUrl": "https://open.spotify.com/track/5RubKOuDoPn5Kj5TLVxSxY"
+        },
+        {
+          "name": "Ojitos Lindos",
+          "artistName": "Bad Bunny & Bomba Estéreo",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/py/album/ojitos-lindos/1622045624?i=1622045962",
+          "spotifyUrl": "https://open.spotify.com/track/3k3NWokhRRkEPhCzPmV8TW"
+        },
+        {
+          "name": "Hasta Que Dios Diga",
+          "artistName": "Anuel AA & Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/50/95/c7/5095c702-2159-c3ac-be67-9a1c16cc0ed9/195081694399.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/py/album/hasta-que-dios-diga/1515738865?i=1515739167",
+          "spotifyUrl": "https://open.spotify.com/track/06s3QtMJVXw1AJX3UfvZG1"
+        }
+      ]
+    },
+    "ve": {
+      "code": "ve",
+      "name": "Venezuela",
+      "sync": 3,
+      "dissident": true,
+      "tracks": [
+        {
+          "name": "KLOuFRENS",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/5e/7e/905e7ed5-a8fa-a8f3-cd06-0028fdf3afaa/199066342442.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/kloufrens/1787022393?i=1787023297",
+          "spotifyUrl": "https://open.spotify.com/track/4MUrUT38U98olfnyzMBCzm"
+        },
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/bby-wow/6796864741?i=6796864754",
+          "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "name": "Te Imagino",
+          "artistName": "Myke Towers",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5e/01/e0/5e01e0f6-91a6-d923-2495-855a4610485f/1200220330331.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/te-imagino/6823686091?i=6823686094",
+          "spotifyUrl": "https://open.spotify.com/track/2zMwhxsn38rjCCnIwpaoh4"
+        },
+        {
+          "name": "SWIM",
+          "artistName": "BTS",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/cb/bc/83cbbc49-cfad-aeaf-3292-0dd428290d81/198704942365_Cover.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/swim/1868862375?i=1868862384",
+          "spotifyUrl": "https://open.spotify.com/track/68lbSrXDORS51pmyjZv712"
+        },
+        {
+          "name": "RIGHT NOW",
+          "artistName": "Lucho RK",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1b/ca/0d/1bca0dcb-fa2d-df63-46c5-5accb98d45b3/1200220209156.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/right-now/6817338538?i=6817338657",
+          "spotifyUrl": "https://open.spotify.com/track/5DQlWplGHmjCRPZtZyet4i"
+        },
+        {
+          "name": "carita linda ;)",
+          "artistName": "Alleh",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e1/cf/06/e1cf0624-83c7-e68a-c529-b0e5a11f8732/196874962398.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/carita-linda/6830289713?i=6830289782",
+          "spotifyUrl": "https://open.spotify.com/track/64N5BvavEYBpPoUXglzTQL"
+        },
+        {
+          "name": "PERRO NEGRO",
+          "artistName": "Bad Bunny & Feid",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/00/e0/31/00e0311e-9dab-fd0c-fc37-ee3d36aafbf3/197190137897.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/perro-negro/1710982865?i=1710983279",
+          "spotifyUrl": "https://open.spotify.com/track/7iQXYTyuG13aoeHxGG28Nh"
+        },
+        {
+          "name": "WHERE SHE GOES",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ad/b7/0e/adb70ef8-c456-3b31-136c-450d196d7cda/197188909819.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/where-she-goes/1687809993?i=1687809996",
+          "spotifyUrl": "https://open.spotify.com/track/7ro0hRteUMfnOioTFI5TG1"
+        },
+        {
+          "name": "Suzuki",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/suzuki/6812476961?i=6812477298",
+          "spotifyUrl": "https://open.spotify.com/track/6VDw2mGBIa4csypjOhS6JT"
+        },
+        {
+          "name": "VeLDÁ",
+          "artistName": "Bad Bunny, Omar Courtz & Dei V",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/5e/7e/905e7ed5-a8fa-a8f3-cd06-0028fdf3afaa/199066342442.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/veld%C3%A1/1787022393?i=1787022999",
+          "spotifyUrl": "https://open.spotify.com/track/7d6yK8v8J484SWH5prIQiE"
+        }
+      ]
+    },
+    "cr": {
+      "code": "cr",
+      "name": "Costa Rica",
+      "sync": 7,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cr/album/bby-wow/6796864741?i=6796864754",
+          "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "name": "Happy Monday (W Sound 10)",
+          "artistName": "W Sound, Hades66 & Ovy On the Drums",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ab/81/e8/ab81e88c-c8e0-2624-25f0-6bf18a20b6a4/1200220345397.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cr/album/happy-monday-w-sound-10/6824664210?i=6824664211",
+          "spotifyUrl": "https://open.spotify.com/track/3IOUSbYmye1CFqdUjXYLFF"
+        },
+        {
+          "name": "VeLDÁ",
+          "artistName": "Bad Bunny, Omar Courtz & Dei V",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/5e/7e/905e7ed5-a8fa-a8f3-cd06-0028fdf3afaa/199066342442.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cr/album/veld%C3%A1/1787022393?i=1787022999",
+          "spotifyUrl": "https://open.spotify.com/track/7d6yK8v8J484SWH5prIQiE"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cr/album/koko/1877481995?i=1877482633",
+          "spotifyUrl": "https://open.spotify.com/track/1tz7RZirwiuaJw2p0jbdHb"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b6/12/da/b612daba-6c68-c2ab-7492-fb2e079074d5/196006829308.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cr/album/yonaguni/1570323047?i=1570323056",
+          "spotifyUrl": "https://open.spotify.com/track/2JPLbjOn0wPCngEot2STUS"
+        },
+        {
+          "name": "Vuelve",
+          "artistName": "Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/43/2c/c3/432cc3a0-debd-4cec-67a1-8b3720402308/885288743814.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cr/album/vuelve/6818353344?i=6818353346",
+          "spotifyUrl": "https://open.spotify.com/track/4rKEWNZrYYo66knSxFxE2J"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cr/album/efecto/1622045624?i=1622045954",
+          "spotifyUrl": "https://open.spotify.com/track/5Eax0qFko2dh7Rl2lYs3bx"
+        },
+        {
+          "name": "Peli De Terror",
+          "artistName": "Køddy G, THE FAVORITES & Fharid On The Beat",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b7/31/de/b731deb0-6f32-a9a4-0f3d-df33f9f8ac34/5378.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cr/album/peli-de-terror/6817112748?i=6817112749",
+          "spotifyUrl": "https://open.spotify.com/track/23XDZWXMOiRrm0qoKXCPbf"
+        },
+        {
+          "name": "CAPCANA COCOA",
+          "artistName": "Blessd & Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/45/ff/de/45ffde34-6e7e-90e4-eaa7-4d4f72599051/1200220051427.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cr/album/capcana-cocoa/6808005047?i=6808005059",
+          "spotifyUrl": "https://open.spotify.com/track/5Otq7hczby9xJIplVweLBI"
+        },
+        {
+          "name": "Las mas bonitas son p#tas",
+          "artistName": "Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/46/f2/82/46f28288-8e3d-d4cb-e73f-00863da4603b/820233902649.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/cr/album/las-mas-bonitas-son-p-tas/6784402197?i=6784402416",
+          "spotifyUrl": "https://open.spotify.com/track/4vJaNTSA8fYLLLSauHmkLe"
+        }
+      ]
+    },
+    "ec": {
+      "code": "ec",
+      "name": "Ecuador",
+      "sync": 6,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ec/album/bby-wow/6796864741?i=6796864754",
+          "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "name": "Suzuki",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ec/album/suzuki/6812476961?i=6812477298",
+          "spotifyUrl": "https://open.spotify.com/track/6VDw2mGBIa4csypjOhS6JT"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b6/12/da/b612daba-6c68-c2ab-7492-fb2e079074d5/196006829308.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ec/album/yonaguni/1570323047?i=1570323056",
+          "spotifyUrl": "https://open.spotify.com/track/2JPLbjOn0wPCngEot2STUS"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ec/album/efecto/1622045624?i=1622045954",
+          "spotifyUrl": "https://open.spotify.com/track/5Eax0qFko2dh7Rl2lYs3bx"
+        },
+        {
+          "name": "Vete",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/8c/0f/81/8c0f81f2-9f10-5e3d-b9de-5961a73e8e52/195081078724.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ec/album/vete/1500776322?i=1500776923",
+          "spotifyUrl": "https://open.spotify.com/track/2n7ohqg1s68ToAHh4u9mcW"
+        },
+        {
+          "name": "Ojitos Lindos",
+          "artistName": "Bad Bunny & Bomba Estéreo",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ec/album/ojitos-lindos/1622045624?i=1622045962",
+          "spotifyUrl": "https://open.spotify.com/track/3k3NWokhRRkEPhCzPmV8TW"
+        },
+        {
+          "name": "Peli De Terror",
+          "artistName": "Køddy G, THE FAVORITES & Fharid On The Beat",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b7/31/de/b731deb0-6f32-a9a4-0f3d-df33f9f8ac34/5378.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ec/album/peli-de-terror/6817112748?i=6817112749",
+          "spotifyUrl": "https://open.spotify.com/track/23XDZWXMOiRrm0qoKXCPbf"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ec/album/koko/1877481995?i=1877482633",
+          "spotifyUrl": "https://open.spotify.com/track/1tz7RZirwiuaJw2p0jbdHb"
+        },
+        {
+          "name": "Me Porto Bonito",
+          "artistName": "Bad Bunny & Chencho Corleone",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ec/album/me-porto-bonito/1622045624?i=1622045634",
+          "spotifyUrl": "https://open.spotify.com/track/6Sq7ltF9Qa7SNFBsV5Cogx"
+        },
+        {
+          "name": "DÁKITI",
+          "artistName": "Bad Bunny & JHAYCO",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/70/1c/64701cff-71ed-912f-ce62-71d409f5e6ad/195497640560.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ec/album/d%C3%A1kiti/1542102907?i=1542103620",
+          "spotifyUrl": "https://open.spotify.com/track/4MzXwWMhyBbmu6hOcLVD49"
+        }
+      ]
+    },
+    "bo": {
+      "code": "bo",
+      "name": "Bolivia",
+      "sync": 7,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "Casi",
+          "artistName": "Jota Narbaja & Dat Polo",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5c/b5/b7/5cb5b71b-4673-7e3c-f7b4-a93df6c75522/8447803043421_cover.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/bo/album/casi/6824960755?i=6824960763",
+          "spotifyUrl": "https://open.spotify.com/track/6IrIOO2DRZ5edKJdHoUvux"
+        },
+        {
+          "name": "Suzuki",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/bo/album/suzuki/6812476961?i=6812477298",
+          "spotifyUrl": "https://open.spotify.com/track/6VDw2mGBIa4csypjOhS6JT"
+        },
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/bo/album/bby-wow/6796864741?i=6796864754",
+          "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b6/12/da/b612daba-6c68-c2ab-7492-fb2e079074d5/196006829308.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/bo/album/yonaguni/1570323047?i=1570323056",
+          "spotifyUrl": "https://open.spotify.com/track/2JPLbjOn0wPCngEot2STUS"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/bo/album/koko/1877481995?i=1877482633",
+          "spotifyUrl": "https://open.spotify.com/track/1tz7RZirwiuaJw2p0jbdHb"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/bo/album/efecto/1622045624?i=1622045954",
+          "spotifyUrl": "https://open.spotify.com/track/5Eax0qFko2dh7Rl2lYs3bx"
+        },
+        {
+          "name": "Te Estoy Correteando",
+          "artistName": "LATIN MAFIA & Fred again..",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/90/52/6e/90526e94-89c7-8387-458f-1972f7995d48/1200214495824.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/bo/album/te-estoy-correteando/6796842304?i=6796842545",
+          "spotifyUrl": "https://open.spotify.com/track/5B579RUazOpBcuxjTZWnMs"
+        },
+        {
+          "name": "TE MUDASTE",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/70/1c/64701cff-71ed-912f-ce62-71d409f5e6ad/195497640560.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/bo/album/te-mudaste/1542102907?i=1542102922",
+          "spotifyUrl": "https://open.spotify.com/track/5RubKOuDoPn5Kj5TLVxSxY"
+        },
+        {
+          "name": "Ojitos Lindos",
+          "artistName": "Bad Bunny & Bomba Estéreo",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/bo/album/ojitos-lindos/1622045624?i=1622045962",
+          "spotifyUrl": "https://open.spotify.com/track/3k3NWokhRRkEPhCzPmV8TW"
+        },
+        {
+          "name": "mi almohada",
+          "artistName": "Mika Malky & Fran Aliss",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a0/39/0b/a0390b34-a61a-b24e-226c-f7acd68743da/885288824056.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/bo/album/mi-almohada/6819670603?i=6819670619",
+          "spotifyUrl": "https://open.spotify.com/track/23hPqPySIRgWbtTO59gaRy"
+        }
+      ]
+    },
+    "pa": {
+      "code": "pa",
+      "name": "Panama",
+      "sync": 7,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "Te Imagino",
+          "artistName": "Myke Towers",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5e/01/e0/5e01e0f6-91a6-d923-2495-855a4610485f/1200220330331.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pa/album/te-imagino/6823686091?i=6823686094",
+          "spotifyUrl": "https://open.spotify.com/track/2zMwhxsn38rjCCnIwpaoh4"
+        },
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pa/album/bby-wow/6796864741?i=6796864754",
+          "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "name": "Vuelve",
+          "artistName": "Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/43/2c/c3/432cc3a0-debd-4cec-67a1-8b3720402308/885288743814.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pa/album/vuelve/6818353344?i=6818353346",
+          "spotifyUrl": "https://open.spotify.com/track/4rKEWNZrYYo66knSxFxE2J"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pa/album/koko/1877481995?i=1877482633",
+          "spotifyUrl": "https://open.spotify.com/track/1tz7RZirwiuaJw2p0jbdHb"
+        },
+        {
+          "name": "VeLDÁ",
+          "artistName": "Bad Bunny, Omar Courtz & Dei V",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/5e/7e/905e7ed5-a8fa-a8f3-cd06-0028fdf3afaa/199066342442.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pa/album/veld%C3%A1/1787022393?i=1787022999",
+          "spotifyUrl": "https://open.spotify.com/track/7d6yK8v8J484SWH5prIQiE"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b6/12/da/b612daba-6c68-c2ab-7492-fb2e079074d5/196006829308.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pa/album/yonaguni/1570323047?i=1570323056",
+          "spotifyUrl": "https://open.spotify.com/track/2JPLbjOn0wPCngEot2STUS"
+        },
+        {
+          "name": "Happy Monday (W Sound 10)",
+          "artistName": "W Sound, Hades66 & Ovy On the Drums",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ab/81/e8/ab81e88c-c8e0-2624-25f0-6bf18a20b6a4/1200220345397.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pa/album/happy-monday-w-sound-10/6824664210?i=6824664211",
+          "spotifyUrl": "https://open.spotify.com/track/3IOUSbYmye1CFqdUjXYLFF"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pa/album/efecto/1622045624?i=1622045954",
+          "spotifyUrl": "https://open.spotify.com/track/5Eax0qFko2dh7Rl2lYs3bx"
+        },
+        {
+          "name": "TE MUDASTE",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/70/1c/64701cff-71ed-912f-ce62-71d409f5e6ad/195497640560.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pa/album/te-mudaste/1542102907?i=1542102922",
+          "spotifyUrl": "https://open.spotify.com/track/5RubKOuDoPn5Kj5TLVxSxY"
+        },
+        {
+          "name": "CAPCANA COCOA",
+          "artistName": "Blessd & Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/45/ff/de/45ffde34-6e7e-90e4-eaa7-4d4f72599051/1200220051427.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/pa/album/capcana-cocoa/6808005047?i=6808005059",
+          "spotifyUrl": "https://open.spotify.com/track/5Otq7hczby9xJIplVweLBI"
+        }
+      ]
+    },
+    "gt": {
+      "code": "gt",
+      "name": "Guatemala",
+      "sync": 7,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "Sonido de Lluvia para Dormir y Relajarse (Pt. 02)",
+          "artistName": "Lluvia para Dormir",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/97/e5/a0/97e5a051-ab09-cabb-31f4-96aee2719b1d/1963621469467_cover.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gt/album/sonido-de-lluvia-para-dormir-y-relajarse-pt-02/1695209090?i=1695209094",
+          "spotifyUrl": "https://open.spotify.com/track/3cnyFwRaXXhY7KC653y5cT"
+        },
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gt/album/bby-wow/6796864741?i=6796864754",
+          "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "name": "Suzuki",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gt/album/suzuki/6812476961?i=6812477298",
+          "spotifyUrl": "https://open.spotify.com/track/6VDw2mGBIa4csypjOhS6JT"
+        },
+        {
+          "name": "Olimpo",
+          "artistName": "Neton Vega & Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/91/0e/fa910ef9-5a70-973e-1b2c-27f34dd4e536/1963625111737_cover.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gt/album/olimpo/6825004152?i=6825004153",
+          "spotifyUrl": "https://open.spotify.com/track/0vGKL7wzfkhzGEJScbYt7N"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b6/12/da/b612daba-6c68-c2ab-7492-fb2e079074d5/196006829308.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gt/album/yonaguni/1570323047?i=1570323056",
+          "spotifyUrl": "https://open.spotify.com/track/2JPLbjOn0wPCngEot2STUS"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gt/album/efecto/1622045624?i=1622045954",
+          "spotifyUrl": "https://open.spotify.com/track/5Eax0qFko2dh7Rl2lYs3bx"
+        },
+        {
+          "name": "TE MUDASTE",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/70/1c/64701cff-71ed-912f-ce62-71d409f5e6ad/195497640560.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gt/album/te-mudaste/1542102907?i=1542102922",
+          "spotifyUrl": "https://open.spotify.com/track/5RubKOuDoPn5Kj5TLVxSxY"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gt/album/koko/1877481995?i=1877482633",
+          "spotifyUrl": "https://open.spotify.com/track/1tz7RZirwiuaJw2p0jbdHb"
+        },
+        {
+          "name": "EXCESOS",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/21/e3/b7/21e3b74f-571b-07ce-567b-a2aa8274c7b2/196871548922.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gt/album/excesos/1712362875?i=1712363845",
+          "spotifyUrl": "https://open.spotify.com/track/6UtWwuheJr5LLDeVypPNx7"
+        },
+        {
+          "name": "Ojitos Lindos",
+          "artistName": "Bad Bunny & Bomba Estéreo",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/gt/album/ojitos-lindos/1622045624?i=1622045962",
+          "spotifyUrl": "https://open.spotify.com/track/3k3NWokhRRkEPhCzPmV8TW"
+        }
+      ]
+    },
+    "sv": {
+      "code": "sv",
+      "name": "El Salvador",
+      "sync": 7,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/sv/album/koko/1877481995?i=1877482633",
+          "spotifyUrl": "https://open.spotify.com/track/1tz7RZirwiuaJw2p0jbdHb"
+        },
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/sv/album/bby-wow/6796864741?i=6796864754",
+          "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "name": "Suzuki",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/sv/album/suzuki/6812476961?i=6812477298",
+          "spotifyUrl": "https://open.spotify.com/track/6VDw2mGBIa4csypjOhS6JT"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b6/12/da/b612daba-6c68-c2ab-7492-fb2e079074d5/196006829308.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/sv/album/yonaguni/1570323047?i=1570323056",
+          "spotifyUrl": "https://open.spotify.com/track/2JPLbjOn0wPCngEot2STUS"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/sv/album/efecto/1622045624?i=1622045954",
+          "spotifyUrl": "https://open.spotify.com/track/5Eax0qFko2dh7Rl2lYs3bx"
+        },
+        {
+          "name": "L a k e n o s h i",
+          "artistName": "Omar Courtz",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/sv/album/l-a-k-e-n-o-s-h-i/1877481995?i=1877482430",
+          "spotifyUrl": "https://open.spotify.com/track/6OoYmAP9oZtBiSomWpDTWP"
+        },
+        {
+          "name": "POR SI MAÑANA NO ESTOY",
+          "artistName": "Omar Courtz",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/sv/album/por-si-ma%C3%B1ana-no-estoy/1877481995?i=1877482849",
+          "spotifyUrl": "https://open.spotify.com/track/595wwjQiad6e6lSTScmXvz"
+        },
+        {
+          "name": "TE MUDASTE",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/70/1c/64701cff-71ed-912f-ce62-71d409f5e6ad/195497640560.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/sv/album/te-mudaste/1542102907?i=1542102922",
+          "spotifyUrl": "https://open.spotify.com/track/5RubKOuDoPn5Kj5TLVxSxY"
+        },
+        {
+          "name": "Q U E V A S H A C E R H O Y ?",
+          "artistName": "Omar Courtz & De La Rose",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/30/0f/48/300f48fd-f560-8aaf-17c1-00a4531ad61a/198588847695.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/sv/album/q-u-e-v-a-s-h-a-c-e-r-h-o-y/1760193416?i=1760194559",
+          "spotifyUrl": "https://open.spotify.com/track/0Sr7ssScx54yxdM2ols7nW"
+        },
+        {
+          "name": "VeLDÁ",
+          "artistName": "Bad Bunny, Omar Courtz & Dei V",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/5e/7e/905e7ed5-a8fa-a8f3-cd06-0028fdf3afaa/199066342442.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/sv/album/veld%C3%A1/1787022393?i=1787022999",
+          "spotifyUrl": "https://open.spotify.com/track/7d6yK8v8J484SWH5prIQiE"
+        }
+      ]
+    },
+    "ni": {
+      "code": "ni",
+      "name": "Nicaragua",
+      "sync": 7,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "Suzuki",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ni/album/suzuki/6812476961?i=6812477298",
+          "spotifyUrl": "https://open.spotify.com/track/6VDw2mGBIa4csypjOhS6JT"
+        },
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ni/album/bby-wow/6796864741?i=6796864754",
+          "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b6/12/da/b612daba-6c68-c2ab-7492-fb2e079074d5/196006829308.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ni/album/yonaguni/1570323047?i=1570323056",
+          "spotifyUrl": "https://open.spotify.com/track/2JPLbjOn0wPCngEot2STUS"
+        },
+        {
+          "name": "Happy Monday (W Sound 10)",
+          "artistName": "W Sound, Hades66 & Ovy On the Drums",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ab/81/e8/ab81e88c-c8e0-2624-25f0-6bf18a20b6a4/1200220345397.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ni/album/happy-monday-w-sound-10/6824664210?i=6824664211",
+          "spotifyUrl": "https://open.spotify.com/track/3IOUSbYmye1CFqdUjXYLFF"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ni/album/koko/1877481995?i=1877482633",
+          "spotifyUrl": "https://open.spotify.com/track/1tz7RZirwiuaJw2p0jbdHb"
+        },
+        {
+          "name": "MIA (feat. Drake)",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5b/7a/e0/5b7ae0d7-9d4c-99cf-90ef-ca8ea086eb11/54391947369.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ni/album/mia-feat-drake/6814090666?i=6814090680",
+          "spotifyUrl": "https://open.spotify.com/track/3Ueq2zboxwAbsvHrOjdEqz"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ni/album/efecto/1622045624?i=1622045954",
+          "spotifyUrl": "https://open.spotify.com/track/5Eax0qFko2dh7Rl2lYs3bx"
+        },
+        {
+          "name": "Olimpo",
+          "artistName": "Neton Vega & Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/91/0e/fa910ef9-5a70-973e-1b2c-27f34dd4e536/1963625111737_cover.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ni/album/olimpo/6825004152?i=6825004153",
+          "spotifyUrl": "https://open.spotify.com/track/0vGKL7wzfkhzGEJScbYt7N"
+        },
+        {
+          "name": "Vuelve",
+          "artistName": "Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/43/2c/c3/432cc3a0-debd-4cec-67a1-8b3720402308/885288743814.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ni/album/vuelve/6818353344?i=6818353346",
+          "spotifyUrl": "https://open.spotify.com/track/4rKEWNZrYYo66knSxFxE2J"
+        },
+        {
+          "name": "Las mas bonitas son p#tas",
+          "artistName": "Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/46/f2/82/46f28288-8e3d-d4cb-e73f-00863da4603b/820233902649.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ni/album/las-mas-bonitas-son-p-tas/6784402197?i=6784402416",
+          "spotifyUrl": "https://open.spotify.com/track/4vJaNTSA8fYLLLSauHmkLe"
+        }
+      ]
+    },
+    "do": {
+      "code": "do",
+      "name": "Dominican Republic",
+      "sync": 4,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "Te Imagino",
+          "artistName": "Myke Towers",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5e/01/e0/5e01e0f6-91a6-d923-2495-855a4610485f/1200220330331.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/do/album/te-imagino/6823686091?i=6823686094",
+          "spotifyUrl": "https://open.spotify.com/track/2zMwhxsn38rjCCnIwpaoh4"
+        },
+        {
+          "name": "De Amanecía",
+          "artistName": "Yoan Retro, Kreizy K & Malcom Produce",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fa/2d/50/fa2d5049-6f38-f9eb-5831-97f024efa62f/708208425037_cover.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/do/album/de-amanec%C3%ADa/6828103813?i=6828103814",
+          "spotifyUrl": "https://open.spotify.com/track/0PIeGpoUBNNZ2zpH8i8ocb"
+        },
+        {
+          "name": "Otra Noche en Miami",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/cf/3a/db/cf3adbe6-8ea1-f60f-60fd-713eefda3962/193483317984.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/do/album/otra-noche-en-miami/1447554595?i=1447554973",
+          "spotifyUrl": "https://open.spotify.com/track/4vCAzANUWDE24URV6wQ4ra"
+        },
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/do/album/bby-wow/6796864741?i=6796864754",
+          "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "name": "Peli De Terror",
+          "artistName": "Køddy G, THE FAVORITES & Fharid On The Beat",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b7/31/de/b731deb0-6f32-a9a4-0f3d-df33f9f8ac34/5378.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/do/album/peli-de-terror/6817112748?i=6817112749",
+          "spotifyUrl": "https://open.spotify.com/track/23XDZWXMOiRrm0qoKXCPbf"
+        },
+        {
+          "name": "Alma Rota",
+          "artistName": "Dalvin La Melodia & El Blachy",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/01/07/d0/0107d0df-020a-9b50-21b2-81f31a271f44/881453506222_cover.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/do/album/alma-rota/6797924406?i=6797924422",
+          "spotifyUrl": "https://open.spotify.com/track/1PcFWaVib2MUwJRTFByJeT"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/do/album/koko/1877481995?i=1877482633",
+          "spotifyUrl": "https://open.spotify.com/track/1tz7RZirwiuaJw2p0jbdHb"
+        },
+        {
+          "name": "Vuelve",
+          "artistName": "Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/43/2c/c3/432cc3a0-debd-4cec-67a1-8b3720402308/885288743814.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/do/album/vuelve/6818353344?i=6818353346",
+          "spotifyUrl": "https://open.spotify.com/track/4rKEWNZrYYo66knSxFxE2J"
+        },
+        {
+          "name": "Amnesia",
+          "artistName": "Dalvin La Melodia",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d0/4d/d8/d04dd8d2-3692-47ec-0bac-c25724b1af73/824296242681_cover.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/do/album/amnesia/1891416937?i=1891416939",
+          "spotifyUrl": "https://open.spotify.com/track/0RtlKChy7M5DHrezRiRNzh"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b6/12/da/b612daba-6c68-c2ab-7492-fb2e079074d5/196006829308.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/do/album/yonaguni/1570323047?i=1570323056",
+          "spotifyUrl": "https://open.spotify.com/track/2JPLbjOn0wPCngEot2STUS"
+        }
+      ]
+    },
+    "hn": {
+      "code": "hn",
+      "name": "Honduras",
+      "sync": 8,
+      "dissident": false,
+      "tracks": [
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/hn/album/bby-wow/6796864741?i=6796864754",
+          "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr"
+        },
+        {
+          "name": "VeLDÁ",
+          "artistName": "Bad Bunny, Omar Courtz & Dei V",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/5e/7e/905e7ed5-a8fa-a8f3-cd06-0028fdf3afaa/199066342442.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/hn/album/veld%C3%A1/1787022393?i=1787022999",
+          "spotifyUrl": "https://open.spotify.com/track/7d6yK8v8J484SWH5prIQiE"
+        },
+        {
+          "name": "Suzuki",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/hn/album/suzuki/6812476961?i=6812477298",
+          "spotifyUrl": "https://open.spotify.com/track/6VDw2mGBIa4csypjOhS6JT"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b6/12/da/b612daba-6c68-c2ab-7492-fb2e079074d5/196006829308.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/hn/album/yonaguni/1570323047?i=1570323056",
+          "spotifyUrl": "https://open.spotify.com/track/2JPLbjOn0wPCngEot2STUS"
+        },
+        {
+          "name": "Olimpo",
+          "artistName": "Neton Vega & Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/91/0e/fa910ef9-5a70-973e-1b2c-27f34dd4e536/1963625111737_cover.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/hn/album/olimpo/6825004152?i=6825004153",
+          "spotifyUrl": "https://open.spotify.com/track/0vGKL7wzfkhzGEJScbYt7N"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/hn/album/efecto/1622045624?i=1622045954",
+          "spotifyUrl": "https://open.spotify.com/track/5Eax0qFko2dh7Rl2lYs3bx"
+        },
+        {
+          "name": "KOKO",
+          "artistName": "Omar Courtz",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/13/d6/0b13d6d1-d5b9-03f4-a7b8-29f00faad00f/820200317964.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/hn/album/koko/1877481995?i=1877482633",
+          "spotifyUrl": "https://open.spotify.com/track/1tz7RZirwiuaJw2p0jbdHb"
+        },
+        {
+          "name": "Vuelve",
+          "artistName": "Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/43/2c/c3/432cc3a0-debd-4cec-67a1-8b3720402308/885288743814.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/hn/album/vuelve/6818353344?i=6818353346",
+          "spotifyUrl": "https://open.spotify.com/track/4rKEWNZrYYo66knSxFxE2J"
+        },
+        {
+          "name": "TE MUDASTE",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/70/1c/64701cff-71ed-912f-ce62-71d409f5e6ad/195497640560.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/hn/album/te-mudaste/1542102907?i=1542102922",
+          "spotifyUrl": "https://open.spotify.com/track/5RubKOuDoPn5Kj5TLVxSxY"
+        },
+        {
+          "name": "Vete",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/8c/0f/81/8c0f81f2-9f10-5e3d-b9de-5961a73e8e52/195081078724.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/hn/album/vete/1500776322?i=1500776923",
+          "spotifyUrl": "https://open.spotify.com/track/2n7ohqg1s68ToAHh4u9mcW"
+        }
+      ]
+    }
+  },
+  "dissidents": [
+    {
+      "code": "br",
+      "name": "Brazil",
+      "sync": 0,
+      "dissident": true,
+      "tracks": [
+        {
+          "name": "Pós (Ao Vivo)",
+          "artistName": "Felipe e Rodrigo",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/55/ac/80/55ac8010-26ff-2719-6218-e5419e64b127/1200220202775.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/p%C3%B3s-ao-vivo/6815826568?i=6815826572"
+        },
+        {
+          "name": "Housewife",
+          "artistName": "Tate McRae",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/69/64/e4/6964e483-c02c-e389-14f4-c426e8c65f2c/196874840146.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/housewife/6822497770?i=6822497774"
+        },
+        {
+          "name": "Postinho de Gasolina",
+          "artistName": "João Gustavo e Murilo & Grelo",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/da/e5/90dae5bf-d2e5-0d0f-2a66-5007df7d1768/3778128.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/postinho-de-gasolina/6794359613?i=6794359884"
+        },
+        {
+          "name": "Nicole Kidman",
+          "artistName": "ADÉLA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/77/7b/5d777b87-e796-0b3e-cef6-d37d993dd8fe/26UMGIM82371.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/nicole-kidman/6792883860?i=6792884088"
+        },
+        {
+          "name": "Flash (Ao Vivo)",
+          "artistName": "Hugo & Guilherme",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7c/07/13/7c0713a7-9103-831f-d541-f68ec91fa8b3/1200214766542.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/flash-ao-vivo/6797688529?i=6797688530"
+        },
+        {
+          "name": "Mega Hair (Ao Vivo)",
+          "artistName": "Netto Brito & Luan Pereira",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3a/04/58/3a0458ac-2c12-11dd-06eb-0b1a2255f310/1200220039135.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/mega-hair-ao-vivo/6807174941?i=6807174942"
+        },
+        {
+          "name": "Ain't In LA",
+          "artistName": "ADÉLA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/77/7b/5d777b87-e796-0b3e-cef6-d37d993dd8fe/26UMGIM82371.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/aint-in-la/6792883860?i=6792884101"
+        },
+        {
+          "name": "Cadeira Cativa (Ao Vivo)",
+          "artistName": "Zé Neto & Cristiano",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/63/af/a3/63afa3c3-7c7b-bc39-a050-6f66a2dcb53d/196874264478.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/cadeira-cativa-ao-vivo/6774797126?i=6774797127"
+        },
+        {
+          "name": "Você Já Sabe",
+          "artistName": "Anitta & Los Brasileros",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3a/bf/6a/3abf6a92-7a22-5cdb-209b-54f2e38cf623/26UMGIM96099.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/voc%C3%AA-j%C3%A1-sabe/6793770395?i=6793770617"
+        },
+        {
+          "name": "Eu Te Seguro (Ao Vivo)",
+          "artistName": "Panda & MJ Records",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/62/ec/58/62ec58ca-872b-d85a-255b-3236eb61d7b6/196873588636.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/br/album/eu-te-seguro-ao-vivo/1838576009?i=1838576011"
+        }
+      ],
+      "why": {
+        "industry": "Funk carioca and sertanejo universitário",
+        "story": "Funk carioca and sertanejo generate more internal streams than any import could. The regional catalog isn't competing — it doesn't fit. It's the biggest market on the map and the most isolated one, at the same time."
+      },
+      "needsReview": false
+    },
+    {
+      "code": "mx",
+      "name": "Mexico",
+      "sync": 2,
+      "dissident": true,
+      "tracks": [
+        {
+          "name": "Suzuki",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/suzuki/6812476961?i=6812477298"
+        },
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/bby-wow/6796864741?i=6796864754"
+        },
+        {
+          "name": "Olimpo",
+          "artistName": "Neton Vega & Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/91/0e/fa910ef9-5a70-973e-1b2c-27f34dd4e536/1963625111737_cover.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/olimpo/6825004152?i=6825004153"
+        },
+        {
+          "name": "OLIVIA LA FLAKA",
+          "artistName": "Natanael Cano, Tito Double P, Victor Mendivil & Ovi",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/70/b4/32/70b4321e-d887-b60c-c413-50513d7a5585/196874816158.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/olivia-la-flaka/6814967310?i=6814967656"
+        },
+        {
+          "name": "TU SANCHO",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/51/0a/a3/510aa39f-7a41-b53c-70a0-6a0df60645bb/196872995978.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/tu-sancho/1804142476?i=1804142885"
+        },
+        {
+          "name": "King of Watches",
+          "artistName": "Omar Camacho",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/03/1f/80031f12-fb82-924b-48c1-2c34dda8b95e/1200214033859.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/king-of-watches/6770709820?i=6770710132"
+        },
+        {
+          "name": "EXCESOS",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/21/e3/b7/21e3b74f-571b-07ce-567b-a2aa8274c7b2/196871548922.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/excesos/1712362875?i=1712363845"
+        },
+        {
+          "name": "Marlboro Rojo",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/51/0a/a3/510aa39f-7a41-b53c-70a0-6a0df60645bb/196872995978.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/marlboro-rojo/1804142476?i=1804142886"
+        },
+        {
+          "name": "FES",
+          "artistName": "Victor Mendivil & Omar Camacho",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a6/d8/31/a6d831af-322c-57e3-a470-5acc23dd84c1/1963625067621_cover.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/fes/6818554554?i=6818554565"
+        },
+        {
+          "name": "gervonta",
+          "artistName": "Peso Pluma",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/39/ed/a6/39eda6fa-33fc-76da-238e-454c5ad8b73c/199066114025.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/mx/album/gervonta/1783250949?i=1783250950"
+        }
+      ],
+      "why": {
+        "industry": "Corridos tumbados and Mexican regional music",
+        "story": "The corridos tumbados revival and regional Mexican music fill the national chart before any consensus hit gets a look in. It's not the market's exception, it's the dominant industry."
+      },
+      "needsReview": false
+    },
+    {
+      "code": "co",
+      "name": "Colombia",
+      "sync": 3,
+      "dissident": true,
+      "tracks": [
+        {
+          "name": "PARADIXE",
+          "artistName": "Feid, El Americano 4KT & Pirlo",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8f/d6/4c/8fd64cc6-e58c-2edc-1615-238b433a1170/26UM1IM12670.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/paradixe/6812011280?i=6812011443"
+        },
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/bby-wow/6796864741?i=6796864754"
+        },
+        {
+          "name": "PERRO NEGRO",
+          "artistName": "Bad Bunny & Feid",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/00/e0/31/00e0311e-9dab-fd0c-fc37-ee3d36aafbf3/197190137897.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/perro-negro/1710982865?i=1710983279"
+        },
+        {
+          "name": "CAPCANA COCOA",
+          "artistName": "Blessd & Anuel AA",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/45/ff/de/45ffde34-6e7e-90e4-eaa7-4d4f72599051/1200220051427.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/capcana-cocoa/6808005047?i=6808005059"
+        },
+        {
+          "name": "Yonaguni",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b6/12/da/b612daba-6c68-c2ab-7492-fb2e079074d5/196006829308.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/yonaguni/1570323047?i=1570323056"
+        },
+        {
+          "name": "Happy Monday (W Sound 10)",
+          "artistName": "W Sound, Hades66 & Ovy On the Drums",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ab/81/e8/ab81e88c-c8e0-2624-25f0-6bf18a20b6a4/1200220345397.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/happy-monday-w-sound-10/6824664210?i=6824664211"
+        },
+        {
+          "name": "Peli De Terror",
+          "artistName": "Køddy G, THE FAVORITES & Fharid On The Beat",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b7/31/de/b731deb0-6f32-a9a4-0f3d-df33f9f8ac34/5378.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/peli-de-terror/6817112748?i=6817112749"
+        },
+        {
+          "name": "Te Imagino",
+          "artistName": "Myke Towers",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5e/01/e0/5e01e0f6-91a6-d923-2495-855a4610485f/1200220330331.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/te-imagino/6823686091?i=6823686094"
+        },
+        {
+          "name": "Efecto",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3e/04/eb/3e04ebf6-370f-f59d-ec84-2c2643db92f1/196626945068.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/efecto/1622045624?i=1622045954"
+        },
+        {
+          "name": "Ojalá",
+          "artistName": "Ryan Castro",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8b/bb/06/8bbb0602-9d85-c28b-6de1-558f89f38bfa/196873157443.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/co/album/ojal%C3%A1/1814163356?i=1814164314"
+        }
+      ],
+      "why": null,
+      "needsReview": true
+    },
+    {
+      "code": "ve",
+      "name": "Venezuela",
+      "sync": 3,
+      "dissident": true,
+      "tracks": [
+        {
+          "name": "KLOuFRENS",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/5e/7e/905e7ed5-a8fa-a8f3-cd06-0028fdf3afaa/199066342442.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/kloufrens/1787022393?i=1787023297"
+        },
+        {
+          "name": "BbY WOW",
+          "artistName": "KAROL G, Judeline & rusowsky",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/bby-wow/6796864741?i=6796864754"
+        },
+        {
+          "name": "Te Imagino",
+          "artistName": "Myke Towers",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5e/01/e0/5e01e0f6-91a6-d923-2495-855a4610485f/1200220330331.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/te-imagino/6823686091?i=6823686094"
+        },
+        {
+          "name": "SWIM",
+          "artistName": "BTS",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/cb/bc/83cbbc49-cfad-aeaf-3292-0dd428290d81/198704942365_Cover.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/swim/1868862375?i=1868862384"
+        },
+        {
+          "name": "RIGHT NOW",
+          "artistName": "Lucho RK",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1b/ca/0d/1bca0dcb-fa2d-df63-46c5-5accb98d45b3/1200220209156.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/right-now/6817338538?i=6817338657"
+        },
+        {
+          "name": "carita linda ;)",
+          "artistName": "Alleh",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e1/cf/06/e1cf0624-83c7-e68a-c529-b0e5a11f8732/196874962398.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/carita-linda/6830289713?i=6830289782"
+        },
+        {
+          "name": "PERRO NEGRO",
+          "artistName": "Bad Bunny & Feid",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/00/e0/31/00e0311e-9dab-fd0c-fc37-ee3d36aafbf3/197190137897.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/perro-negro/1710982865?i=1710983279"
+        },
+        {
+          "name": "WHERE SHE GOES",
+          "artistName": "Bad Bunny",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ad/b7/0e/adb70ef8-c456-3b31-136c-450d196d7cda/197188909819.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/where-she-goes/1687809993?i=1687809996"
+        },
+        {
+          "name": "Suzuki",
+          "artistName": "Fuerza Regida",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/suzuki/6812476961?i=6812477298"
+        },
+        {
+          "name": "VeLDÁ",
+          "artistName": "Bad Bunny, Omar Courtz & Dei V",
+          "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/5e/7e/905e7ed5-a8fa-a8f3-cd06-0028fdf3afaa/199066342442.jpg/300x300bb.jpg",
+          "url": "https://music.apple.com/ve/album/veld%C3%A1/1787022393?i=1787022999"
+        }
+      ],
+      "why": null,
+      "needsReview": true
+    }
+  ],
+  "stats": {
+    "topSongRank1": {
+      "title": "BbY WOW",
+      "presence": 5,
+      "of": 18
+    },
+    "topConsensusPresence": [
+      {
+        "title": "BbY WOW",
+        "artistName": "KAROL G, Judeline & rusowsky",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/300x300bb.jpg",
+        "presence": 17,
+        "of": 18,
+        "countries": [
+          "cl",
+          "ar",
+          "pe",
+          "co",
+          "mx",
+          "uy",
+          "py",
+          "ve",
+          "cr",
+          "ec",
+          "bo",
+          "pa",
+          "gt",
+          "sv",
+          "ni",
+          "do",
+          "hn"
+        ]
+      }
+    ],
+    "topArtist": {
+      "name": "KAROL G",
+      "presence": 17,
+      "of": 18
+    },
+    "highestSync": {
+      "code": "py",
+      "name": "Paraguay",
+      "sync": 8
+    },
+    "dissidentCount": 4
+  },
+  "curatorialMyths": {
+    "KAROL G": {
+      "world": "She doesn't drop albums, she drops weather systems. Every project reconfigures the genre around her instead of joining it.",
+      "withheld": "She rarely competes on the terrain of controversy. The absence of scandal is, itself, a brand decision.",
+      "risk": "Dominating this many markets with one single exposes the whole catalog to a ceiling of familiarity: the consensus can turn predictable before it turns boring."
+    },
+    "Bad Bunny": {
+      "world": "He doesn't drop albums, he drops weather systems. Every project reconfigures the genre around him instead of joining it.",
+      "withheld": "Long silences between eras, a refusal to explain creative decisions at the moment he makes them. The mystery is part of the catalog.",
+      "risk": "The risk isn't stream overexposure, it's premature canonization — when every move gets read as an era statement and there's no more room left to fail in public."
+    },
+    "Omar Courtz": {
+      "world": "He builds on the recent Puerto Rican circuit without directly inheriting Bad Bunny's shadow: less world-narrative, more sound execution.",
+      "withheld": "He hasn't had to carry a full era yet. The open question is whether KOKO is the start of a catalog or an isolated peak.",
+      "risk": "Without a second move to confirm the first, the risk is getting read as one successful song instead of an artist with an arc."
+    }
+  }
+}
